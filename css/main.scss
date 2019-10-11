@@ -407,6 +407,11 @@ button:focus {
           @media (max-width: 576px) {
             font: 12px/22px "sansB";
           }
+          span{
+            @media (max-width: 576px) {
+              display: none;
+            }
+          }
         }
       }
     }

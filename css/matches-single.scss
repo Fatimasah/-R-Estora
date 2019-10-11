@@ -33,9 +33,9 @@ body {
   margin-bottom: 30px;
   .soon-block {
     background-color: rgba(245, 181, 83, 0.10196078431372549);
-    padding:20px 40px;
+    padding: 20px 40px;
     border-radius: 7px;
-    @media (max-width:767px){
+    @media (max-width: 767px) {
       padding: 20px;
     }
     img {
@@ -113,7 +113,7 @@ body {
     padding: 40px;
     background: white;
     @media (max-width: 576px) {
-      padding: 20px 10px;
+      padding: 40px 60px;
     }
     .info-blocks {
       display: flex;

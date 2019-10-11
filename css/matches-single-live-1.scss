@@ -1,17 +1,10 @@
-.active-status {
-  @media (max-width: 767px) {
-    right: 35%;
-    top: 0;
-  }
-  @media (max-width: 450px) {
-    right: 25%;
-    top: 0;
-  }
-  @media (max-width: 310px) {
-    right: 20%;
-    top: 0;
+.soon-alert{
+  .soon-block{
+    background-color: var(--redBack);
   }
 }
+
+
 // match details start
 .details-section {
   margin-bottom: 30px;

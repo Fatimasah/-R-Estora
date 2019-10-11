@@ -1,22 +1,5 @@
-@media (max-width: 767px) {
-  .active-status {
-    right: 35%;
-    top: 0;
-  }
-}
-
-@media (max-width: 450px) {
-  .active-status {
-    right: 25%;
-    top: 0;
-  }
-}
-
-@media (max-width: 310px) {
-  .active-status {
-    right: 20%;
-    top: 0;
-  }
+.soon-alert .soon-block {
+  background-color: var(--redBack);
 }
 
 .details-section {
@@ -77,4 +60,4 @@
 .matche-live {
   margin-bottom: 100px;
 }
-/*# sourceMappingURL=matches-single-live -1.css.map */
+/*# sourceMappingURL=matches-single-live-1.css.map */

@@ -543,6 +543,12 @@ button:focus {
   }
 }
 
+@media (max-width: 576px) {
+  .matches-content .matches-tabs .nav-pills .nav-item .nav-link span {
+    display: none;
+  }
+}
+
 .matches-content .matches-tabs .tab-content .match-details:hover .details-hover {
   opacity: 0.7;
 }
