@@ -75,16 +75,6 @@
 }
 
 .matche-live {
-  margin-bottom: 60px;
-}
-
-.matche-live #player {
-  width: 100%;
-  height: 550px;
-}
-
-.matche-live #player iframe {
-  width: 100%;
-  height: 100%;
+  margin-bottom: 100px;
 }
 /*# sourceMappingURL=matches-single-live.css.map */
