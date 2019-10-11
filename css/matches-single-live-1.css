@@ -1,28 +1,47 @@
 .soon-alert .soon-block {
   background-color: var(--redBack);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.details-section {
-  margin-bottom: 30px;
+@media (max-width: 576px) {
+  .soon-alert .soon-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.details-section .details-block {
-  position: relative;
+@media (max-width: 576px) {
+  .soon-alert .soon-block .soon-side {
+    margin-bottom: 10px;
+  }
 }
 
-@media (max-width: 767px) {
-  .details-section .details-block {
-    padding: 20px;
+.soon-alert .soon-block .soon-side b {
+  color: var(--redColor);
+}
+
+@media (max-width: 576px) {
+  .soon-alert .soon-block .soon-side b {
+    font-size: 12px;
   }
 }
 
 .details-section .details-block .match-info h3 {
-  margin-right: 30px;
-  font: 16px/23px "sansB";
-  color: var(--blueColor);
+  margin-right: 0;
+  color: var(--goldColor);
 }
 
-.details-section .details-block .joining-teams .team {
+.details-section .details-block .finished-result {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,29 +54,122 @@
           align-items: center;
 }
 
-.details-section .details-block .joining-teams .team b {
-  font: 13px/23px "sansB";
-  color: #031c02;
-  margin-top: 10px;
+.details-section .details-block .finished-result .winner,
+.details-section .details-block .finished-result .loser {
+  width: 25px;
+  height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.details-section .details-block .joining-teams b {
-  color: #557ae0;
+.details-section .details-block .finished-result .winner {
+  background: rgba(0, 184, 169, 0.0509804) 0% 0% no-repeat padding-box;
+  border: 1px solid rgba(0, 184, 169, 0.301961);
+  border-radius: 4px;
+  color: var(--blueColor);
 }
 
-@media (max-width: 576px) {
-  .details-section .details-block .joining-teams b {
-    margin-left: 15px;
-    margin-right: 15px;
-    font: 14px/22px "sansB";
+.details-section .details-block .finished-result .loser {
+  background: rgba(254, 75, 75, 0.0509804) 0% 0% no-repeat padding-box;
+  border: 1px solid rgba(254, 75, 75, 0.301961);
+  border-radius: 4px;
+  color: var(--redColor);
+}
+
+.details-section .details-block .finished-result .vs {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details-section .details-block .finished-result .match-status {
+  font: 12px/23px "sansP";
+  color: var(--grayColor);
+}
+
+@media (max-width: 992px) {
+  .details-section .details-block .finished-result .match-status {
+    margin-right: 0;
+    margin-left: 0;
   }
+}
+
+.details-section .details-block .finished-result div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
 }
 
 .meeting-section {
   margin-bottom: 30px;
 }
 
-.matche-live {
+.match-live-section {
   margin-bottom: 100px;
+}
+
+.match-live-section .match-live {
+  padding: 40px;
+  background-color: white;
+}
+
+.match-live-section .match-live .border-gray {
+  padding: 20px;
+}
+
+.match-live-section .match-live h3 {
+  font: 20px/23px "sansB";
+  color: var(--blackColor);
+  margin-bottom: 30px;
+}
+
+.match-live-section .match-live iframe {
+  border-radius: 5px;
+}
+
+.match-live-section .match-live .video-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.match-live-section .match-live .video-info .league-name {
+  font: 12px/20px "sansB";
+  color: var(--purpleColor);
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.match-live-section .match-live .video-info .viedo-name {
+  font: 15px/25px "sansB";
+  color: var(--blackColor);
+  margin-bottom: 25px;
+}
+
+.match-live-section .match-live .video-info .video-time {
+  font: 13px/20px "sansP";
+  color: #a0a3a0;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=matches-single-live-1.css.map */
