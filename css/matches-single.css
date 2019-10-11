@@ -152,7 +152,7 @@ body {
 
 @media (max-width: 576px) {
   .meeting-section .meeting-info {
-    padding: 40px 60px;
+    padding: 20px 20px;
   }
 }
 
