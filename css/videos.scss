@@ -1,0 +1,67 @@
+.search-section {
+  padding: 25px 0;
+  .form-inline {
+    .form-control {
+      border: none;
+      background: none;
+      text-align: right !important;
+    }
+  }
+}
+
+// live section
+.match-live-section {
+  margin-bottom: 100px;
+  background-color: white;
+  .match-live {
+    padding: 50px 0;
+    @media (max-width: 576px) {
+      padding: 40px 10px;
+    }
+    .border-gray {
+      padding: 20px;
+      // margin-bottom: 30px;
+    }
+    .adds-block {
+      height: 100%;
+      border: none;
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      .adds {
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+    }
+    h3 {
+      font: 20px/23px "sansB";
+      color: var(--blackColor);
+      margin-bottom: 30px;
+    }
+    iframe {
+      border-radius: 5px;
+    }
+    .video-info {
+      display: flex;
+      flex-direction: column;
+      .league-name {
+        font: 12px/20px "sansB";
+        color: var(--purpleColor);
+        margin-bottom: 10px;
+        margin-top: 15px;
+      }
+      .viedo-name {
+        font: 15px/25px "sansB";
+        color: var(--blackColor);
+        margin-bottom: 25px;
+      }
+      .video-time {
+        font: 13px/20px "sansP";
+        color: #a0a3a0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
