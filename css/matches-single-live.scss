@@ -1,0 +1,71 @@
+.active-status {
+  @media (max-width: 767px) {
+    right: 35%;
+    top: 0;
+  }
+  @media (max-width: 450px) {
+    right: 25%;
+    top: 0;
+  }
+  @media (max-width: 310px) {
+    right: 20%;
+    top: 0;
+  }
+}
+// match details start
+.details-section {
+  margin-bottom: 30px;
+  .details-block {
+    position: relative;
+    @media (max-width: 767px) {
+      padding: 20px;
+    }
+    .match-info {
+      h3 {
+        margin-right: 30px;
+        font: 16px/23px "sansB";
+        color: var(--blueColor);
+      }
+    }
+    .joining-teams {
+      .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        b {
+          font: 13px/23px "sansB";
+          color: #031c02;
+          margin-top: 10px;
+        }
+      }
+      b {
+        color: #557ae0;
+        @media (max-width: 576px) {
+          margin-left: 15px;
+          margin-right: 15px;
+          font: 14px/22px "sansB";
+        }
+      }
+    }
+  }
+}
+// match details end
+
+// meeting info section start
+.meeting-section {
+  margin-bottom: 30px;
+}
+// meeting info section end
+
+// live section
+.matche-live {
+  margin-bottom: 60px;
+  #player {
+    width: 100%;
+    height: 550px;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
