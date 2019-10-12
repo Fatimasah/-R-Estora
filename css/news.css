@@ -23,7 +23,7 @@
   src: url("../fonts/TheSans-Plain.ttf");
 }
 
-.all-items, .all-items a:first-of-type, .all-items a:first-of-type b, .all-items a:last-of-type, .all-items:hover, .header-section .social-contact ul li a, .header-section .social-contact ul li a svg, .header-section .social-contact ul li a:hover, .header-section .social-contact ul li a:hover svg, .navbar-section .navbar .navbar-nav .nav-item .nav-link, .navbar-section .navbar .navbar-nav .nav-item.active .nav-link, .navbar-section .navbar .navbar-nav .nav-item:hover .nav-link, .matches-content .matches-tabs .nav-pills .nav-item .nav-link, .matches-content .matches-tabs .tab-content .match-details, .matches-content .matches-tabs .tab-content .match-details:hover .details-hover, .matches-content .top-soccer .carousel .carousel-inner .carousel-item,
+.header-section .social-contact ul li a, .header-section .social-contact ul li a svg, .header-section .social-contact ul li a:hover, .header-section .social-contact ul li a:hover svg, .navbar-section .navbar .navbar-nav .nav-item .nav-link, .navbar-section .navbar .navbar-nav .nav-item.active .nav-link, .navbar-section .navbar .navbar-nav .nav-item:hover .nav-link, .matches-content .matches-tabs .nav-pills .nav-item .nav-link, .matches-content .matches-tabs .tab-content .match-details, .matches-content .matches-tabs .tab-content .match-details:hover .details-hover, .matches-content .top-soccer .carousel .carousel-inner .carousel-item,
 .matches-content .top-soccer .carousel .carousel-inner .champion-item,
 .matches-content .top-soccer .carousel .champion-inner .carousel-item,
 .matches-content .top-soccer .carousel .champion-inner .champion-item,
@@ -157,9 +157,6 @@ button:focus {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  overflow: hidden;
-  width: 50px;
-  margin-right: auto;
 }
 
 .all-items a {
@@ -177,72 +174,6 @@ button:focus {
   height: 50px;
   background-color: var(--purpleColor);
   border-radius: 5px;
-}
-
-.all-items a:first-of-type {
-  padding-left: 15px;
-  padding-right: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  height: 50px;
-  left: -35px;
-  width: 120px;
-  height: 50px;
-  overflow: hidden;
-  -webkit-transform: translate(-65px, 0px);
-          transform: translate(-65px, 0px);
-  border-top-left-radius: 0;
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
-}
-
-.all-items a:first-of-type b {
-  -webkit-transform: translate(0px, 55px);
-          transform: translate(0px, 55px);
-  position: relative;
-  position: absolute;
-  bottom: 0;
-  left: 15px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.all-items a:last-of-type {
-  background: unset;
-  padding: 0;
-  width: 50px;
-  height: 50px;
-}
-
-.all-items a:last-of-type img {
-  margin-right: 0;
-}
-
-.all-items:hover {
-  width: 170px;
-}
-
-.all-items:hover .all-items-hover {
-  left: 0;
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-}
-
-.all-items:hover .all-items-hover b {
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
-  bottom: 7px;
 }
 
 .adds {
@@ -711,6 +642,12 @@ button:focus {
   color: var(--blackColor);
 }
 
+@media (max-width: 576px) {
+  .matches-content .matches-tabs .tab-content .tab-content-row .match-result {
+    font-size: 12px;
+  }
+}
+
 .matches-content .matches-tabs .tab-content .tab-content-row .match-result b:first-of-type, .matches-content .matches-tabs .tab-content .tab-content-row .match-result b:last-of-type {
   padding: 5px 10px;
 }
@@ -724,55 +661,19 @@ button:focus {
 .matches-content .matches-tabs .tab-content .tab-content-row .match-result b:nth-of-type(2) {
   padding-left: 10px;
   padding-right: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+@media (max-width: 576px) {
+  .matches-content .matches-tabs .tab-content .tab-content-row .match-result b:nth-of-type(2) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 @media (max-width: 767px) {
   .matches-content .matches-tabs .tab-content .tab-content-row .match-result {
-    margin-bottom: -13%;
+    margin-bottom: -15%;
   }
-}
-
-@media (max-width: 576px) {
-  .matches-content .matches-tabs .tab-content .tab-content-row .match-result {
-    margin-bottom: -18%;
-  }
-}
-
-@media (max-width: 450px) {
-  .matches-content .matches-tabs .tab-content .tab-content-row .match-result {
-    margin-bottom: -25%;
-  }
-}
-
-.matches-content .matches-tabs .tab-content .tab-content-row .finished-result {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.matches-content .matches-tabs .tab-content .tab-content-row .finished-result .loser,
-.matches-content .matches-tabs .tab-content .tab-content-row .finished-result .winner {
-  width: 25px;
-  height: 30px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .matches-content .matches-tabs .tab-content .tab-content-row .finished-result .winner {
@@ -827,18 +728,6 @@ button:focus {
 @media (max-width: 767px) {
   .matches-content .matches-tabs .tab-content .timing {
     margin-bottom: -15%;
-  }
-}
-
-@media (max-width: 576px) {
-  .matches-content .matches-tabs .tab-content .timing {
-    margin-bottom: -18%;
-  }
-}
-
-@media (max-width: 450px) {
-  .matches-content .matches-tabs .tab-content .timing {
-    margin-bottom: -25%;
   }
 }
 
@@ -1125,17 +1014,6 @@ button:focus {
   padding: 0px 30px;
 }
 
-.matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content:last-of-type .player-info b:first-of-type,
-.matches-content .top-soccer .carousel .carousel-inner .champion-item .item-content:last-of-type .player-info b:first-of-type,
-.matches-content .top-soccer .carousel .champion-inner .carousel-item .item-content:last-of-type .player-info b:first-of-type,
-.matches-content .top-soccer .carousel .champion-inner .champion-item .item-content:last-of-type .player-info b:first-of-type,
-.matches-content .top-soccer .championships .carousel-inner .carousel-item .item-content:last-of-type .player-info b:first-of-type,
-.matches-content .top-soccer .championships .carousel-inner .champion-item .item-content:last-of-type .player-info b:first-of-type,
-.matches-content .top-soccer .championships .champion-inner .carousel-item .item-content:last-of-type .player-info b:first-of-type,
-.matches-content .top-soccer .championships .champion-inner .champion-item .item-content:last-of-type .player-info b:first-of-type {
-  margin-left: 10px;
-}
-
 .matches-content .top-soccer .carousel .carousel-inner .carousel-item .item-content .player-info,
 .matches-content .top-soccer .carousel .carousel-inner .champion-item .item-content .player-info,
 .matches-content .top-soccer .carousel .champion-inner .carousel-item .item-content .player-info,
@@ -1240,7 +1118,6 @@ button:focus {
 .nav-pills .show > .nav-link {
   background-color: var(--goldColor);
   color: white !important;
-  border: none;
 }
 
 .latest-news-section {
@@ -1269,7 +1146,6 @@ button:focus {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 7px;
 }
 
 .latest-news-section .news .news-item .news-title {
@@ -1288,14 +1164,6 @@ button:focus {
   font: 12px/34px "sansP";
   color: var(--grayColor);
   margin-bottom: 0;
-}
-
-.latest-news-section .news .all-items:hover {
-  width: 150px;
-}
-
-.latest-news-section .news .all-items a:first-of-type {
-  width: 100px;
 }
 
 .latest-news-section .news .row-news2 {
@@ -6157,4 +6025,4 @@ button:focus {
   font-size: 32px;
   margin-right: -15px;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=news.css.map */

@@ -61,6 +61,7 @@ a:hover {
 button:focus {
   outline: none;
 }
+
 .border-gray {
   border: 1px solid var(--grayborder);
   border-radius: 5px;
@@ -121,11 +122,6 @@ button:focus {
 .all-items {
   display: flex;
   justify-content: flex-end;
-  overflow: hidden;
-  width: 50px;
-  margin-right: auto;
-  @extend %trans;
-
   a {
     padding: 0 16px 0 0;
     border-radius: 5px;
@@ -139,58 +135,6 @@ button:focus {
       height: 50px;
       background-color: var(--purpleColor);
       border-radius: 5px;
-    }
-  }
-  a {
-    &:first-of-type {
-      padding-left: 15px;
-      padding-right: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      height: 50px;
-
-      left: -35px;
-      width: 120px;
-      height: 50px;
-      overflow: hidden;
-      transform: translate(-65px, 0px);
-      border-top-left-radius: 0;
-      transition-delay: 0.2s;
-      @extend %trans;
-      b {
-        transform: translate(0px, 55px);
-        position: relative;
-        @extend %trans;
-        position: absolute;
-        bottom: 0;
-        left: 15px;
-        width: max-content;
-      }
-    }
-    &:last-of-type {
-      background: unset;
-      padding: 0;
-      width: 50px;
-      height: 50px;
-      @extend %trans;
-      img {
-        margin-right: 0;
-      }
-    }
-  }
-  &:hover {
-    @extend %trans;
-    width: 170px;
-    .all-items-hover {
-      left: 0;
-      transform: translate(0px, 0px);
-      b {
-        transform: translate(0px, 0px);
-        transition-delay: 0.4s;
-        bottom: 7px;
-      }
     }
   }
 }
@@ -536,9 +480,9 @@ button:focus {
         .match-result {
           font: 15px/23px "sansB";
           color: var(--blackColor);
-          // @media (max-width: 576px) {
-          //   font-size: 12px;
-          // }
+          @media (max-width: 576px) {
+            font-size: 12px;
+          }
           b {
             &:first-of-type,
             &:last-of-type {
@@ -550,40 +494,17 @@ button:focus {
             &:nth-of-type(2) {
               padding-left: 10px;
               padding-right: 10px;
-              display: flex;
-              align-items: center;
+              @media (max-width: 576px) {
+                padding-left: 0px;
+                padding-right: 0px;
+              }
             }
           }
           @media (max-width: 767px) {
-            margin-bottom: -13%;
-          }
-          @media (max-width: 576px) {
-            margin-bottom: -18%;
-          }
-          @media (max-width: 450px) {
-            margin-bottom: -25%;
+            margin-bottom: -15%;
           }
         }
         .finished-result {
-          display: flex;
-          .loser,
-          .winner {
-            width: 25px;
-            height: 30px;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-          }
           .winner {
             background: rgba(0, 184, 169, 0.050980392156862744) 0% 0% no-repeat padding-box;
             border: 1px solid rgba(0, 184, 169, 0.30196078431372547);
@@ -627,12 +548,6 @@ button:focus {
         }
         @media (max-width: 767px) {
           margin-bottom: -15%;
-        }
-        @media (max-width: 576px) {
-          margin-bottom: -18%;
-        }
-        @media (max-width: 450px) {
-          margin-bottom: -25%;
         }
       }
       .first-row {
@@ -787,15 +702,6 @@ button:focus {
           }
           .item-content {
             padding: 0px 30px;
-            &:last-of-type {
-              .player-info {
-                b {
-                  &:first-of-type {
-                    margin-left: 10px;
-                  }
-                }
-              }
-            }
             .player-info {
               display: flex;
               flex-direction: row;
@@ -849,7 +755,6 @@ button:focus {
 .nav-pills .show > .nav-link {
   background-color: var(--goldColor);
   color: white !important;
-  border: none;
   @extend %trans;
 }
 //  end matches-tabs section
@@ -873,7 +778,6 @@ button:focus {
       img {
         max-width: 100%;
         object-fit: cover;
-        border-radius: 7px;
       }
       .news-title {
         position: absolute;
@@ -889,14 +793,6 @@ button:focus {
           color: var(--grayColor);
           margin-bottom: 0;
         }
-      }
-    }
-    .all-items {
-      &:hover {
-        width: 150px;
-      }
-      a:first-of-type {
-        width: 100px;
       }
     }
     .row-news2 {

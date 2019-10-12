@@ -1,5 +1,22 @@
+body {
+  background-color: unset;
+}
+
 .search-section {
   padding: 25px 0;
+  background-color: #f7f7f7;
+}
+
+.search-section .form-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .search-section .form-inline .form-control {
@@ -25,6 +42,7 @@
 
 .match-live-section .match-live .border-gray {
   padding: 20px;
+  border-radius: 7px;
 }
 
 .match-live-section .match-live .adds-block {
@@ -46,6 +64,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 7px;
 }
 
 .match-live-section .match-live h3 {
@@ -85,5 +104,9 @@
   font: 13px/20px "sansP";
   color: #a0a3a0;
   margin-bottom: 0;
+}
+
+.site-app {
+  padding-top: 0;
 }
 /*# sourceMappingURL=videos.css.map */

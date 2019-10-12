@@ -133,6 +133,7 @@
 }
 
 .match-live-section .match-live {
+  border-radius: 7px;
   padding: 40px;
   background-color: white;
 }

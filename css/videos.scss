@@ -1,6 +1,13 @@
+body {
+  background-color: unset;
+}
 .search-section {
   padding: 25px 0;
+  background-color: #f7f7f7;
   .form-inline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     .form-control {
       border: none;
       background: none;
@@ -21,6 +28,7 @@
     .border-gray {
       padding: 20px;
       // margin-bottom: 30px;
+      border-radius: 7px;
     }
     .adds-block {
       height: 100%;
@@ -33,6 +41,7 @@
         align-items: center;
         justify-content: center;
         display: flex;
+        border-radius: 7px;
       }
     }
     h3 {
@@ -64,4 +73,9 @@
       }
     }
   }
+}
+
+// site app
+.site-app {
+  padding-top: 0;
 }

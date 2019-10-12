@@ -58,6 +58,7 @@ body {
 .details-section {
   margin-bottom: 30px;
   .details-block {
+    border-radius: 7px;
     padding: 40px;
     background: white;
     // margin-top: 50px;
@@ -110,6 +111,7 @@ body {
 .meeting-section {
   margin-bottom: 100px;
   .meeting-info {
+    border-radius: 7px;
     padding: 40px;
     background: white;
     @media (max-width: 576px) {

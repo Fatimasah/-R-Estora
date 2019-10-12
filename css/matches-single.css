@@ -65,6 +65,7 @@ body {
 }
 
 .details-section .details-block {
+  border-radius: 7px;
   padding: 40px;
   background: white;
   display: -webkit-box;
@@ -146,6 +147,7 @@ body {
 }
 
 .meeting-section .meeting-info {
+  border-radius: 7px;
   padding: 40px;
   background: white;
 }
