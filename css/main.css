@@ -23,7 +23,7 @@
   src: url("../fonts/TheSans-Plain.ttf");
 }
 
-.all-items, .all-items a:first-of-type, .all-items a:first-of-type b, .all-items a:last-of-type, .all-items:hover, .header-section .social-contact ul li a, .header-section .social-contact ul li a svg, .header-section .social-contact ul li a:hover, .header-section .social-contact ul li a:hover svg, .navbar-section .navbar .navbar-nav .nav-item .nav-link, .navbar-section .navbar .navbar-nav .nav-item.active .nav-link, .navbar-section .navbar .navbar-nav .nav-item:hover .nav-link, .matches-content .matches-tabs .nav-pills .nav-item .nav-link, .matches-content .matches-tabs .tab-content .match-details, .matches-content .matches-tabs .tab-content .match-details:hover .details-hover, .matches-content .top-soccer .carousel .carousel-inner .carousel-item,
+.all-items, .all-items a, .all-items a:first-of-type, .all-items a:first-of-type b, .all-items a:last-of-type, .all-items:hover, .all-items:hover .all-items-hover, .all-items:hover .all-items-hover b, .header-section .social-contact ul li a, .header-section .social-contact ul li a svg, .header-section .social-contact ul li a:hover, .header-section .social-contact ul li a:hover svg, .navbar-section .navbar .navbar-nav .nav-item .nav-link, .navbar-section .navbar .navbar-nav .nav-item.active .nav-link, .navbar-section .navbar .navbar-nav .nav-item:hover .nav-link, .matches-content .matches-tabs .nav-pills .nav-item .nav-link, .matches-content .matches-tabs .tab-content .match-details, .matches-content .matches-tabs .tab-content .match-details:hover .details-hover, .matches-content .top-soccer .carousel .carousel-inner .carousel-item,
 .matches-content .top-soccer .carousel .carousel-inner .champion-item,
 .matches-content .top-soccer .carousel .champion-inner .carousel-item,
 .matches-content .top-soccer .carousel .champion-inner .champion-item,
@@ -324,6 +324,47 @@ button:focus {
             transform: scale(1.5);
     opacity: 0;
   }
+}
+
+.latest-news-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.latest-news-card .card-imge {
+  width: 120px;
+  height: 80px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.latest-news-card .card-imge img {
+  width: 120px;
+  height: 80px;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.latest-news-card .card-body {
+  width: 166px;
+  overflow: hidden;
+}
+
+.latest-news-card .card-body .card-text {
+  font: 14px/23px "sansB";
+  color: #031c02;
+  height: 46px;
+  overflow: hidden;
+}
+
+.latest-news-card .card-body .text-muted {
+  font: 12px/34px "sansP";
+  color: #A0A3A0 !important;
 }
 
 .header-section {
@@ -709,6 +750,9 @@ button:focus {
 .matches-content .matches-tabs .tab-content .tab-content-row .match-result {
   font: 15px/23px "sansB";
   color: var(--blackColor);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .matches-content .matches-tabs .tab-content .tab-content-row .match-result b:first-of-type, .matches-content .matches-tabs .tab-content .tab-content-row .match-result b:last-of-type {

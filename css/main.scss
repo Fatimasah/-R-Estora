@@ -132,6 +132,8 @@ button:focus {
     font: 14px/34px "sansB";
     color: var(--purpleColor);
     background-color: var(--purpleBack);
+    @extend %trans;
+
     img {
       padding: 13px;
       margin-right: 16px;
@@ -186,10 +188,13 @@ button:focus {
     .all-items-hover {
       left: 0;
       transform: translate(0px, 0px);
+      @extend %trans;
+
       b {
         transform: translate(0px, 0px);
         transition-delay: 0.4s;
         bottom: 7px;
+        @extend %trans;
       }
     }
   }
@@ -250,6 +255,40 @@ button:focus {
   100% {
     transform: scale(1.5);
     opacity: 0;
+  }
+}
+
+
+
+// news-card
+.latest-news-card {
+  display: flex;
+  justify-content: center;
+  .card-imge {
+    width: 120px;
+    height: 80px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    img {
+      width: 120px;
+      height: 80px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  }
+  .card-body {
+    width: 166px;
+    overflow: hidden;
+    .card-text {
+      font: 14px/23px "sansB";
+      color: #031c02;
+      height: 46px;
+      overflow: hidden;
+    }
+    .text-muted {
+      font: 12px/34px "sansP";
+      color: #A0A3A0 !important;
+    }
   }
 }
 // ======================
@@ -536,6 +575,7 @@ button:focus {
         .match-result {
           font: 15px/23px "sansB";
           color: var(--blackColor);
+          display: flex;
           // @media (max-width: 576px) {
           //   font-size: 12px;
           // }

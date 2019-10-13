@@ -64,42 +64,4 @@
   margin-right: 40px;
   margin-bottom: 50px;
 }
-
-.matches-content .top-soccer .latest-news .latest-news-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.matches-content .top-soccer .latest-news .latest-news-card .card-imge {
-  width: 120px;
-  height: 80px;
-  background-color: #f7f7f7;
-  border-radius: 5px;
-}
-
-.matches-content .top-soccer .latest-news .latest-news-card .card-imge img {
-  width: 120px;
-  height: 80px;
-  border-radius: 5px;
-}
-
-.matches-content .top-soccer .latest-news .latest-news-card .card-body {
-  width: 166px;
-  overflow: hidden;
-}
-
-.matches-content .top-soccer .latest-news .latest-news-card .card-body .card-text {
-  font: 14px/23px "sansB";
-  color: #031c02;
-  height: 46px;
-  overflow: hidden;
-}
-
-.matches-content .top-soccer .latest-news .latest-news-card .card-body .text-muted {
-  font: 12px/34px "sansP";
-}
 /*# sourceMappingURL=matches.css.map */
