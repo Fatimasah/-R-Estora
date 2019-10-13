@@ -82,6 +82,8 @@
 
 .fr-league {
   border-top: none;
+  margin-bottom: 20px;
+  padding-top: 60px;
 }
 
 .fr-league .news-cards {
@@ -175,9 +177,59 @@
   margin-top: 55px;
 }
 
+.ar-league {
+  background-color: white;
+  margin-bottom: 60px;
+  padding-top: 10px;
+}
+
+.ar-league .eg-league .news .ar-col-p,
+.ar-league .sa-league .news .ar-col-p {
+  padding-left: 5px;
+}
+
+.ar-league .eg-league .news .item215,
+.ar-league .eg-league .news .item215 img,
+.ar-league .sa-league .news .item215,
+.ar-league .sa-league .news .item215 img {
+  height: 190px;
+}
+
+.ar-league .eg-league .all-items,
+.ar-league .sa-league .all-items {
+  margin-top: 40px;
+}
+
+.ar-league .sa-league .news-cards {
+  padding: 35px 20px 40px 20px;
+}
+
+.ar-league .sa-league .news-cards .latest-news-card .card-imge {
+  width: 90px;
+  height: 70px;
+}
+
+.ar-league .sa-league .news-cards .latest-news-card .card-imge img {
+  width: 90px;
+  height: 70px;
+}
+
+.ar-league .sa-league .news-cards .latest-news-card .card-body {
+  padding-right: 12px;
+}
+
+.ar-league .sa-league .news-cards .latest-news-card .card-body .card-text {
+  font: 13px/23px "sansB";
+}
+
+.ar-league .sa-league .news-cards .latest-news-card .card-body .text-muted {
+  font: 12px/25px "sansP";
+}
+
 .league-tabs {
   border-top: 1px solid var(--grayborder);
   margin-bottom: 100px;
+  padding-top: 0;
 }
 
 .league-tabs nav .nav-tabs {
