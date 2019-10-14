@@ -1,7 +1,107 @@
-.league-section{
+.league-section {
   padding: 30px 0;
   background-color: white;
 }
 
+.teams-score {
+  background-color: #f7f7f7;
+  padding: 30px 0;
+  .t-card {
+    border-radius: 7px;
+    background-color: white;
+    padding: 20px;
+    .t-info {
+      display: flex;
+      align-items: center;
+      .t-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img {
+          width: 70px;
+          height: 70px;
+        }
+        span {
+          background-color: #00b8a9;
+          border: 3px solid white;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          margin-top: -20px;
+          z-index: 5;
+        }
+      }
+      .t-name {
+        margin-right: 23px;
+        p {
+          margin-bottom: 2px;
+          &:first-of-type {
+            font: 16px/23px "sansB";
+            color: var(--blackColor);
+          }
+          &:last-of-type {
+            font: 12px/23px "sansP";
+            color: #a0a3a0;
+          }
+        }
+      }
+    }
+    .t-rounds {
+      padding: 9px 20px;
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      margin-top: 30px;
+      .num-g-m {
+        p {
+          margin-bottom: 2px;
+          &:first-of-type {
+            font: 16px/20px "sansB";
+            color: var(--blackColor);
+          }
+          &:last-of-type {
+            font: 12px/20px "sansP";
+            color: #a0a3a0;
+          }
+        }
+      }
+    }
+    .t-goals {
+      .num-goals {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+          font: 14px/20px "sansP";
+          color: #a0a3a0;
+        }
+        .num-w,
+        .num-l,
+        .num-d,
+        .num-p {
+          font: 14px/20px "sansB";
+        }
+        .num-w {
+          color: var(--blueColor);
+        }
+        .num-d {
+          color: var(--goldColor);
+        }
+        .num-l {
+          color: var(--redColor);
+        }
+        .num-p {
+          color: var(--blackColor);
+        }
+      }
+    }
+  }
+}
 
 

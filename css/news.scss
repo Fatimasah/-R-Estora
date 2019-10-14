@@ -214,6 +214,14 @@
   padding-top: 0;
   nav {
     .nav-tabs {
+      .owl-carousel {
+        .owl-stage {
+          .owl-item {
+            margin-left: 0px !important;
+            width: unset !important;
+          }
+        }
+      }
       border-bottom: none;
       .nav-item {
         border: none;

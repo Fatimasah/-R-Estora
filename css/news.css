@@ -236,6 +236,11 @@
   border-bottom: none;
 }
 
+.league-tabs nav .nav-tabs .owl-carousel .owl-stage .owl-item {
+  margin-left: 0px !important;
+  width: unset !important;
+}
+
 .league-tabs nav .nav-tabs .nav-item {
   border: none;
   border-top: 3px solid transparent;

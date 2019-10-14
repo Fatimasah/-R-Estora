@@ -2,4 +2,149 @@
   padding: 30px 0;
   background-color: white;
 }
+
+.teams-score {
+  background-color: #f7f7f7;
+  padding: 30px 0;
+}
+
+.teams-score .t-card {
+  border-radius: 7px;
+  background-color: white;
+  padding: 20px;
+}
+
+.teams-score .t-card .t-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teams-score .t-card .t-info .t-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.teams-score .t-card .t-info .t-logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.teams-score .t-card .t-info .t-logo span {
+  background-color: #00b8a9;
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  margin-top: -20px;
+  z-index: 5;
+}
+
+.teams-score .t-card .t-info .t-name {
+  margin-right: 23px;
+}
+
+.teams-score .t-card .t-info .t-name p {
+  margin-bottom: 2px;
+}
+
+.teams-score .t-card .t-info .t-name p:first-of-type {
+  font: 16px/23px "sansB";
+  color: var(--blackColor);
+}
+
+.teams-score .t-card .t-info .t-name p:last-of-type {
+  font: 12px/23px "sansP";
+  color: #a0a3a0;
+}
+
+.teams-score .t-card .t-rounds {
+  padding: 9px 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.teams-score .t-card .t-rounds .num-g-m p {
+  margin-bottom: 2px;
+}
+
+.teams-score .t-card .t-rounds .num-g-m p:first-of-type {
+  font: 16px/20px "sansB";
+  color: var(--blackColor);
+}
+
+.teams-score .t-card .t-rounds .num-g-m p:last-of-type {
+  font: 12px/20px "sansP";
+  color: #a0a3a0;
+}
+
+.teams-score .t-card .t-goals .num-goals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teams-score .t-card .t-goals .num-goals p {
+  font: 14px/20px "sansP";
+  color: #a0a3a0;
+}
+
+.teams-score .t-card .t-goals .num-goals .num-w,
+.teams-score .t-card .t-goals .num-goals .num-l,
+.teams-score .t-card .t-goals .num-goals .num-d,
+.teams-score .t-card .t-goals .num-goals .num-p {
+  font: 14px/20px "sansB";
+}
+
+.teams-score .t-card .t-goals .num-goals .num-w {
+  color: var(--blueColor);
+}
+
+.teams-score .t-card .t-goals .num-goals .num-d {
+  color: var(--goldColor);
+}
+
+.teams-score .t-card .t-goals .num-goals .num-l {
+  color: var(--redColor);
+}
+
+.teams-score .t-card .t-goals .num-goals .num-p {
+  color: var(--blackColor);
+}
 /*# sourceMappingURL=teams.css.map */
