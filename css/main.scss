@@ -258,8 +258,6 @@ button:focus {
   }
 }
 
-
-
 // news-card
 .latest-news-card {
   display: flex;
@@ -287,7 +285,7 @@ button:focus {
     }
     .text-muted {
       font: 12px/34px "sansP";
-      color: #A0A3A0 !important;
+      color: #a0a3a0 !important;
     }
   }
 }
@@ -1245,5 +1243,56 @@ button:focus {
         margin-right: -15px;
       }
     }
+  }
+}
+
+// loader
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 14px;
+  height: 14px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  // margin: 6px;
+  border: 2px solid #557ae0;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #557ae0 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 75px;
+  p {
+    font: 13px/20px "sansB";
+    color: #a0a3a0;
+    margin-bottom: 0;
+    margin-right: 13px;
   }
 }
