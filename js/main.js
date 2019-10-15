@@ -23,8 +23,29 @@ $(document).ready(function () {
             }
         }
     });
+    // tabs carousl
 
-
+    $("#owl-demo2").owlCarousel({
+      rtl: true,
+      loop: false,
+      margin: 10,
+      nav: false,
+      responsiveClass: true,
+      responsive: {
+          0: {
+              items: 2
+          },
+          600: {
+              items: 3
+          },
+          800: {
+              items: 4
+          },
+          1199: {
+              items: 7
+          }
+      }
+  });
 
 
 
@@ -33,7 +54,7 @@ $(document).ready(function () {
 });
 
 
-
+// pagination
 window.onload = function(){
     var paginationPage = parseInt($('.cdp').attr('actpage'), 10);
     $('.cdp_i').on('click', function(){

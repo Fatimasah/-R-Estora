@@ -147,4 +147,22 @@
 .teams-score .t-card .t-goals .num-goals .num-p {
   color: var(--blackColor);
 }
+
+.league-section nav .nav-tabs .owl-carousel .owl-stage {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.league-section nav .nav-tabs .owl-carousel .owl-stage .owl-item {
+  margin-left: 0px !important;
+  width: unset !important;
+}
 /*# sourceMappingURL=teams.css.map */

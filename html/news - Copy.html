@@ -6,18 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
   <link rel="shortcut icon" type="image/x-icon" href="../imgs/logo-black.png">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- bootstrap -->
   <link rel="stylesheet" href="../css/assets/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="../css/fontawesome.min.css"> -->
   <link rel="stylesheet" href="../css/assets/all.min.css">
   <link rel="stylesheet" href="../css/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="../css/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" href="../css/assets/animate.min.css">
+
   <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/matches-single.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/matches-single-live.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/matches-single-live-1.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/videos.css">
   <link rel="stylesheet" href="../css/news.css">
+
   <link rel="stylesheet" href="../css/teams.css">
+
 </head>
 
 <body>
@@ -74,11 +78,10 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto p-0">
-            <li class="nav-item ">
-              <a class="nav-link pr-lg-0" href="../index.html">الرئيسية <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link pr-lg-0" href="#">الرئيسية <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="matches.html">المباريات</a>
@@ -86,10 +89,10 @@
             <li class="nav-item">
               <a class="nav-link" href="videos.html">فيديوهات</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="news.html">أخر الأخبار</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="teams.html">البطولات والفرق المشاركة</a>
             </li>
             <li class="nav-item">
@@ -112,17 +115,33 @@
   </section>
   <!-- end navbar section -->
 
+  <!-- start search section -->
+  <section class="search-section">
+    <div class="container">
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button><input
+          class="form-control mr-sm-2 text-left" type="search" placeholder="البحث عن فريق" aria-label="Search">
+      </form>
+    </div>
+  </section>
+  <!-- end search section -->
 
-
-
-  <!-- start league tabs section -->
-  <section class="league-tabs latest-news-section">
+  <!-- start League section -->
+  <section class="league-tabs latest-news-section league-section">
     <div class="container">
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <div id="owl-demo" class="owl-carousel owl-theme">
+          <div id="owl-demo2" class="owl-carousel owl-theme">
+              <div class="league-content">
             <a class="nav-item nav-link active" id="nav-1-tab" data-toggle="tab" href="#nav-1" role="tab"
-              aria-controls="nav-1" aria-selected="true">دوري أبطال أوروبا</a>
+              aria-controls="nav-1" aria-selected="true">
+              <div class="item">
+                <div class="league-details">
+                  <img src="imgs/league/spainLeague.png" alt="spainLeague">
+                    <h3>الدوري الإسباني</h3>
+                </div>
+              </div>
+            </a>
             <a class="nav-item nav-link" id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab" aria-controls="nav-2"
               aria-selected="false">الدوري الأوروبي</a>
             <a class="nav-item nav-link" id="nav-3-tab" data-toggle="tab" href="#nav-3" role="tab" aria-controls="nav-3"
@@ -133,7 +152,7 @@
               aria-selected="false">دوري أبطال أسيا</a>
             <a class="nav-item nav-link" id="nav-6-tab" data-toggle="tab" href="#nav-6" role="tab" aria-controls="nav-6"
               aria-selected="false">أخبار عامة</a>
-            </div>
+          </div>
         </div>
       </nav>
     </div>
@@ -488,7 +507,522 @@
       </div>
     </div>
   </section>
-  <!-- end league tabs section -->
+  <!-- end League section -->
+
+  <section class="teams-score">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <a href="">
+                <div class="t-card">
+                  <div class="t-info">
+                    <div class="t-logo">
+                      <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                      <span>1</span>
+                    </div>
+                    <div class="t-name">
+                      <p>برشلونة</p>
+                      <p>إسبانيا</p>
+                    </div>
+                  </div>
+                  <div class="t-rounds">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>128</p>
+                          <p>عدد المباريات</p>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>70</p>
+                          <p>عدد الأهداف</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="t-goals">
+                    <div class="row">
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>فاز</p>
+                          <p class="num-w">3</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>تعادل</p>
+                          <p class="num-d">2</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>خسر</p>
+                          <p class="num-l">0</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>النقاط</p>
+                          <p class="num-p">7</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+            <div class="col-3">
+              <a href="">
+                <div class="t-card">
+                  <div class="t-info">
+                    <div class="t-logo">
+                      <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                      <span>2</span>
+                    </div>
+                    <div class="t-name">
+                      <p>برشلونة</p>
+                      <p>إسبانيا</p>
+                    </div>
+                  </div>
+                  <div class="t-rounds">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>128</p>
+                          <p>عدد المباريات</p>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>70</p>
+                          <p>عدد الأهداف</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="t-goals">
+                    <div class="row">
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>فاز</p>
+                          <p class="num-w">3</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>تعادل</p>
+                          <p class="num-d">2</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>خسر</p>
+                          <p class="num-l">0</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>النقاط</p>
+                          <p class="num-p">7</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+            <div class="col-3">
+              <a href="">
+                <div class="t-card">
+                  <div class="t-info">
+                    <div class="t-logo">
+                      <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                      <span>3</span>
+                    </div>
+                    <div class="t-name">
+                      <p>برشلونة</p>
+                      <p>إسبانيا</p>
+                    </div>
+                  </div>
+                  <div class="t-rounds">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>128</p>
+                          <p>عدد المباريات</p>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>70</p>
+                          <p>عدد الأهداف</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="t-goals">
+                    <div class="row">
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>فاز</p>
+                          <p class="num-w">3</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>تعادل</p>
+                          <p class="num-d">2</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>خسر</p>
+                          <p class="num-l">0</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>النقاط</p>
+                          <p class="num-p">7</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+            <div class="col-3">
+              <a href="">
+                <div class="t-card">
+                  <div class="t-info">
+                    <div class="t-logo">
+                      <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                      <span>4</span>
+                    </div>
+                    <div class="t-name">
+                      <p>برشلونة</p>
+                      <p>إسبانيا</p>
+                    </div>
+                  </div>
+                  <div class="t-rounds">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>128</p>
+                          <p>عدد المباريات</p>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>70</p>
+                          <p>عدد الأهداف</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="t-goals">
+                    <div class="row">
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>فاز</p>
+                          <p class="num-w">3</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>تعادل</p>
+                          <p class="num-d">2</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>خسر</p>
+                          <p class="num-l">0</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>النقاط</p>
+                          <p class="num-p">7</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade show" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <a href="">
+                <div class="t-card">
+                  <div class="t-info">
+                    <div class="t-logo">
+                      <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                      <span>1</span>
+                    </div>
+                    <div class="t-name">
+                      <p>برشلونة</p>
+                      <p>إسبانيا</p>
+                    </div>
+                  </div>
+                  <div class="t-rounds">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>128</p>
+                          <p>عدد المباريات</p>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>70</p>
+                          <p>عدد الأهداف</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="t-goals">
+                    <div class="row">
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>فاز</p>
+                          <p class="num-w">3</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>تعادل</p>
+                          <p class="num-d">2</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>خسر</p>
+                          <p class="num-l">0</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>النقاط</p>
+                          <p class="num-p">7</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+            <div class="col-3">
+              <a href="">
+                <div class="t-card">
+                  <div class="t-info">
+                    <div class="t-logo">
+                      <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                      <span>2</span>
+                    </div>
+                    <div class="t-name">
+                      <p>برشلونة</p>
+                      <p>إسبانيا</p>
+                    </div>
+                  </div>
+                  <div class="t-rounds">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>128</p>
+                          <p>عدد المباريات</p>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>70</p>
+                          <p>عدد الأهداف</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="t-goals">
+                    <div class="row">
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>فاز</p>
+                          <p class="num-w">3</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>تعادل</p>
+                          <p class="num-d">2</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>خسر</p>
+                          <p class="num-l">0</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>النقاط</p>
+                          <p class="num-p">7</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+            <div class="col-3">
+              <a href="">
+                <div class="t-card">
+                  <div class="t-info">
+                    <div class="t-logo">
+                      <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                      <span>3</span>
+                    </div>
+                    <div class="t-name">
+                      <p>برشلونة</p>
+                      <p>إسبانيا</p>
+                    </div>
+                  </div>
+                  <div class="t-rounds">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>128</p>
+                          <p>عدد المباريات</p>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>70</p>
+                          <p>عدد الأهداف</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="t-goals">
+                    <div class="row">
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>فاز</p>
+                          <p class="num-w">3</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>تعادل</p>
+                          <p class="num-d">2</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>خسر</p>
+                          <p class="num-l">0</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>النقاط</p>
+                          <p class="num-p">7</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+            <div class="col-3">
+              <a href="">
+                <div class="t-card">
+                  <div class="t-info">
+                    <div class="t-logo">
+                      <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                      <span>4</span>
+                    </div>
+                    <div class="t-name">
+                      <p>برشلونة</p>
+                      <p>إسبانيا</p>
+                    </div>
+                  </div>
+                  <div class="t-rounds">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>128</p>
+                          <p>عدد المباريات</p>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="num-g-m">
+                          <p>70</p>
+                          <p>عدد الأهداف</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="t-goals">
+                    <div class="row">
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>فاز</p>
+                          <p class="num-w">3</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>تعادل</p>
+                          <p class="num-d">2</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>خسر</p>
+                          <p class="num-l">0</p>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="num-goals">
+                          <p>النقاط</p>
+                          <p class="num-p">7</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
 
 
 
@@ -526,8 +1060,8 @@
             <a href=""><b>أندرويد</b></a>
           </div>
           <div class="footer-links">
-            <a href="html/matches.html"><b>المباريات</b></a>
-            <a href="html/videos.html"><b>الفيديوهات</b></a>
+            <a href="matches.html"><b>المباريات</b></a>
+            <a href="videos.html"><b>الفيديوهات</b></a>
             <a href="players.html"><b>اللاعبون</b></a>
             <a href="teams.html"><b>البطولات</b></a>
           </div>
@@ -557,6 +1091,7 @@
 
 
 
+
   <!-- jquery -->
   <script src="../js/assets/jquery-3.3.1.min.js"></script>
   <!-- popper -->
@@ -565,6 +1100,7 @@
   <script src="../js/assets/bootstrap.min.js"></script>
   <script src="../js/assets/all.min.js"></script>
   <script src="../js/assets/owl.carousel.min.js"></script>
+
   <script src="../js/main.js"></script>
 
 

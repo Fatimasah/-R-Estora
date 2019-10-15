@@ -105,3 +105,38 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.league-section {
+  nav {
+    .nav-tabs {
+      .owl-carousel {
+        .owl-stage {
+          justify-content: space-between;
+          display: flex;
+          flex-direction: row;
+          .owl-item {
+            margin-left: 0px !important;
+            width: unset !important;
+          }
+        }
+      }
+    }
+    // .league-content {
+    // }
+  }
+}

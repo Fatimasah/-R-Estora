@@ -1,0 +1,265 @@
+.search-section {
+  padding: 25px 0;
+  background-color: white;
+  border-top: 1px solid #ebeaea;
+}
+
+.search-section.s-c2 {
+  border: none;
+}
+
+.search-section .league-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .search-section .league-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.search-section .league-info h4 {
+  font: 14px/23px "sansB";
+  color: var(--blackColor);
+  margin-right: 18px;
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .search-section .league-info h4 {
+    font: 12px/23px "sansB";
+  }
+}
+
+.search-section .league-info span {
+  width: 30px;
+  height: 30px;
+  color: var(--blackColor);
+  font: 13px/20px "sansB";
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(224, 189, 85, 0.0509804);
+  border: 1px solid rgba(224, 189, 85, 0.301961);
+}
+
+.search-section form {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+  .search-section form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.search-section form .form-control {
+  font: 14px/23px "sansP";
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .search-section form .form-control {
+    font: 12px/23px "sansP";
+  }
+}
+
+.team-players .p-num p {
+  font: 13px/20px "sansB";
+  color: #a0a3a0;
+  margin-bottom: 30px;
+}
+
+.team-players .p-num p span {
+  color: var(--blackColor);
+}
+
+.team-players .p-card {
+  margin-bottom: 30px;
+}
+
+.team-players .p-card .p-info .t-logo img {
+  border: 1px solid #ebeaea;
+  border-radius: 35px;
+}
+
+.team-players .p-card .p-info .t-logo span {
+  background-color: var(--goldColor);
+  margin-top: -15px;
+}
+
+.team-players .p-card .p-info .p-name p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team-players .p-card .p-info .p-name p span:first-of-type {
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  background-color: #cbd0cb;
+  margin: 0 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team-players .p-card .p-info .p-name p span:last-of-type {
+  color: #557ae0;
+}
+
+.team-players .p-card .p-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.team-players .p-card .p-logos .p-l {
+  border: 1px solid #f3f3f3;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team-players .p-card .p-logos .p-l img {
+  width: 20px;
+  height: 20px;
+}
+
+.team-players .p-card .p-logos .p-logo1 {
+  margin-left: 13px;
+}
+
+.team-players .p-card .p-result {
+  margin-top: 30px;
+}
+
+.team-players .p-card .p-result .p-r:first-of-type {
+  padding-left: 7px;
+}
+
+.team-players .p-card .p-result .p-r:last-of-type {
+  padding-right: 7px;
+}
+
+.team-players .p-card .p-result .p-warning .r-warn,
+.team-players .p-card .p-result .p-warning .y-warn {
+  border-radius: 5px;
+  padding: 11px 9px;
+}
+
+.team-players .p-card .p-result .p-warning .r-warn p,
+.team-players .p-card .p-result .p-warning .y-warn p {
+  margin-bottom: 2px;
+}
+
+.team-players .p-card .p-result .p-warning .r-warn p:first-of-type,
+.team-players .p-card .p-result .p-warning .y-warn p:first-of-type {
+  font: 16px/20px "sansB";
+  height: 23px;
+}
+
+.team-players .p-card .p-result .p-warning .r-warn p:last-of-type,
+.team-players .p-card .p-result .p-warning .y-warn p:last-of-type {
+  font: 12px/20px "sansP";
+}
+
+.team-players .p-card .p-result .p-warning .y-warn {
+  background: #f8ce471a;
+  margin-bottom: 14px;
+}
+
+.team-players .p-card .p-result .p-warning .y-warn p {
+  color: var(--goldColor);
+}
+
+.team-players .p-card .p-result .p-warning .r-warn {
+  background: var(--redBack);
+}
+
+.team-players .p-card .p-result .p-warning .r-warn p {
+  color: var(--redColor);
+}
+
+.team-players .p-card .p-result .p-goals {
+  border: 1px solid #ebeaea;
+  border-radius: 5px;
+  padding: 18px 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team-players .p-card .p-result .p-goals p {
+  font: 14px/20px "sansB";
+  color: var(--blackColor);
+  margin-bottom: 0;
+}
+
+.team-players .p-card .p-result .p-goals p:first-of-type {
+  margin: 10px 0 15px 0;
+}
+
+.team-players .p-card .p-result .p-goals p:last-of-type {
+  background-color: #f7f7f7;
+  border: 1px solid #eaeaea;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.site-app {
+  padding-top: 100px;
+}
+/*# sourceMappingURL=players.css.map */

@@ -1,0 +1,81 @@
+.matches-content {
+  background-color: white;
+}
+
+.matches-content .news-cards {
+  border: 1px solid #ebeaea;
+  border-radius: 7px;
+  padding: 30px;
+  padding-bottom: 43px;
+}
+
+.matches-content .news-cards .latest-news-card {
+  margin-bottom: 30px;
+}
+
+.matches-content .news-cards .latest-news-card .card-body {
+  padding-bottom: 0;
+}
+
+.matches-content .news-cards .latest-news-card .card-body .text-muted {
+  margin-bottom: 0;
+}
+
+.matches-content .section-title {
+  margin-top: 71px;
+  margin-bottom: 30px;
+}
+
+.matches-content .tab-content-row:last-of-type {
+  padding-top: 19px;
+}
+
+.matches-content .adds-bord {
+  padding: 43px;
+  border-radius: 7px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.matches-content .adds-bord .adds {
+  height: 600px;
+  margin-bottom: 0;
+}
+
+.matches-content .team-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.matches-content .team-info .t-info {
+  margin-left: 30px;
+}
+
+.matches-content .team-info .t-info img {
+  width: 57px;
+  height: 75px;
+}
+
+.matches-content .team-info .t-info p {
+  margin-bottom: 0;
+}
+
+.matches-content .team-info .t-info p:first-of-type {
+  font: 12px/23px "sansP";
+  color: #a0a3a0;
+}
+
+.matches-content .team-info .t-info p:last-of-type {
+  font: 15px/23px "sansB";
+  color: var(--blackColor);
+}
+
+.all-items {
+  margin-top: 50px;
+}
+/*# sourceMappingURL=single-team.css.map */

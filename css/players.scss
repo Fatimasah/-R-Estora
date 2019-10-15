@@ -1,0 +1,188 @@
+.search-section {
+  padding: 25px 0;
+  background-color: white;
+  border-top: 1px solid #ebeaea;
+  &.s-c2{
+    border: none;
+  }
+  .league-info {
+    display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
+    h4 {
+      font: 14px/23px "sansB";
+      color: var(--blackColor);
+      margin-right: 18px;
+      margin-left: 15px;
+      margin-bottom: 0; 
+      @media (max-width: 767px) {
+        font: 12px/23px "sansB";
+      }
+    }
+    span {
+      width: 30px;
+      height: 30px;
+      color: var(--blackColor);
+      font: 13px/20px "sansB";
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(224, 189, 85, 0.050980392156862744);
+      border: 1px solid rgba(224, 189, 85, 0.30196078431372547);
+    }
+  }
+  form {
+    justify-content: flex-end;
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
+    .form-control {
+      font: 14px/23px "sansP";
+      width: 50%;
+      @media (max-width: 767px) {
+        font: 12px/23px "sansP";
+      }
+    }
+  }
+}
+// players section
+.team-players {
+  .p-num {
+    p {
+      font: 13px/20px "sansB";
+      color: #a0a3a0;
+      margin-bottom: 30px;
+      span {
+        color: var(--blackColor);
+      }
+    }
+  }
+  .p-card {
+    margin-bottom: 30px;
+    .p-info {
+      .t-logo {
+        img {
+          border: 1px solid #ebeaea;
+          border-radius: 35px;
+        }
+        span {
+          background-color: var(--goldColor);
+          margin-top: -15px;
+        }
+      }
+      .p-name {
+        p {
+          display: flex;
+          align-items: center;
+          span {
+            &:first-of-type {
+              border-radius: 50%;
+              width: 4px;
+              height: 4px;
+              background-color: #cbd0cb;
+              margin: 0 6px;
+              display: flex;
+            }
+            &:last-of-type {
+              color: #557ae0;
+            }
+          }
+        }
+      }
+    }
+    .p-logos {
+      display: flex;
+      justify-content: flex-end;
+      .p-l {
+        border: 1px solid #f3f3f3;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .p-logo1 {
+        margin-left: 13px;
+      }
+    }
+    .p-result {
+      margin-top: 30px;
+      .p-r {
+        &:first-of-type {
+          padding-left: 7px;
+        }
+        &:last-of-type {
+          padding-right: 7px;
+        }
+      }
+      .p-warning {
+        .r-warn,
+        .y-warn {
+          border-radius: 5px;
+          padding: 11px 9px;
+          p {
+            margin-bottom: 2px;
+            &:first-of-type {
+              font: 16px/20px "sansB";
+              height: 23px;
+            }
+            &:last-of-type {
+              font: 12px/20px "sansP";
+            }
+          }
+        }
+        .y-warn {
+          background: #f8ce471a;
+          margin-bottom: 14px;
+          p {
+            color: var(--goldColor);
+          }
+        }
+        .r-warn {
+          background: var(--redBack);
+          p {
+            color: var(--redColor);
+          }
+        }
+      }
+      .p-goals {
+        border: 1px solid #ebeaea;
+        border-radius: 5px;
+        padding: 18px 15px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        p {
+          font: 14px/20px "sansB";
+          color: var(--blackColor);
+          margin-bottom: 0;
+          &:first-of-type {
+            margin: 10px 0 15px 0;
+          }
+          &:last-of-type {
+            background-color: #f7f7f7;
+            border: 1px solid #eaeaea;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+// site app
+.site-app{
+  padding-top: 100px;
+}
