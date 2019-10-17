@@ -59,7 +59,6 @@
 .search-result .tab-content .news-cards,
 .search-result .tab-content .teams-score,
 .search-result .tab-content .league {
-  height: 450px;
   overflow: auto;
   padding-left: 60px;
 }

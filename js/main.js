@@ -96,63 +96,53 @@ $(document).ready(function () {
             color: '#F2EFEF',
             alwaysVisible: true,
             distance: '0px',
-            start: $('#child_image_element'),
             railVisible: true,
             railColor: '#ffffff',
-            railOpacity: 0.3,
-            wheelStep: 10,
             allowPageScroll: false,
             disableFadeOut: false
         });
     
-        // $('.slimScrollDiv2').slimScroll
-        // ({
-        //     height: '450px',
-        //     size: '10px',
-        //     position: 'left',
-        //     color: '#F2EFEF',
-        //     alwaysVisible: true,
-        //     distance: '0px',
-        //     start: $('#child_image_element'),
-        //     railVisible: true,
-        //     railColor: '#ffffff',
-        //     railOpacity: 0.3,
-        //     wheelStep: 10,
-        //     allowPageScroll: false,
-        //     disableFadeOut: false
-        // });
-        // $('.slimScrollDiv3').slimScroll
-        // ({
-        //     height: '450px',
-        //     size: '10px',
-        //     position: 'left',
-        //     color: '#F2EFEF',
-        //     alwaysVisible: true,
-        //     distance: '0px',
-        //     start: $('#child_image_element'),
-        //     railVisible: true,
-        //     railColor: '#ffffff',
-        //     railOpacity: 0.3,
-        //     wheelStep: 10,
-        //     allowPageScroll: false,
-        //     disableFadeOut: false
-        // });
-        // $('.slimScrollDiv4').slimScroll
-        // ({
-        //     height: '450px',
-        //     size: '10px',
-        //     position: 'left',
-        //     color: '#F2EFEF',
-        //     alwaysVisible: true,
-        //     distance: '0px',
-        //     start: $('#child_image_element'),
-        //     railVisible: true,
-        //     railColor: '#ffffff',
-        //     railOpacity: 0.3,
-        //     wheelStep: 10,
-        //     allowPageScroll: false,
-        //     disableFadeOut: false
-        // });
+        $('.slimScrollDiv2').slimScroll
+        ({
+             height: '450px',
+            size: '10px',
+            position: 'left',
+            color: '#F2EFEF',
+            alwaysVisible: true,
+            distance: '0px',
+            railVisible: true,
+            railColor: '#ffffff',
+            allowPageScroll: false,
+            disableFadeOut: false
+        });
+        $('.slimScrollDiv3').slimScroll
+        ({
+        
+            height: '450px',
+            size: '10px',
+            position: 'left',
+            color: '#F2EFEF',
+            alwaysVisible: true,
+            distance: '0px',
+            railVisible: true,
+            railColor: '#ffffff',
+            allowPageScroll: false,
+            disableFadeOut: false
+        });
+        $('.slimScrollDiv4').slimScroll
+        ({
+        
+            height: '450px',
+            size: '10px',
+            position: 'left',
+            color: '#F2EFEF',
+            alwaysVisible: true,
+            distance: '0px',
+            railVisible: true,
+            railColor: '#ffffff',
+            allowPageScroll: false,
+            disableFadeOut: false
+        });
        
 
 });
