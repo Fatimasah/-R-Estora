@@ -191,6 +191,7 @@
   font: 20px/34px "sansB";
   margin-right: 34px;
   color: var(--blackColor);
+  margin-bottom: 0;
 }
 
 .team-squad .details-section .details-block .joining-teams {
@@ -216,5 +217,26 @@
   font: 15px/23px "sansB";
   border: none;
   background-color: unset;
+}
+
+.team-squad .details-section .details-block .news-cards.border-gray {
+  border-radius: 7px;
+  padding: 30px;
+}
+
+.team-squad .details-section .details-block .news-cards.border-gray .latest-news-card {
+  margin-bottom: 30px;
+}
+
+.team-squad .details-section .details-block .news-cards.border-gray .latest-news-card .card-body {
+  padding-bottom: 0;
+}
+
+.team-squad .details-section .details-block .news-cards.border-gray .latest-news-card .card-body .text-muted {
+  margin-bottom: 0;
+}
+
+.team-squad .details-section .details-block .news-cards .all-items {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=news-single.css.map */

@@ -50,7 +50,7 @@ $(document).ready(function () {
     $('.nav-link').click(function () {
         $('.nav-link').removeClass('active');
         $(this).addClass('active');
-        ($(this).attr("aria-selected") === "true"); 
+        ($(this).attr("aria-selected") === "true");
         $('.nav-link').removeClass('active');
 
 
@@ -73,7 +73,7 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-           400: {
+            400: {
                 items: 2
             },
             800: {
@@ -88,9 +88,75 @@ $(document).ready(function () {
 
 
 
-
+    $('.slimScrollDiv1').slimScroll
+        ({
+            height: '450px',
+            size: '10px',
+            position: 'left',
+            color: '#F2EFEF',
+            alwaysVisible: true,
+            distance: '0px',
+            start: $('#child_image_element'),
+            railVisible: true,
+            railColor: '#ffffff',
+            railOpacity: 0.3,
+            wheelStep: 10,
+            allowPageScroll: false,
+            disableFadeOut: false
+        });
+    
+        // $('.slimScrollDiv2').slimScroll
+        // ({
+        //     height: '450px',
+        //     size: '10px',
+        //     position: 'left',
+        //     color: '#F2EFEF',
+        //     alwaysVisible: true,
+        //     distance: '0px',
+        //     start: $('#child_image_element'),
+        //     railVisible: true,
+        //     railColor: '#ffffff',
+        //     railOpacity: 0.3,
+        //     wheelStep: 10,
+        //     allowPageScroll: false,
+        //     disableFadeOut: false
+        // });
+        // $('.slimScrollDiv3').slimScroll
+        // ({
+        //     height: '450px',
+        //     size: '10px',
+        //     position: 'left',
+        //     color: '#F2EFEF',
+        //     alwaysVisible: true,
+        //     distance: '0px',
+        //     start: $('#child_image_element'),
+        //     railVisible: true,
+        //     railColor: '#ffffff',
+        //     railOpacity: 0.3,
+        //     wheelStep: 10,
+        //     allowPageScroll: false,
+        //     disableFadeOut: false
+        // });
+        // $('.slimScrollDiv4').slimScroll
+        // ({
+        //     height: '450px',
+        //     size: '10px',
+        //     position: 'left',
+        //     color: '#F2EFEF',
+        //     alwaysVisible: true,
+        //     distance: '0px',
+        //     start: $('#child_image_element'),
+        //     railVisible: true,
+        //     railColor: '#ffffff',
+        //     railOpacity: 0.3,
+        //     wheelStep: 10,
+        //     allowPageScroll: false,
+        //     disableFadeOut: false
+        // });
+       
 
 });
+
 
 
 // pagination
@@ -108,3 +174,5 @@ window.onload = function () {
         $('.cdp').attr('actpage', paginationPage);
     });
 };
+
+
