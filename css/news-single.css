@@ -1,0 +1,220 @@
+@charset "UTF-8";
+.team-squad .squad-content .squad-text ul li, .team-squad .squad-content .squad-text ul li::before, .team-squad .squad-content .squad-text ul li a, .team-squad .squad-content .squad-text ul li:hover, .team-squad .squad-content .squad-text ul li:hover a, .team-squad .squad-content .squad-text ul li:hover:first-of-type::before, .team-squad .squad-content .squad-text ul li:hover:nth-of-type(2)::before, .team-squad .squad-content .squad-text ul li:hover:nth-of-type(3)::before, .team-squad .squad-content .squad-text ul li:hover:last-of-type::before {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.team-squad {
+  background-color: white;
+  padding-top: 30px;
+}
+
+.team-squad .tSquad-info {
+  margin-bottom: 30px;
+}
+
+.team-squad .tSquad-info h3 {
+  font: 25px/23px "sansB";
+  color: var(--blackColor);
+  margin-bottom: 13px;
+}
+
+.team-squad .tSquad-info p {
+  margin-bottom: 0;
+}
+
+.team-squad .tSquad-info .tSquad-d,
+.team-squad .tSquad-info .tSquad-l {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team-squad .tSquad-info .tSquad-d {
+  margin-left: 15px;
+}
+
+.team-squad .tSquad-info .tSquad-d img {
+  margin-left: 9px;
+  width: 13px;
+  height: 13px;
+}
+
+.team-squad .tSquad-info .tSquad-d p {
+  font: 13px/20px "sansP";
+  color: #a0a3a0;
+}
+
+.team-squad .tSquad-info .tSquad-l img {
+  margin-left: 7px;
+  width: 17px;
+  height: 17px;
+}
+
+.team-squad .tSquad-info .tSquad-l p {
+  color: #557ae0;
+  font: 13px/20px "sansP";
+}
+
+.team-squad .squad-content img {
+  border-radius: 7px;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.team-squad .squad-content .squad-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.team-squad .squad-content .squad-text p {
+  font: 18px/28px "sansP";
+  color: var(--blackColor);
+  width: 85%;
+  margin-bottom: 0;
+}
+
+.team-squad .squad-content .squad-text ul {
+  padding: 0;
+  width: 15%;
+  text-align: left;
+  padding-left: 8px;
+}
+
+.team-squad .squad-content .squad-text ul h6 {
+  font: 14px/20px "sansB";
+  margin-bottom: 18px;
+  color: var(--blackColor);
+}
+
+.team-squad .squad-content .squad-text ul li {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.team-squad .squad-content .squad-text ul li::before {
+  content: "";
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  left: 35px;
+  font: 11px/20px "sansP";
+  color: #a0a3a0;
+}
+
+.team-squad .squad-content .squad-text ul li a {
+  color: #a0a3a0;
+}
+
+.team-squad .squad-content .squad-text ul li:last-of-type a {
+  color: #557ae0;
+}
+
+.team-squad .squad-content .squad-text ul li:hover a {
+  color: var(--blackColor);
+}
+
+.team-squad .squad-content .squad-text ul li:hover:first-of-type::before {
+  content: "فيس بوك";
+}
+
+.team-squad .squad-content .squad-text ul li:hover:nth-of-type(2)::before {
+  content: "تويتر";
+}
+
+.team-squad .squad-content .squad-text ul li:hover:nth-of-type(3)::before {
+  content: "تيلجرام";
+}
+
+.team-squad .squad-content .squad-text ul li:hover:last-of-type::before {
+  content: "الرابط";
+}
+
+.team-squad .squad-content .t-squad {
+  margin-bottom: 50px;
+}
+
+.team-squad .squad-content .t-squad h5 {
+  font: 18px/28px "sansB";
+  color: var(--goldColor);
+  margin-bottom: 15px;
+}
+
+.team-squad .squad-content .t-squad p {
+  font: 18px/28px "sansB";
+  margin-bottom: 25px;
+}
+
+.team-squad .squad-content .source-link {
+  margin-bottom: 40px;
+}
+
+.team-squad .squad-content .source-link a {
+  font: 15px/23px "sansB";
+  color: #557ae0;
+}
+
+.team-squad .squad-content .source-link a svg {
+  margin-left: 12px;
+}
+
+.team-squad .details-section .details-block {
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team-squad .details-section .details-block .match-info {
+  margin-bottom: 25px;
+}
+
+.team-squad .details-section .details-block .match-info .active-status {
+  top: -10px;
+  right: -20px;
+}
+
+.team-squad .details-section .details-block .match-info h3 {
+  font: 20px/34px "sansB";
+  margin-right: 34px;
+  color: var(--blackColor);
+}
+
+.team-squad .details-section .details-block .joining-teams {
+  border: 1px solid #ebeaea;
+  border-radius: 7px;
+  padding: 14px 30px;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+}
+
+.team-squad .details-section .details-block .joining-teams .team b {
+  margin: 0;
+  font: 14px/23px "sansB";
+  color: var(--blackColor);
+  margin-top: 10px;
+}
+
+.team-squad .details-section .details-block .joining-teams .l-result .winner,
+.team-squad .details-section .details-block .joining-teams .l-result .loser,
+.team-squad .details-section .details-block .joining-teams .l-result .vs {
+  color: var(--blackColor);
+  font: 15px/23px "sansB";
+  border: none;
+  background-color: unset;
+}
+/*# sourceMappingURL=news-single.css.map */

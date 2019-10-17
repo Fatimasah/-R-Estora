@@ -1,0 +1,205 @@
+%trans {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+// start team-set section
+.team-squad {
+  background-color: white;
+  padding-top: 30px;
+  .tSquad-info {
+    margin-bottom: 30px;
+    h3 {
+      font: 25px/23px "sansB";
+      color: var(--blackColor);
+      margin-bottom: 13px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    .tSquad-d,
+    .tSquad-l {
+      display: inline-flex;
+      align-items: center;
+    }
+    .tSquad-d {
+      margin-left: 15px;
+      img {
+        margin-left: 9px;
+        width: 13px;
+        height: 13px;
+      }
+      p {
+        font: 13px/20px "sansP";
+        color: #a0a3a0;
+      }
+    }
+    .tSquad-l {
+      img {
+        margin-left: 7px;
+        width: 17px;
+        height: 17px;
+      }
+      p {
+        color: #557ae0;
+        font: 13px/20px "sansP";
+      }
+    }
+  }
+  .squad-content {
+    img {
+      // background: #f7f7f7;
+      border-radius: 7px;
+      height: 400px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .squad-text {
+      display: flex;
+      margin-bottom: 30px;
+      p {
+        font: 18px/28px "sansP";
+        color: var(--blackColor);
+        width: 85%;
+        margin-bottom: 0;
+      }
+      ul {
+        h6 {
+          font: 14px/20px "sansB";
+          margin-bottom: 18px;
+          color: var(--blackColor);
+        }
+        padding: 0;
+        width: 15%;
+        text-align: left;
+        padding-left: 8px;
+        li {
+          position: relative;
+          width: 18px;
+          height: 18px;
+          margin-right: auto;
+          margin-bottom: 20px;
+          margin-left: 10px;
+          text-align: center;
+          @extend %trans;
+          &::before {
+            content: "";
+            position: absolute;
+            width: max-content;
+            left: 35px;
+            font: 11px/20px "sansP";
+            color: #a0a3a0;
+
+            @extend %trans;
+          }
+          a {
+            color: #a0a3a0;
+            @extend %trans;
+          }
+          &:last-of-type {
+            a {
+              color: #557ae0;
+            }
+          }
+          &:hover {
+            @extend %trans;
+            a {
+              color: var(--blackColor);
+              @extend %trans;
+            }
+            &:first-of-type {
+              &::before {
+                content: "فيس بوك";
+                @extend %trans;
+              }
+            }
+            &:nth-of-type(2) {
+              &::before {
+                content: "تويتر";
+                @extend %trans;
+              }
+            }
+            &:nth-of-type(3) {
+              &::before {
+                content: "تيلجرام";
+                @extend %trans;
+              }
+            }
+            &:last-of-type {
+              &::before {
+                content: "الرابط";
+                @extend %trans;
+              }
+            }
+          }
+        }
+      }
+    }
+    .t-squad {
+      margin-bottom: 50px;
+      h5 {
+        font: 18px/28px "sansB";
+        color: var(--goldColor);
+        margin-bottom: 15px;
+      }
+      p {
+        font: 18px/28px "sansB";
+        margin-bottom: 25px;
+      }
+    }
+    .source-link {
+      margin-bottom: 40px;
+      a {
+        font: 15px/23px "sansB";
+        color: #557ae0;
+        svg {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+  .details-section {
+    .details-block {
+      padding: 0;
+      flex-direction: column;
+      .match-info {
+        margin-bottom: 25px;
+        .active-status {
+          top: -10px;
+          right: -20px;
+        }
+        h3 {
+          font: 20px/34px "sansB";
+          margin-right: 34px;
+          color: var(--blackColor);
+        }
+      }
+      .joining-teams {
+        border: 1px solid #ebeaea;
+        border-radius: 7px;
+        padding: 14px 30px;
+        justify-content: inherit;
+        .team {
+          b {
+            margin: 0;
+            font: 14px/23px "sansB";
+            color: var(--blackColor);
+            margin-top: 10px;
+          }
+        }
+        .l-result {
+          .winner,
+          .loser,
+          .vs {
+            color: var(--blackColor);
+            font: 15px/23px "sansB";
+            border: none;
+            background-color: unset;
+          }
+        }
+      }
+    }
+  }
+}

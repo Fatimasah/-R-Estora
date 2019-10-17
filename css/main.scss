@@ -1246,7 +1246,7 @@ button:focus {
   }
 }
 
-// loader
+// loader section start
 
 .lds-ring {
   display: inline-block;
@@ -1260,7 +1260,6 @@ button:focus {
   position: absolute;
   width: 14px;
   height: 14px;
-  // margin: 6px;
   border: 2px solid #557ae0;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
@@ -1294,5 +1293,62 @@ button:focus {
     color: #a0a3a0;
     margin-bottom: 0;
     margin-right: 13px;
+  }
+}
+
+//  model section start
+.modal {
+  .modal-dialog {
+    @media (min-width: 576px) {
+      max-width: 400px;
+    }
+    margin-top: 160px;
+    .modal-content {
+      border-radius: 7px;
+      border: none;
+      padding: 30px 30px 41px 30px;
+      .modal-header {
+        padding: 0;
+        border: none;
+        margin-bottom: 30px;
+        .modal-title {
+          font: 20px/23px "sansB";
+        }
+      }
+      .modal-body {
+        padding: 0;
+        .form-group {
+          margin-bottom: 20px;
+          label {
+            font: 13px/23px "sansB";
+            color: #a0a3a0;
+            padding: 0 0 12px;
+          }
+          input {
+            border: 1px solid #ebeaea;
+            border-radius: 5px;
+            height: 55px;
+            font: 15px/23px "sansP";
+            color: var(--blackColor);
+            padding: 0;
+          }
+          textarea {
+            height: 130px;
+            resize: none;
+          }
+        }
+      }
+      .modal-footer {
+        border: none;
+        padding: 0;
+        button {
+          background: #e0bd55 0% 0% no-repeat padding-box;
+          border-radius: 5px;
+          border: none;
+          margin-top: 10px;
+          margin-left: auto;
+        }
+      }
+    }
   }
 }
