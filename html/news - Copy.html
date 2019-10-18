@@ -21,92 +21,49 @@
   <link rel="stylesheet" href="../css/news.css">
 
   <link rel="stylesheet" href="../css/teams.css">
-
+<link rel="stylesheet" href="../css/search-result.css">
 </head>
 
 <body>
-  <!-- start header section -->
-  <section class="header-section py-4">
-    <div class="container">
-      <div class="row">
-        <!-- <div class="col"> -->
-        <div class="logo pr-4">
-          <a href=""><img src="../imgs/logo.png" alt="Ramy logo"></a>
-        </div>
-        <div class="site-name px-4">
-          <p class="mb-0">
-            <a href="">رامي <br>الأسطورة</a>
-          </p>
-        </div>
-        <div class="social-contact mr-auto">
-          <ul class="list-unstyled mb-0">
-            <li class="px-3">
-              <a href="">من نحن</a>
-            </li>
-            <li class="px-3">
-              <a href="">اتصل بنا</a>
-            </li>
-            <li class="mx-2 social-icon">
-              <a href=""><i class="fab fa-twitter"></i></a>
-            </li>
-            <li class="mx-2 social-icon">
-              <a href=""><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li class="mx-2 social-icon">
-              <a href=""><i class="fab fa-android"></i></a>
-            </li>
-            <li class="pr-3">
-              <a href="">
-                <p class="m-0">احصل عليه من</p>
-                <p class="m-0">جوجل بلاي</p>
-              </a>
-            </li>
-          </ul>
-
-        </div>
-        <!-- </div> -->
-      </div>
-    </div>
-  </section>
-  <!-- end header section -->
-
-  <!-- start navbar section -->
-  <section class="navbar-section">
+ 
+<!-- start navbar section -->
+<section class="navbar-section">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light py-4 px-0">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto p-0">
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link pr-lg-0" href="#">الرئيسية <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="matches.html">المباريات</a>
+              <a class="nav-link" href="html/matches.html">المباريات</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="videos.html">فيديوهات</a>
+              <a class="nav-link" href="html/videos.html">فيديوهات</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="news.html">أخر الأخبار</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="teams.html">البطولات والفرق المشاركة</a>
+              <a class="nav-link" href="html/news.html">أخر الأخبار</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="players.html">اللاعبون</a>
+              <a class="nav-link" href="html/teams.html">البطولات والفرق المشاركة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/players.html">اللاعبون</a>
             </li>
             <li class="nav-item d-block d-sm-none">
-              <a class="nav-link" href="#">اتصل بنا</a>
+              <a class="nav-link" href="" data-toggle="modal" data-target="#exampleModal">اتصل بنا</a>
             </li>
             <li class="nav-item d-block d-sm-none">
               <a class="nav-link" href="#">من نحن</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 text-left" type="search" placeholder="بحث" aria-label="Search">
+            <button class="form-control mr-sm-2 text-left" type="search" placeholder="بحث" aria-label="Search" data-target="#search-resultModal">
             <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
           </form>
         </div>
@@ -115,702 +72,648 @@
   </section>
   <!-- end navbar section -->
 
-  <!-- start search section -->
-  <section class="search-section">
-    <div class="container">
-      <form class="form-inline my-2 my-lg-0">
-        <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button><input
-          class="form-control mr-sm-2 text-left" type="search" placeholder="البحث عن فريق" aria-label="Search">
-      </form>
-    </div>
-  </section>
-  <!-- end search section -->
 
-  <!-- start League section -->
-  <section class="league-tabs latest-news-section league-section">
-    <div class="container">
-      <div class="league-content">
-        <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <div id="owl-demo2" class="owl-carousel owl-theme">
-              <a class="nav-item nav-link active" id="nav-1-tab" data-toggle="tab" href="#nav-1" role="tab"
-                aria-controls="nav-1" aria-selected="true">
-                <div class="item">
-                  <div class="league-details">
-                    <img src="../imgs/league/spainLeague.png" alt="spainLeague">
-                    <h3>الدوري الإسباني</h3>
-                  </div>
-                </div>
-              </a>
-              <a class="nav-item nav-link" id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab"
-                aria-controls="nav-2" aria-selected="false">
-                <div class="item">
-                  <div class="league-details">
-                    <img src="../imgs/league/englandLeague.png" alt="englandLeague">
-                    <h3>الدوري الإنجليزي</h3>
-                  </div>
-                </div>
-              </a>
-              <a class="nav-item nav-link" id="nav-3-tab" data-toggle="tab" href="#nav-3" role="tab"
-                aria-controls="nav-3" aria-selected="false">
-                <div class="item">
-                  <div class="league-details">
-                    <img src="../imgs/league/italianLeague.png" alt="italianLeague">
-                    <h3>الدوري الإيطالي</h3>
-                  </div>
-                </div>
-              </a>
-              <a class="nav-item nav-link" id="nav-4-tab" data-toggle="tab" href="#nav-4" role="tab"
-                aria-controls="nav-4" aria-selected="false">
-                <div class="item">
-                  <div class="league-details">
-                    <img src="../imgs/league/championsLeague.png" alt="championsLeague">
-                    <h3>دوري أبطال أوروبا</h3>
-                  </div>
-                </div>
-              </a>
-              <a class="nav-item nav-link" id="nav-5-tab" data-toggle="tab" href="#nav-5" role="tab"
-                aria-controls="nav-5" aria-selected="false">
-                <div class="item">
-                  <div class="league-details">
-                    <img src="../imgs/league/frenchLeague.png" alt="frenchLeague">
-                    <h3>الدوري الفرنسي</h3>
-                  </div>
-                </div>
-              </a>
-              <a class="nav-item nav-link" id="nav-6-tab" data-toggle="tab" href="#nav-6" role="tab"
-                aria-controls="nav-6" aria-selected="false">
-                <div class="item">
-                  <div class="league-details">
-                    <img src="../imgs/league/europaLeague.png" alt="europaLeague">
-                    <h3>الدوري الأوروبي</h3>
-                  </div>
-                </div>
-              </a>
-              <a class="nav-item nav-link" id="nav-7-tab" data-toggle="tab" href="#nav-7" role="tab"
-                aria-controls="nav-7" aria-selected="false">
-                <div class="item">
-                  <div class="league-details">
-                    <img src="../imgs/league/qatarLeague.png" alt="qatarLeague">
-                    <h3>دوري نجوم قطر</h3>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </section>
-  <!-- end League section -->
-  <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
-      <section class="teams-score">
+    <div class="modal fade" id="search-resultModal" tabindex="-1" role="dialog" aria-labelledby="search-resultModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog2" role="document">
+      <div class="modal-content">
+    <section class="search-result">
         <div class="container">
-          <div class="row">
-            <div class="col-3">
-              <a href="../html/single-team.html">
-                <div class="t-card">
-                  <div class="t-info">
-                    <div class="t-logo">
-                      <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
-                      <span>1</span>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-12">
+                    <div class="search-form">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control text-right" type="search" placeholder="بحث" aria-label="Search">
+                        </form>
                     </div>
-                    <div class="t-name">
-                      <p>برشلونة</p>
-                      <p>إسبانيا</p>
+                    <ul class="nav nav-pills mb-3 p-0" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-news-tab" data-toggle="pill" href="#pills-news"
+                                role="tab" aria-controls="pills-news" aria-selected="true">الأخبار</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-teams-tab" data-toggle="pill" href="#pills-teams" role="tab"
+                                aria-controls="pills-teams" aria-selected="false">الفرق</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-players-tab" data-toggle="pill" href="#pills-players"
+                                role="tab" aria-controls="pills-players" aria-selected="false">اللاعبون</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pills-league-tab" data-toggle="pill" href="#pills-league" role="tab"
+                                aria-controls="pills-league" aria-selected="false">الدوريات</a>
+                        </li>
+                        <div class="s-result">
+                            <p>
+                                <span>(0)</span>
+                                النتيجة
+                            </p>
+                        </div>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-news" role="tabpanel"
+                            aria-labelledby="pills-news-tab">
+                            <div class="slimScrollDiv1">
+                                <div class="news-cards">
+                                    <div class="latest-news-card">
+                                        <div class="card-imge">
+                                            <a href="">
+                                                <img src="../imgs/latest-news/news1.svg" alt="latest-news">
+                                            </a>
+                                        </div>
+                                        <div class="card-body pt-0 pl-0">
+                                            <a href="">
+                                                <p class="card-text mb-0">انتر ميلان يستهدف صفقة مميزة في يناير</p>
+                                            </a>
+                                            <p class="text-muted">منذ 3 ساعات</p>
+                                        </div>
+                                    </div>
+                                    <div class="latest-news-card">
+                                        <div class="card-imge">
+                                            <a href="">
+                                                <img src="../imgs/latest-news/news1.svg" alt="latest-news">
+                                            </a>
+                                        </div>
+                                        <div class="card-body pt-0 pl-0">
+                                            <a href="">
+                                                <p class="card-text mb-0">انتر ميلان يستهدف صفقة مميزة في يناير</p>
+                                            </a>
+                                            <p class="text-muted">منذ 3 ساعات</p>
+                                        </div>
+                                    </div>
+                                    <div class="latest-news-card">
+                                        <div class="card-imge">
+                                            <a href="">
+                                                <img src="../imgs/latest-news/news1.svg" alt="latest-news">
+                                            </a>
+                                        </div>
+                                        <div class="card-body pt-0 pl-0">
+                                            <a href="">
+                                                <p class="card-text mb-0">انتر ميلان يستهدف صفقة مميزة في يناير</p>
+                                            </a>
+                                            <p class="text-muted">منذ 3 ساعات</p>
+                                        </div>
+                                    </div>
+                                    <div class="latest-news-card">
+                                        <div class="card-imge">
+                                            <a href="">
+                                                <img src="../imgs/latest-news/news1.svg" alt="latest-news">
+                                            </a>
+                                        </div>
+                                        <div class="card-body pt-0 pl-0">
+                                            <a href="">
+                                                <p class="card-text mb-0">انتر ميلان يستهدف صفقة مميزة في يناير</p>
+                                            </a>
+                                            <p class="text-muted">منذ 3 ساعات</p>
+                                        </div>
+                                    </div>
+                                    <div class="latest-news-card pb-0">
+                                        <div class="card-imge">
+                                            <a href="">
+                                                <img src="../imgs/latest-news/news1.svg" alt="latest-news">
+                                            </a>
+                                        </div>
+                                        <div class="card-body pt-0 pl-0">
+                                            <a href="">
+                                                <p class="card-text mb-0">انتر ميلان يستهدف صفقة مميزة في يناير</p>
+                                            </a>
+                                            <p class="text-muted">منذ 3 ساعات</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-teams" role="tabpanel" aria-labelledby="pills-teams-tab">
+                            <div class="slimScrollDiv2">
+                                <div class="teams-score">
+                                    <a href="../html/single-team.html">
+                                        <div class="t-card">
+                                            <div class="t-info">
+                                                <div class="t-logo">
+                                                    <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                                                </div>
+                                                <div class="t-name">
+                                                    <p>برشلونة</p>
+                                                    <p>إسبانيا</p>
+                                                </div>
+                                            </div>
+                                            <div class="t-goals">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>فاز</p>
+                                                            <p class="num-w">3</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>تعادل</p>
+                                                            <p class="num-d">2</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>خسر</p>
+                                                            <p class="num-l">0</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>النقاط</p>
+                                                            <p class="num-p">7</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="../html/single-team.html">
+                                        <div class="t-card">
+                                            <div class="t-info">
+                                                <div class="t-logo">
+                                                    <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                                                </div>
+                                                <div class="t-name">
+                                                    <p>برشلونة</p>
+                                                    <p>إسبانيا</p>
+                                                </div>
+                                            </div>
+                                            <div class="t-goals">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>فاز</p>
+                                                            <p class="num-w">3</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>تعادل</p>
+                                                            <p class="num-d">2</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>خسر</p>
+                                                            <p class="num-l">0</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>النقاط</p>
+                                                            <p class="num-p">7</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="../html/single-team.html">
+                                        <div class="t-card">
+                                            <div class="t-info">
+                                                <div class="t-logo">
+                                                    <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                                                </div>
+                                                <div class="t-name">
+                                                    <p>برشلونة</p>
+                                                    <p>إسبانيا</p>
+                                                </div>
+                                            </div>
+                                            <div class="t-goals">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>فاز</p>
+                                                            <p class="num-w">3</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>تعادل</p>
+                                                            <p class="num-d">2</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>خسر</p>
+                                                            <p class="num-l">0</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>النقاط</p>
+                                                            <p class="num-p">7</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="../html/single-team.html">
+                                        <div class="t-card">
+                                            <div class="t-info">
+                                                <div class="t-logo">
+                                                    <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                                                </div>
+                                                <div class="t-name">
+                                                    <p>برشلونة</p>
+                                                    <p>إسبانيا</p>
+                                                </div>
+                                            </div>
+                                            <div class="t-goals">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>فاز</p>
+                                                            <p class="num-w">3</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>تعادل</p>
+                                                            <p class="num-d">2</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>خسر</p>
+                                                            <p class="num-l">0</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>النقاط</p>
+                                                            <p class="num-p">7</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="../html/single-team.html">
+                                        <div class="t-card">
+                                            <div class="t-info">
+                                                <div class="t-logo">
+                                                    <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                                                </div>
+                                                <div class="t-name">
+                                                    <p>برشلونة</p>
+                                                    <p>إسبانيا</p>
+                                                </div>
+                                            </div>
+                                            <div class="t-goals">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>فاز</p>
+                                                            <p class="num-w">3</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>تعادل</p>
+                                                            <p class="num-d">2</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>خسر</p>
+                                                            <p class="num-l">0</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>النقاط</p>
+                                                            <p class="num-p">7</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="../html/single-team.html">
+                                        <div class="t-card">
+                                            <div class="t-info">
+                                                <div class="t-logo">
+                                                    <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                                                </div>
+                                                <div class="t-name">
+                                                    <p>برشلونة</p>
+                                                    <p>إسبانيا</p>
+                                                </div>
+                                            </div>
+                                            <div class="t-goals">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>فاز</p>
+                                                            <p class="num-w">3</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>تعادل</p>
+                                                            <p class="num-d">2</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>خسر</p>
+                                                            <p class="num-l">0</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>النقاط</p>
+                                                            <p class="num-p">7</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="../html/single-team.html">
+                                        <div class="t-card">
+                                            <div class="t-info">
+                                                <div class="t-logo">
+                                                    <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
+                                                </div>
+                                                <div class="t-name">
+                                                    <p>برشلونة</p>
+                                                    <p>إسبانيا</p>
+                                                </div>
+                                            </div>
+                                            <div class="t-goals">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>فاز</p>
+                                                            <p class="num-w">3</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>تعادل</p>
+                                                            <p class="num-d">2</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>خسر</p>
+                                                            <p class="num-l">0</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="num-goals">
+                                                            <p>النقاط</p>
+                                                            <p class="num-p">7</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-players" role="tabpanel"
+                            aria-labelledby="pills-players-tab">
+                            <div class="slimScrollDiv3">
+                                <div class="teams-score team-players">
+                                    <div class="t-card p-card">
+                                        <div class="t-info p-info">
+                                            <div class="t-logo">
+                                                <img src="../imgs/top-soccer/player3.png" alt="team logo">
+                                            </div>
+                                            <div class="t-name p-name">
+                                                <p>دانيال باريخو</p>
+                                                <p>31 عام
+                                                    <span></span>
+                                                    <span>لاعب هجوم</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="p-logos">
+                                            <div class="p-l p-logo1">
+                                                <img src="../imgs/team-logos/realMadrid.png" alt="logo">
+                                            </div>
+                                            <div class="p-l p-logo2">
+                                                <img src="../imgs/team-logos/realMadrid.png" alt="logo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="t-card p-card">
+                                        <div class="t-info p-info">
+                                            <div class="t-logo">
+                                                <img src="../imgs/top-soccer/player3.png" alt="team logo">
+                                            </div>
+                                            <div class="t-name p-name">
+                                                <p>دانيال باريخو</p>
+                                                <p>31 عام
+                                                    <span></span>
+                                                    <span>لاعب هجوم</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="p-logos">
+                                            <div class="p-l p-logo1">
+                                                <img src="../imgs/team-logos/realMadrid.png" alt="logo">
+                                            </div>
+                                            <div class="p-l p-logo2">
+                                                <img src="../imgs/team-logos/realMadrid.png" alt="logo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="t-card p-card">
+                                        <div class="t-info p-info">
+                                            <div class="t-logo">
+                                                <img src="../imgs/top-soccer/player3.png" alt="team logo">
+                                            </div>
+                                            <div class="t-name p-name">
+                                                <p>دانيال باريخو</p>
+                                                <p>31 عام
+                                                    <span></span>
+                                                    <span>لاعب هجوم</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="p-logos">
+                                            <div class="p-l p-logo1">
+                                                <img src="../imgs/team-logos/realMadrid.png" alt="logo">
+                                            </div>
+                                            <div class="p-l p-logo2">
+                                                <img src="../imgs/team-logos/realMadrid.png" alt="logo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="t-card p-card">
+                                        <div class="t-info p-info">
+                                            <div class="t-logo">
+                                                <img src="../imgs/top-soccer/player3.png" alt="team logo">
+                                            </div>
+                                            <div class="t-name p-name">
+                                                <p>دانيال باريخو</p>
+                                                <p>31 عام
+                                                    <span></span>
+                                                    <span>لاعب هجوم</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="p-logos">
+                                            <div class="p-l p-logo1">
+                                                <img src="../imgs/team-logos/realMadrid.png" alt="logo">
+                                            </div>
+                                            <div class="p-l p-logo2">
+                                                <img src="../imgs/team-logos/realMadrid.png" alt="logo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="t-card p-card">
+                                        <div class="t-info p-info">
+                                            <div class="t-logo">
+                                                <img src="../imgs/top-soccer/player3.png" alt="team logo">
+                                            </div>
+                                            <div class="t-name p-name">
+                                                <p>دانيال باريخو</p>
+                                                <p>31 عام
+                                                    <span></span>
+                                                    <span>لاعب هجوم</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="p-logos">
+                                            <div class="p-l p-logo1">
+                                                <img src="../imgs/team-logos/realMadrid.png" alt="logo">
+                                            </div>
+                                            <div class="p-l p-logo2">
+                                                <img src="../imgs/team-logos/realMadrid.png" alt="logo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="t-card p-card">
+                                        <div class="t-info p-info">
+                                            <div class="t-logo">
+                                                <img src="../imgs/top-soccer/player3.png" alt="team logo">
+                                            </div>
+                                            <div class="t-name p-name">
+                                                <p>دانيال باريخو</p>
+                                                <p>31 عام
+                                                    <span></span>
+                                                    <span>لاعب هجوم</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="p-logos">
+                                            <div class="p-l p-logo1">
+                                                <img src="../imgs/team-logos/realMadrid.png" alt="logo">
+                                            </div>
+                                            <div class="p-l p-logo2">
+                                                <img src="../imgs/team-logos/realMadrid.png" alt="logo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-league" role="tabpanel" aria-labelledby="pills-league-tab">
+                            <div class="slimScrollDiv4">
+                                <div class="league">
+                                    <a href="">
+                                        <div class="item border-gray">
+                                            <div class="league-details">
+                                                <div class="l-img">
+                                                    <img src="../imgs/league/championsLeague.png" alt="championsLeague">
+                                                    <h3>دوري أبطال أوروبا</h3>
+                                                </div>
+                                                <span>4</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="item border-gray">
+                                            <div class="league-details">
+                                                <div class="l-img">
+                                                    <img src="../imgs/league/championsLeague.png" alt="championsLeague">
+                                                    <h3>دوري أبطال أوروبا</h3>
+                                                </div>
+                                                <span>4</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="item border-gray">
+                                            <div class="league-details">
+                                                <div class="l-img">
+                                                    <img src="../imgs/league/championsLeague.png" alt="championsLeague">
+                                                    <h3>دوري أبطال أوروبا</h3>
+                                                </div>
+                                                <span>4</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="item border-gray">
+                                            <div class="league-details">
+                                                <div class="l-img">
+                                                    <img src="../imgs/league/championsLeague.png" alt="championsLeague">
+                                                    <h3>دوري أبطال أوروبا</h3>
+                                                </div>
+                                                <span>4</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="item border-gray">
+                                            <div class="league-details">
+                                                <div class="l-img">
+                                                    <img src="../imgs/league/championsLeague.png" alt="championsLeague">
+                                                    <h3>دوري أبطال أوروبا</h3>
+                                                </div>
+                                                <span>4</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="item border-gray">
+                                            <div class="league-details">
+                                                <div class="l-img">
+                                                    <img src="../imgs/league/championsLeague.png" alt="championsLeague">
+                                                    <h3>دوري أبطال أوروبا</h3>
+                                                </div>
+                                                <span>4</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="item border-gray">
+                                            <div class="league-details">
+                                                <div class="l-img">
+                                                    <img src="../imgs/league/championsLeague.png" alt="championsLeague">
+                                                    <h3>دوري أبطال أوروبا</h3>
+                                                </div>
+                                                <span>4</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                  </div>
-                  <div class="t-rounds">
-                    <div class="row">
-                      <div class="col-6">
-                        <div class="num-g-m">
-                          <p>128</p>
-                          <p>عدد المباريات</p>
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="num-g-m">
-                          <p>70</p>
-                          <p>عدد الأهداف</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="t-goals">
-                    <div class="row">
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>فاز</p>
-                          <p class="num-w">3</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>تعادل</p>
-                          <p class="num-d">2</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>خسر</p>
-                          <p class="num-l">0</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>النقاط</p>
-                          <p class="num-p">7</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </a>
             </div>
-            <div class="col-3">
-              <a href="../html/single-team.html">
-                <div class="t-card">
-                  <div class="t-info">
-                    <div class="t-logo">
-                      <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
-                      <span>2</span>
-                    </div>
-                    <div class="t-name">
-                      <p>برشلونة</p>
-                      <p>إسبانيا</p>
-                    </div>
-                  </div>
-                  <div class="t-rounds">
-                    <div class="row">
-                      <div class="col-6">
-                        <div class="num-g-m">
-                          <p>128</p>
-                          <p>عدد المباريات</p>
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="num-g-m">
-                          <p>70</p>
-                          <p>عدد الأهداف</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="t-goals">
-                    <div class="row">
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>فاز</p>
-                          <p class="num-w">3</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>تعادل</p>
-                          <p class="num-d">2</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>خسر</p>
-                          <p class="num-l">0</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>النقاط</p>
-                          <p class="num-p">7</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-            </div>
-            <div class="col-3">
-              <a href="../html/single-team.html">
-                <div class="t-card">
-                  <div class="t-info">
-                    <div class="t-logo">
-                      <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
-                      <span>3</span>
-                    </div>
-                    <div class="t-name">
-                      <p>برشلونة</p>
-                      <p>إسبانيا</p>
-                    </div>
-                  </div>
-                  <div class="t-rounds">
-                    <div class="row">
-                      <div class="col-6">
-                        <div class="num-g-m">
-                          <p>128</p>
-                          <p>عدد المباريات</p>
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="num-g-m">
-                          <p>70</p>
-                          <p>عدد الأهداف</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="t-goals">
-                    <div class="row">
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>فاز</p>
-                          <p class="num-w">3</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>تعادل</p>
-                          <p class="num-d">2</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>خسر</p>
-                          <p class="num-l">0</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>النقاط</p>
-                          <p class="num-p">7</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-            </div>
-            <div class="col-3">
-              <a href="../html/single-team.html">
-                <div class="t-card">
-                  <div class="t-info">
-                    <div class="t-logo">
-                      <img src="../imgs/team-logos/bayernMünchen-x2.png" alt="team logo">
-                      <span>4</span>
-                    </div>
-                    <div class="t-name">
-                      <p>برشلونة</p>
-                      <p>إسبانيا</p>
-                    </div>
-                  </div>
-                  <div class="t-rounds">
-                    <div class="row">
-                      <div class="col-6">
-                        <div class="num-g-m">
-                          <p>128</p>
-                          <p>عدد المباريات</p>
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="num-g-m">
-                          <p>70</p>
-                          <p>عدد الأهداف</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="t-goals">
-                    <div class="row">
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>فاز</p>
-                          <p class="num-w">3</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>تعادل</p>
-                          <p class="num-d">2</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>خسر</p>
-                          <p class="num-l">0</p>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                        <div class="num-goals">
-                          <p>النقاط</p>
-                          <p class="num-p">7</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
         </div>
-      </section>
-    </div>
-    <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="nav-5" role="tabpanel" aria-labelledby="nav-5-tab">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="tab-pane fade" id="nav-6" role="tabpanel" aria-labelledby="nav-6-tab">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-12">
-            <div class="news">
-              <div class="news-item">
-                <a href="">
-                  <img src="../imgs/latest-news/news1.svg" alt="news image">
-                  <div class="news-title">
-                    <b>ثلاث نجوم لا تلمع في الليجا</b>
-                    <p>منذ 3 ساعات</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    </section>
+
+
+</div></div></div>
 
 
 
 
-
-
-
-
-
-
-
-  <!-- start site-app section -->
-  <section class="site-app">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="app-info">
-            <p>تطبيق رامي الأسطورة</p>
-            <p>عرض أولي لجميع دوريات العالم</p>
-            <a href="">تحميل التطبيق</a>
-          </div>
-          <img src="../imgs/app-img.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end site-app section -->
-
-  <!-- start footer section -->
-  <section class="footer-section">
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="footer-links">
-            <a href="../index.html"><b>الرئيسية</b></a>
-            <a href="news.html"><b>الأخبار</b></a>
-            <a href=""><b>التواصل</b></a>
-            <a href=""><b>من نحن</b></a>
-          </div>
-          <div class="footer-links">
-            <a href=""><b>فيس بوك</b></a>
-            <a href=""><b>تويتر</b></a>
-            <a href=""><b>أندرويد</b></a>
-          </div>
-          <div class="footer-links">
-            <a href="matches.html"><b>المباريات</b></a>
-            <a href="videos.html"><b>الفيديوهات</b></a>
-            <a href="players.html"><b>اللاعبون</b></a>
-            <a href="teams.html"><b>البطولات</b></a>
-          </div>
-          <div class="footer-links">
-            <a href=""><b>الدوري الإسباني</b></a>
-            <a href=""><b>الدوري الإيطالي</b></a>
-            <a href=""><b>الدوري الإنجليزي</b></a>
-            <a href=""><b>دوري أبطال أوروبا</b></a>
-          </div>
-          <div class="footer-links">
-            <a href=""><b>الدوري الفرنسي</b></a>
-            <a href=""><b>الدوري الأوروبي</b></a>
-            <a href=""><b>دوري قطر</b></a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </section>
-  <!-- end footer section -->
+  
 
 
 

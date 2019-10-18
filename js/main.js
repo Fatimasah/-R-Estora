@@ -91,7 +91,7 @@ $(document).ready(function () {
     $('.slimScrollDiv1').slimScroll
         ({
             height: '450px',
-            size: '10px',
+            size: '6px',
             position: 'left',
             color: '#F2EFEF',
             alwaysVisible: true,
@@ -101,25 +101,11 @@ $(document).ready(function () {
             allowPageScroll: false,
             disableFadeOut: false
         });
-    
-        $('.slimScrollDiv2').slimScroll
+
+    $('.slimScrollDiv2').slimScroll
         ({
-             height: '450px',
-            size: '10px',
-            position: 'left',
-            color: '#F2EFEF',
-            alwaysVisible: true,
-            distance: '0px',
-            railVisible: true,
-            railColor: '#ffffff',
-            allowPageScroll: false,
-            disableFadeOut: false
-        });
-        $('.slimScrollDiv3').slimScroll
-        ({
-        
             height: '450px',
-            size: '10px',
+            size: '6px',
             position: 'left',
             color: '#F2EFEF',
             alwaysVisible: true,
@@ -129,11 +115,11 @@ $(document).ready(function () {
             allowPageScroll: false,
             disableFadeOut: false
         });
-        $('.slimScrollDiv4').slimScroll
+    $('.slimScrollDiv3').slimScroll
         ({
-        
+
             height: '450px',
-            size: '10px',
+            size: '6px',
             position: 'left',
             color: '#F2EFEF',
             alwaysVisible: true,
@@ -143,7 +129,21 @@ $(document).ready(function () {
             allowPageScroll: false,
             disableFadeOut: false
         });
-       
+    $('.slimScrollDiv4').slimScroll
+        ({
+
+            height: '450px',
+            size: '6px',
+            position: 'left',
+            color: '#F2EFEF',
+            alwaysVisible: true,
+            distance: '0px',
+            railVisible: true,
+            railColor: '#ffffff',
+            allowPageScroll: false,
+            disableFadeOut: false
+        });
+
 
 });
 
@@ -166,3 +166,15 @@ window.onload = function () {
 };
 
 
+function openFun() {
+    window.open("html/search-result.html", "_self");
+}
+function openFunIn() {
+    window.open("search-result.html", "_self");
+}
+function goBack() {
+    const element = document.querySelector('.search-result');
+    element.classList.remove('fadeInRight');
+    element.classList.add('bounceOut');
+    window.history.back();
+}

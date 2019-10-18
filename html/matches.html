@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../css/assets/owl.theme.default.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
   <link rel="stylesheet" type="text/css" media="screen" href="../css/matches.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"> -->
 
 </head>
 
@@ -102,7 +102,7 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 text-left" type="search" placeholder="بحث" aria-label="Search">
+            <input class="form-control mr-sm-2 text-left" type="search" placeholder="بحث" aria-label="Search" onclick="openFunIn()">
             <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
           </form>
         </div>
@@ -1553,14 +1553,17 @@
           </div>
         </div>
         <div class="col-lg-4 col-12 top-soccer order-md-1 order-2 pr-0">
-          <div class="latest-news">
+          <div class="a-block">
             <a href="">
               <div class="adds">
                 add. space
               </div>
             </a>
+          </div>
+
+          <div class="latest-news">
             <div class="news-container">
-              <div class="section-title d-flex">
+              <div class="section-title d-flex mt-0">
                 <img src="../imgs/icons/Group 2.svg" alt="group icon">
                 <h4>أخر الأخبار</h4>
               </div>
@@ -1570,11 +1573,11 @@
                     <img src="../imgs/latest-news/news1.svg" alt="latest-news">
                   </a>
                 </div>
-                <div class="card-body pt-0 pl-0">
+                <div class="card-body pb-0 pt-0 pl-0">
                   <a href="">
                     <p class="card-text mb-0">انتر ميلان يستهدف صفقة مميزة في يناير</p>
                   </a>
-                  <p class="text-muted">منذ 3 ساعات</p>
+                  <p class="text-muted mb-0">منذ 3 ساعات</p>
                 </div>
               </div>
               <div class="latest-news-card">
@@ -1583,11 +1586,11 @@
                     <img src="../imgs/latest-news/news1.svg" alt="latest-news">
                   </a>
                 </div>
-                <div class="card-body pt-0 pl-0">
+                <div class="card-body pb-0 pt-0 pl-0">
                   <a href="">
                     <p class="card-text mb-0">انتر ميلان يستهدف صفقة مميزة في يناير</p>
                   </a>
-                  <p class="text-muted">منذ 3 ساعات</p>
+                  <p class="text-muted mb-0">منذ 3 ساعات</p>
                 </div>
               </div>
               <div class="latest-news-card">
@@ -1596,11 +1599,11 @@
                     <img src="../imgs/latest-news/news1.svg" alt="latest-news">
                   </a>
                 </div>
-                <div class="card-body pt-0 pl-0">
+                <div class="card-body pb-0 pt-0 pl-0">
                   <a href="">
                     <p class="card-text mb-0">انتر ميلان يستهدف صفقة مميزة في يناير</p>
                   </a>
-                  <p class="text-muted">منذ 3 ساعات</p>
+                  <p class="text-muted mb-0">منذ 3 ساعات</p>
                 </div>
               </div>
               <div class="latest-news-card">
@@ -1609,11 +1612,11 @@
                     <img src="../imgs/latest-news/news1.svg" alt="latest-news">
                   </a>
                 </div>
-                <div class="card-body pt-0 pl-0">
+                <div class="card-body pb-0 pt-0 pl-0">
                   <a href="">
                     <p class="card-text mb-0">انتر ميلان يستهدف صفقة مميزة في يناير</p>
                   </a>
-                  <p class="text-muted">منذ 3 ساعات</p>
+                  <p class="text-muted mb-0">منذ 3 ساعات</p>
                 </div>
               </div>
               <div class="latest-news-card">
@@ -1622,20 +1625,22 @@
                     <img src="../imgs/latest-news/news1.svg" alt="latest-news">
                   </a>
                 </div>
-                <div class="card-body pt-0 pl-0">
+                <div class="card-body pb-0 pt-0 pl-0">
                   <a href="">
                     <p class="card-text mb-0">انتر ميلان يستهدف صفقة مميزة في يناير</p>
                   </a>
-                  <p class="text-muted">منذ 3 ساعات</p>
+                  <p class="text-muted mb-0">منذ 3 ساعات</p>
                 </div>
               </div>
-              <div class="all-items mt-5">
-                <a href=""><b>جميع الأخبار</b><img src="../imgs/icons/add.svg" alt="add icon"></a>
-
-              </div>
+            </div><div class="all-items">
+              <a href="" class="all-items-hover"><b>جميع الأخبار</b></a>
+              <a href="">
+                <img src="../imgs/icons/add.svg" alt="add icon">
+              </a>
             </div>
+            
           </div>
-
+          
         </div>
       </div>
     </div>
@@ -1711,49 +1716,39 @@
   </section>
   <!-- end footer section -->
 
-<!-- contact model start -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-aria-hidden="true">
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">تواصل معنا</h5>
-      </button>
-    </div>
-    <div class="modal-body">
-      <form>
-        <div class="form-group">
-          <label for="sender-name" class="col-form-label">الاسم كامل</label>
-          <input type="text" class="form-control" id="sender-name">
+  <!-- contact model start -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">تواصل معنا</h5>
+          </button>
         </div>
-        <div class="form-group">
-          <label for="e-mail" class="col-form-label">البريد الالكتروني</label>
-          <input type="text" class="form-control" id="e-mail">
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="sender-name" class="col-form-label">الاسم كامل</label>
+              <input type="text" class="form-control" id="sender-name">
+            </div>
+            <div class="form-group">
+              <label for="e-mail" class="col-form-label">البريد الالكتروني</label>
+              <input type="text" class="form-control" id="e-mail">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">الموضوع</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="message-text" class="col-form-label">الموضوع</label>
-          <textarea class="form-control" id="message-text"></textarea>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">إرسال الرسالة</button>
         </div>
-      </form>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-primary">إرسال الرسالة</button>
+      </div>
     </div>
   </div>
-</div>
-</div>
-<!-- content model end -->
-<script>
-$('#exampleModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = $(this)
-  modal.find('.modal-title').text('New message to ' + recipient)
-  modal.find('.modal-body input').val(recipient)
-})
-</script>
+  <!-- content model end -->
+
 
 
 

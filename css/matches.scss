@@ -16,33 +16,7 @@
   margin-right: 0 !important;
 }
 
-// all item start
-.all-items {
-  a {
-    padding: 0;
-    background-color: white;
-    @extend %trans;
-    img {
-      margin-right: 0;
-    }
-    b {
-      border-radius: 5px;
-      font: 14px/34px "sansB";
-      color: white;
-      padding-left: 15px;
-      padding-right: 15px;
-      @extend %trans;
-    }
-    &:hover {
-      background-color: var(--purpleBack);
-      @extend %trans;
-      b {
-        color: var(--purpleColor);
-        @extend %trans;
-      }
-    }
-  }
-}
+
 // matches content section start
 .matches-content {
   background-color: #f7f7f7;
@@ -54,16 +28,34 @@
       }
     }
   }
+  .a-block {
+    padding: 25px;
+    background-color: white;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    .adds {
+      margin-bottom: 0;
+    }
+  }
   .top-soccer {
     margin-top: 30px;
     border-radius: 7px;
     .latest-news {
       background-color: white;
-      padding: 25px;
+      padding: 30px;
+      border-radius: 7px;
       .section-title {
         margin-top: 20px;
         margin-right: 40px;
         margin-bottom: 50px;
+      }
+      .latest-news-card {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #f2efef;
+        padding-bottom: 20px;
+        &:last-of-type {
+          border-bottom: none;
+        }
       }
     }
   }
