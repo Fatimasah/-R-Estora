@@ -1,5 +1,5 @@
 .search-result {
-  margin-top: 60px;
+  margin-top: 30px;
   .search-form {
     margin-bottom: 40px;
     .form-inline {
@@ -22,6 +22,9 @@
       color: #a0a3a0 !important;
       padding: 0;
       margin-left: 25px;
+      @media (max-width: 576px) {
+        font: 12px/28px "sansB";
+      }
       &.active,
       &:hover {
         color: var(--goldColor) !important;
@@ -43,9 +46,11 @@
     .news-cards,
     .teams-score,
     .league {
-      height: 450px;
       overflow: auto;
       padding-left: 60px;
+      @media (max-width: 576px) {
+        padding-left: 15px;
+      }
     }
     // .news-cards {
     // }

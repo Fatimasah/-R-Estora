@@ -2,7 +2,7 @@
   padding: 25px 0;
   background-color: white;
   border-top: 1px solid #ebeaea;
-  &.s-c2{
+  &.s-c2 {
     border: none;
   }
   .league-info {
@@ -10,13 +10,14 @@
     align-items: center;
     @media (max-width: 767px) {
       justify-content: center;
+      margin-bottom: 20px;
     }
     h4 {
       font: 14px/23px "sansB";
       color: var(--blackColor);
       margin-right: 18px;
       margin-left: 15px;
-      margin-bottom: 0; 
+      margin-bottom: 0;
       @media (max-width: 767px) {
         font: 12px/23px "sansB";
       }
@@ -183,6 +184,6 @@
   }
 }
 // site app
-.site-app{
+.site-app {
   padding-top: 100px;
 }

@@ -1,5 +1,5 @@
 .search-result {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .search-result .search-form {
@@ -38,6 +38,12 @@
   margin-left: 25px;
 }
 
+@media (max-width: 576px) {
+  .search-result .nav .nav-link {
+    font: 12px/28px "sansB";
+  }
+}
+
 .search-result .nav .nav-link.active, .search-result .nav .nav-link:hover {
   color: var(--goldColor) !important;
   background: none;
@@ -61,6 +67,14 @@
 .search-result .tab-content .league {
   overflow: auto;
   padding-left: 60px;
+}
+
+@media (max-width: 576px) {
+  .search-result .tab-content .news-cards,
+  .search-result .tab-content .teams-score,
+  .search-result .tab-content .league {
+    padding-left: 15px;
+  }
 }
 
 .search-result .tab-content .teams-score {

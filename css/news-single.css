@@ -60,6 +60,8 @@
 }
 
 .team-squad .squad-content img {
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 7px;
   height: 400px;
   width: 100%;
@@ -73,11 +75,26 @@
   margin-bottom: 30px;
 }
 
+@media (max-width: 576px) {
+  .team-squad .squad-content .squad-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .team-squad .squad-content .squad-text p {
   font: 18px/28px "sansP";
   color: var(--blackColor);
   width: 85%;
   margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .team-squad .squad-content .squad-text p {
+    width: 100%;
+  }
 }
 
 .team-squad .squad-content .squad-text ul {
@@ -87,10 +104,25 @@
   padding-left: 8px;
 }
 
+@media (max-width: 576px) {
+  .team-squad .squad-content .squad-text ul {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 25px;
+  }
+}
+
 .team-squad .squad-content .squad-text ul h6 {
   font: 14px/20px "sansB";
   margin-bottom: 18px;
   color: var(--blackColor);
+}
+
+@media (max-width: 576px) {
+  .team-squad .squad-content .squad-text ul h6 {
+    display: inline;
+    margin-left: 20px;
+  }
 }
 
 .team-squad .squad-content .squad-text ul li {
@@ -101,6 +133,13 @@
   margin-bottom: 20px;
   margin-left: 10px;
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  .team-squad .squad-content .squad-text ul li {
+    display: inline;
+    margin-left: 20px;
+  }
 }
 
 .team-squad .squad-content .squad-text ul li::before {
@@ -126,20 +165,28 @@
   color: var(--blackColor);
 }
 
-.team-squad .squad-content .squad-text ul li:hover:first-of-type::before {
-  content: "فيس بوك";
+@media (min-width: 576px) {
+  .team-squad .squad-content .squad-text ul li:hover:first-of-type::before {
+    content: "فيس بوك";
+  }
 }
 
-.team-squad .squad-content .squad-text ul li:hover:nth-of-type(2)::before {
-  content: "تويتر";
+@media (min-width: 576px) {
+  .team-squad .squad-content .squad-text ul li:hover:nth-of-type(2)::before {
+    content: "تويتر";
+  }
 }
 
-.team-squad .squad-content .squad-text ul li:hover:nth-of-type(3)::before {
-  content: "تيلجرام";
+@media (min-width: 576px) {
+  .team-squad .squad-content .squad-text ul li:hover:nth-of-type(3)::before {
+    content: "تيلجرام";
+  }
 }
 
-.team-squad .squad-content .squad-text ul li:hover:last-of-type::before {
-  content: "الرابط";
+@media (min-width: 576px) {
+  .team-squad .squad-content .squad-text ul li:hover:last-of-type::before {
+    content: "الرابط";
+  }
 }
 
 .team-squad .squad-content .t-squad {
@@ -185,6 +232,18 @@
 .team-squad .details-section .details-block .match-info .active-status {
   top: -10px;
   right: -20px;
+}
+
+@media (max-width: 767px) {
+  .team-squad .details-section .details-block .match-info .active-status {
+    right: 35%;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-squad .details-section .details-block .match-info .active-status {
+    right: 25%;
+  }
 }
 
 .team-squad .details-section .details-block .match-info h3 {

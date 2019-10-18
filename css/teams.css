@@ -70,6 +70,12 @@
   margin-left: 15px;
 }
 
+@media (max-width: 576px) {
+  .league-section .league-content .owl-carousel .item .league-details h3 {
+    font: 11px/23px "sansP";
+  }
+}
+
 .league-section .league-content .owl-carousel .item .league-details span {
   color: #a0a3a0;
   border: 1px solid #ebeaea;
@@ -89,6 +95,14 @@
   background-color: rgba(224, 189, 85, 0.0509804);
 }
 
+@media (max-width: 576px) {
+  .league-section .league-content .owl-carousel .item .league-details span {
+    width: 20px;
+    font: 10px/20px "sansB";
+    height: 20px;
+  }
+}
+
 .league-section .league-content .owl-carousel .owl-dots {
   display: none;
 }
@@ -101,6 +115,13 @@
 .league-section .league-content .owl-carousel .owl-nav .owl-next {
   position: absolute;
   top: 25px;
+}
+
+@media (max-width: 576px) {
+  .league-section .league-content .owl-carousel .owl-nav .owl-prev,
+  .league-section .league-content .owl-carousel .owl-nav .owl-next {
+    display: none;
+  }
 }
 
 .league-section .league-content .owl-carousel .owl-nav .owl-prev span,
@@ -128,6 +149,12 @@
 @media (max-width: 767px) {
   .league-section .league-content .owl-carousel .owl-nav .owl-next {
     left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .league-tabs nav .nav-tabs .nav-item {
+    margin-left: 20px;
   }
 }
 

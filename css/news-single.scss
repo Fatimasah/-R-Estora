@@ -50,7 +50,7 @@
   }
   .squad-content {
     img {
-      // background: #f7f7f7;
+      object-fit: cover;
       border-radius: 7px;
       height: 400px;
       width: 100%;
@@ -59,22 +59,38 @@
     .squad-text {
       display: flex;
       margin-bottom: 30px;
+      @media (max-width: 576px) {
+        flex-direction: column;
+      }
       p {
         font: 18px/28px "sansP";
         color: var(--blackColor);
         width: 85%;
         margin-bottom: 0;
+        @media (max-width: 576px) {
+          width: 100%;
+        }
       }
       ul {
-        h6 {
-          font: 14px/20px "sansB";
-          margin-bottom: 18px;
-          color: var(--blackColor);
-        }
         padding: 0;
         width: 15%;
         text-align: left;
         padding-left: 8px;
+        @media (max-width: 576px) {
+          width: 100%;
+          text-align: right;
+          margin-bottom: 25px;
+        }
+        h6 {
+          font: 14px/20px "sansB";
+          margin-bottom: 18px;
+          color: var(--blackColor);
+          @media (max-width: 576px) {
+            display: inline;
+            margin-left: 20px;
+          }
+        }
+
         li {
           position: relative;
           width: 18px;
@@ -84,6 +100,10 @@
           margin-left: 10px;
           text-align: center;
           @extend %trans;
+          @media (max-width: 576px) {
+            display: inline;
+            margin-left: 20px;
+          }
           &::before {
             content: "";
             position: absolute;
@@ -111,25 +131,33 @@
             }
             &:first-of-type {
               &::before {
-                content: "فيس بوك";
+                @media (min-width: 576px) {
+                  content: "فيس بوك";
+                }
                 @extend %trans;
               }
             }
             &:nth-of-type(2) {
               &::before {
-                content: "تويتر";
+                @media (min-width: 576px) {
+                  content: "تويتر";
+                }
                 @extend %trans;
               }
             }
             &:nth-of-type(3) {
               &::before {
-                content: "تيلجرام";
+                @media (min-width: 576px) {
+                  content: "تيلجرام";
+                }
                 @extend %trans;
               }
             }
             &:last-of-type {
               &::before {
-                content: "الرابط";
+                @media (min-width: 576px) {
+                  content: "الرابط";
+                }
                 @extend %trans;
               }
             }
@@ -169,6 +197,12 @@
         .active-status {
           top: -10px;
           right: -20px;
+          @media(max-width:767px){
+            right: 35%;
+          }
+          @media(max-width:576px){
+            right: 25%;
+          }
         }
         h3 {
           font: 20px/34px "sansB";
@@ -201,21 +235,21 @@
           }
         }
       }
-      .news-cards{
-        &.border-gray{
+      .news-cards {
+        &.border-gray {
           border-radius: 7px;
           padding: 30px;
-            .latest-news-card{
-              margin-bottom: 30px;
-              .card-body{
-                padding-bottom: 0;
-                .text-muted{
-                  margin-bottom: 0;
-                }
+          .latest-news-card {
+            margin-bottom: 30px;
+            .card-body {
+              padding-bottom: 0;
+              .text-muted {
+                margin-bottom: 0;
               }
             }
+          }
         }
-        .all-items{
+        .all-items {
           margin-top: 50px;
         }
       }

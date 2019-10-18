@@ -73,7 +73,7 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            400: {
+            300: {
                 items: 2
             },
             800: {
