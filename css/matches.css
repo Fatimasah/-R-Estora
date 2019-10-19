@@ -15,6 +15,63 @@
   padding: 30px 0;
 }
 
+.matches-content .matches-tabs .tab-content .dp-block {
+  margin-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.matches-content .matches-tabs .tab-content .dp-block .prev-month,
+.matches-content .matches-tabs .tab-content .dp-block .prev-day,
+.matches-content .matches-tabs .tab-content .dp-block .next-day,
+.matches-content .matches-tabs .tab-content .dp-block .next-month {
+  border: none;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+}
+
+@media (max-width: 576px) {
+  .matches-content .matches-tabs .tab-content .dp-block .prev-month,
+  .matches-content .matches-tabs .tab-content .dp-block .prev-day,
+  .matches-content .matches-tabs .tab-content .dp-block .next-day,
+  .matches-content .matches-tabs .tab-content .dp-block .next-month {
+    width: 40px;
+  }
+}
+
+.matches-content .matches-tabs .tab-content .dp-block .prev-month img,
+.matches-content .matches-tabs .tab-content .dp-block .prev-day img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.matches-content .matches-tabs .tab-content .dp-block .prev-month {
+  border-radius: 0 7px 7px 0;
+}
+
+.matches-content .matches-tabs .tab-content .dp-block .next-month {
+  border-radius: 7px 0px 0px 7px;
+}
+
+.matches-content .matches-tabs .tab-content .dp-block .next-day,
+.matches-content .matches-tabs .tab-content .dp-block .prev-day {
+  border-left: 3px solid #f7f7f7;
+  border-right: 3px solid #f7f7f7;
+}
+
+.matches-content .matches-tabs .tab-content .dp-block .d-picker {
+  color: var(--blackColor);
+  font: 16px/20px "sansB";
+}
+
+.matches-content .matches-tabs .tab-content .dp-block .d-picker .form-group {
+  direction: ltr;
+}
+
 .matches-content .matches-tabs .tab-content .match-details {
   background-color: white;
 }

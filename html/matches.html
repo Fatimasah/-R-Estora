@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="../css/assets/owl.theme.default.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
   <link rel="stylesheet" type="text/css" media="screen" href="../css/matches.css">
-  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"> -->
-
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
 </head>
 
 <body>
@@ -102,7 +102,8 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 text-left" type="search" placeholder="بحث" aria-label="Search" onclick="openFunIn()">
+            <input class="form-control mr-sm-2 text-left" type="search" placeholder="بحث" aria-label="Search"
+              onclick="openFunIn()">
             <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
           </form>
         </div>
@@ -116,1439 +117,495 @@
     <div class="container">
       <div class="row mx-0">
         <div class="col-lg-8 col-12 matches-tabs order-1 order-md-2">
-          <ul class="nav nav-pills p-0" id="pills-tab" role="tablist">
-            <li class="nav-item col-4">
-              <a class="nav-link border-gray  py-3 text-center active" id="matches-today-tab" data-toggle="pill"
-                href="#matches-today" role="tab" aria-controls="matches-today" aria-selected="true"><span>مباريات</span>
-                اليوم</a>
-            </li>
-            <li class="nav-item col-4">
-              <a class="nav-link border-gray  py-3 text-center" id="matches-yesterday-tab" data-toggle="pill"
-                href="#matches-yesterday" role="tab" aria-controls="matches-yesterday"
-                aria-selected="false"><span>مباريات</span>
-                الغد</a>
-            </li>
-            <li class="nav-item col-4">
-              <a class="nav-link border-gray  py-3 text-center" id="matches-tomorrow-tab" data-toggle="pill"
-                href="#matches-tomorrow" role="tab" aria-controls="matches-tomorrow"
-                aria-selected="false"><span>مباريات</span>
-                الأمس
-              </a>
-            </li>
-          </ul>
           <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="matches-today" role="tabpanel"
-              aria-labelledby="matches-today-tab">
-              <div class="container">
-                <a href="Matches-single-live.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
+            <div class="container">
+              <div class="dp-block d-flex">
+                <div class="prev-btns">
+                  <button class="prev-month"><img src="../imgs/icons/doubleAngel.svg" alt="icon"></button>
+                  <button class="prev-day"><img src="../imgs/icons/chevron_left-black.svg" alt="icon"></button>
+                </div>
+                <div class="d-picker">
+                    <div class="form-group">
+                        <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/>
+                            <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- first row start -->
-                    <div class="row mx-0 tab-content-row first-row">
-                      <div class="match-status status-live d-md-block d-none">
-                        <h5 class="status-name mb-0">
-                          جارية حالياً
-                        </h5>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status status-live d-md-none d-block mb-4 ">
-                          <h5 class="status-name mb-0">
-                            جارية حالياً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">ليستر سيتي</h5>
-                        <img src="../imgs/team-logos/leicesterCity.png" class="order-md-2 order-1" alt="leicesterCity">
-                      </div>
-                      <div class="match-result">
-                        <b>1</b>
-                        <b>-</b>
-                        <b>2</b>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/tottenham.png" alt="tottenham">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">توتنهام</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name type mb-0">
-                          بث مباشر
-                        </h5>
-                      </div>
-                    </div>
-                    <!-- first row end -->
-                    <!-- second row start -->
-                    <div class="row mx-0 tab-content-row">
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">حسن العيدروس</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div>
-                    <!-- second row end -->
-                  </div>
-                </a>
-                <a href="Matches-single-live.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
-                    </div>
-                    <!-- first row start -->
-                    <div class="row mx-0 tab-content-row first-row">
-                      <div class="match-status status-live d-md-block d-none">
-                        <h5 class="status-name mb-0">
-                          جارية حالياً
-                        </h5>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status status-live d-md-none d-block mb-4 ">
-                          <h5 class="status-name mb-0">
-                            جارية حالياً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">ليستر سيتي</h5>
-                        <img src="../imgs/team-logos/leicesterCity.png" class="order-md-2 order-1" alt="leicesterCity">
-                      </div>
-                      <div class="match-result">
-                        <b>1</b>
-                        <b>-</b>
-                        <b>2</b>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/tottenham.png" alt="tottenham">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">توتنهام</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name type mb-0">
-                          بث مباشر
-                        </h5>
-                      </div>
-                    </div>
-                    <!-- first row end -->
-                    <!-- second row start -->
-                    <div class="row mx-0 tab-content-row">
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">حسن العيدروس</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div>
-                    <!-- second row end -->
-                  </div>
-                </a>
-                <a href="Matches-single.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
-                    </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name comming-soon mb-0">
-                          تبدأ قريباً
-                        </h5>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name comming-soon mb-0">
-                            تبدأ قريباً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">بايرن ميونخ</h5>
-                        <img src="../imgs/team-logos/bayernMünchen.png" class="order-md-2 order-1" alt="bayernMünchen">
-                      </div>
-                      <div class="timing">
-                        <p>10:00 مساء</p>
-                        <p class="">بتوقيت السعودية</p>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status mb-4 d-md-none d-block invisible">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/liverpool.png" alt="liverpool">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">ليفربول</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none invisible">
-                        <h5 class="status-name type mb-0">
-                          بث مباشر
-                        </h5>
-                      </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">بلال علام</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
-                  </div>
-                </a>
-                <a href="Matches-single.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
-                    </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name comming-soon mb-0">
-                          تبدأ قريباً
-                        </h5>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name comming-soon mb-0">
-                            تبدأ قريباً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">بايرن ميونخ</h5>
-                        <img src="../imgs/team-logos/bayernMünchen.png" class="order-md-2 order-1" alt="bayernMünchen">
-                      </div>
-                      <div class="timing">
-                        <p>10:00 مساء</p>
-                        <p class="">بتوقيت السعودية</p>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status mb-4 d-md-none d-block invisible">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/liverpool.png" alt="liverpool">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">ليفربول</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none invisible">
-                        <h5 class="status-name type mb-0">
-                          بث مباشر
-                        </h5>
-                      </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">بلال علام</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
-                  </div>
-                </a>
-                <a href="Matches-single-live-1.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
-                    </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name finished mb-0">
-                          انتهت المباراة </h5>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name finished mb-0">
-                            انتهت المباراة </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3  mb-0 order-md-1 order-2 mt-md-0 mt-2">أرسنال</h5>
-                        <img src="../imgs/team-logos/arsenal.png" class="order-md-2 order-1" alt="arsenal">
-                      </div>
-                      <div class="match-result finished-result">
-                        <b class="winner">2</b>
-                        <b>-</b>
-                        <b class="loser">1</b>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block">
-                          <h5 class="status-name goals mb-4">
-                            الأهداف
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/astonVilla.png" alt="roma">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">استون فيلا</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name goals mb-0">
-                          الأهداف
-                        </h5>
-                      </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">خليل البلوشي</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
-                  </div>
-                </a>
-                <a href="Matches-single-live-1.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
-                    </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name finished mb-0">
-                          انتهت المباراة </h5>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name finished mb-0">
-                            انتهت المباراة </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3  mb-0 order-md-1 order-2 mt-md-0 mt-2">أرسنال</h5>
-                        <img src="../imgs/team-logos/arsenal.png" class="order-md-2 order-1" alt="arsenal">
-                      </div>
-                      <div class="match-result finished-result">
-                        <b class="winner">2</b>
-                        <b>-</b>
-                        <b class="loser">1</b>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block">
-                          <h5 class="status-name goals mb-4">
-                            الأهداف
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/astonVilla.png" alt="roma">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">استون فيلا</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name goals mb-0">
-                          الأهداف
-                        </h5>
-                      </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">خليل البلوشي</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
-                  </div>
-                </a>
-                <a href="Matches-single.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
-                    </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name comming-soon mb-0">
-                          تبدأ قريباً
-                        </h5>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name comming-soon mb-0">
-                            تبدأ قريباً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">بايرن ميونخ</h5>
-                        <img src="../imgs/team-logos/bayernMünchen.png" class="order-md-2 order-1" alt="bayernMünchen">
-                      </div>
-                      <div class="timing">
-                        <p>10:00 مساء</p>
-                        <p class="">بتوقيت السعودية</p>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status mb-4 d-md-none d-block invisible">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/liverpool.png" alt="liverpool">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">ليفربول</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none invisible">
-                        <h5 class="status-name type mb-0">
-                          بث مباشر
-                        </h5>
-                      </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">بلال علام</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
-                  </div>
-                </a>
+                </div>
+                <div class="next-btns">
+                  <button class="next-day"><img src="../imgs/icons/chevron_left-black.svg" alt="icon"></button>
+                  <button class="next-month"><img src="../imgs/icons/doubleAngel.svg" alt="icon"></button>
+                </div>
+
               </div>
-            </div>
-            <div class="tab-pane fade show " id="matches-yesterday" role="tabpanel"
-              aria-labelledby="matches-yesterday-tab">
-              <div class="container">
-                <a href="Matches-single-live.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
+              <a href="Matches-single-live.html">
+                <div class="border-gray match-details">
+                  <div class="details-hover border-gray px-5">
+                    <p class="mb-0">التفاصيل</p>
+                    <div class="angel-border">
+                      <i class="fa fa-angle-left"></i>
                     </div>
-                    <!-- first row start -->
-                    <div class="row mx-0 tab-content-row first-row">
-                      <div class="match-status status-live d-md-block d-none">
+                  </div>
+                  <!-- first row start -->
+                  <div class="row mx-0 tab-content-row first-row">
+                    <div class="match-status status-live d-md-block d-none">
+                      <h5 class="status-name mb-0">
+                        جارية حالياً
+                      </h5>
+                    </div>
+                    <div class="team-details">
+                      <div class="match-status status-live d-md-none d-block mb-4 ">
                         <h5 class="status-name mb-0">
                           جارية حالياً
                         </h5>
                       </div>
-                      <div class="team-details">
-                        <div class="match-status status-live d-md-none d-block mb-4 ">
-                          <h5 class="status-name mb-0">
-                            جارية حالياً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">ليستر سيتي</h5>
-                        <img src="../imgs/team-logos/leicesterCity.png" class="order-md-2 order-1" alt="leicesterCity">
-                      </div>
-                      <div class="match-result">
-                        <b>1</b>
-                        <b>-</b>
-                        <b>2</b>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/tottenham.png" alt="tottenham">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">توتنهام</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none">
+                      <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">ليستر سيتي</h5>
+                      <img src="../imgs/team-logos/leicesterCity.png" class="order-md-2 order-1" alt="leicesterCity">
+                    </div>
+                    <div class="match-result">
+                      <b>1</b>
+                      <b>-</b>
+                      <b>2</b>
+                    </div>
+                    <div class="team-details">
+                      <div class="match-status d-md-none d-block mb-4">
                         <h5 class="status-name type mb-0">
                           بث مباشر
                         </h5>
                       </div>
+                      <img src="../imgs/team-logos/tottenham.png" alt="tottenham">
+                      <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">توتنهام</h5>
                     </div>
-                    <!-- first row end -->
-                    <!-- second row start -->
-                    <div class="row mx-0 tab-content-row">
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">حسن العيدروس</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
+                    <div class="match-status d-md-block d-none">
+                      <h5 class="status-name type mb-0">
+                        بث مباشر
+                      </h5>
                     </div>
-                    <!-- second row end -->
                   </div>
-                </a>
-                <a href="Matches-single-live.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
+                  <!-- first row end -->
+                  <!-- second row start -->
+                  <div class="row mx-0 tab-content-row">
+                    <div class="channel-info">
+                      <p class="m-0">القناة الناقلة</p>
+                      <p class="m-0">بي ان سبورت 4</p>
                     </div>
-                    <!-- first row start -->
-                    <div class="row mx-0 tab-content-row first-row">
-                      <div class="match-status status-live d-md-block d-none">
+                    <div class="double-angel d-md-block d-none">
+                      <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
+                    </div>
+                    <div class="match-comentator">
+                      <p class="m-0">معلق المباراة</p>
+                      <p class="m-0">حسن العيدروس</p>
+                    </div>
+                    <div class="double-angel d-md-block d-none">
+                      <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
+                    </div>
+                    <div class="match-stadium d-md-block d-none">
+                      <p class="m-0">ملعب المباراة</p>
+                      <p class="m-0">سان ماميس</p>
+                    </div>
+                  </div>
+                  <!-- second row end -->
+                </div>
+              </a>
+              <a href="Matches-single-live.html">
+                <div class="border-gray match-details">
+                  <div class="details-hover border-gray px-5">
+                    <p class="mb-0">التفاصيل</p>
+                    <div class="angel-border">
+                      <i class="fa fa-angle-left"></i>
+                    </div>
+                  </div>
+                  <!-- first row start -->
+                  <div class="row mx-0 tab-content-row first-row">
+                    <div class="match-status status-live d-md-block d-none">
+                      <h5 class="status-name mb-0">
+                        جارية حالياً
+                      </h5>
+                    </div>
+                    <div class="team-details">
+                      <div class="match-status status-live d-md-none d-block mb-4 ">
                         <h5 class="status-name mb-0">
                           جارية حالياً
                         </h5>
                       </div>
-                      <div class="team-details">
-                        <div class="match-status status-live d-md-none d-block mb-4 ">
-                          <h5 class="status-name mb-0">
-                            جارية حالياً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">ليستر سيتي</h5>
-                        <img src="../imgs/team-logos/leicesterCity.png" class="order-md-2 order-1" alt="leicesterCity">
-                      </div>
-                      <div class="match-result">
-                        <b>1</b>
-                        <b>-</b>
-                        <b>2</b>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/tottenham.png" alt="tottenham">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">توتنهام</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none">
+                      <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">ليستر سيتي</h5>
+                      <img src="../imgs/team-logos/leicesterCity.png" class="order-md-2 order-1" alt="leicesterCity">
+                    </div>
+                    <div class="match-result">
+                      <b>1</b>
+                      <b>-</b>
+                      <b>2</b>
+                    </div>
+                    <div class="team-details">
+                      <div class="match-status d-md-none d-block mb-4">
                         <h5 class="status-name type mb-0">
                           بث مباشر
                         </h5>
                       </div>
+                      <img src="../imgs/team-logos/tottenham.png" alt="tottenham">
+                      <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">توتنهام</h5>
                     </div>
-                    <!-- first row end -->
-                    <!-- second row start -->
-                    <div class="row mx-0 tab-content-row">
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">حسن العيدروس</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
+                    <div class="match-status d-md-block d-none">
+                      <h5 class="status-name type mb-0">
+                        بث مباشر
+                      </h5>
                     </div>
-                    <!-- second row end -->
                   </div>
-                </a>
-                <a href="Matches-single.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
+                  <!-- first row end -->
+                  <!-- second row start -->
+                  <div class="row mx-0 tab-content-row">
+                    <div class="channel-info">
+                      <p class="m-0">القناة الناقلة</p>
+                      <p class="m-0">بي ان سبورت 4</p>
                     </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name comming-soon mb-0">
-                          تبدأ قريباً
-                        </h5>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name comming-soon mb-0">
-                            تبدأ قريباً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">بايرن ميونخ</h5>
-                        <img src="../imgs/team-logos/bayernMünchen.png" class="order-md-2 order-1" alt="bayernMünchen">
-                      </div>
-                      <div class="timing">
-                        <p>10:00 مساء</p>
-                        <p class="">بتوقيت السعودية</p>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status mb-4 d-md-none d-block invisible">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/liverpool.png" alt="liverpool">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">ليفربول</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none invisible">
-                        <h5 class="status-name type mb-0">
-                          بث مباشر
-                        </h5>
-                      </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">بلال علام</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
+                    <div class="double-angel d-md-block d-none">
+                      <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
+                    </div>
+                    <div class="match-comentator">
+                      <p class="m-0">معلق المباراة</p>
+                      <p class="m-0">حسن العيدروس</p>
+                    </div>
+                    <div class="double-angel d-md-block d-none">
+                      <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
+                    </div>
+                    <div class="match-stadium d-md-block d-none">
+                      <p class="m-0">ملعب المباراة</p>
+                      <p class="m-0">سان ماميس</p>
+                    </div>
                   </div>
-                </a>
-                <a href="Matches-single.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
+                  <!-- second row end -->
+                </div>
+              </a>
+              <a href="Matches-single.html">
+                <div class="border-gray match-details">
+                  <div class="details-hover border-gray px-5">
+                    <p class="mb-0">التفاصيل</p>
+                    <div class="angel-border">
+                      <i class="fa fa-angle-left"></i>
                     </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name comming-soon mb-0">
-                          تبدأ قريباً
-                        </h5>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name comming-soon mb-0">
-                            تبدأ قريباً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">بايرن ميونخ</h5>
-                        <img src="../imgs/team-logos/bayernMünchen.png" class="order-md-2 order-1" alt="bayernMünchen">
-                      </div>
-                      <div class="timing">
-                        <p>10:00 مساء</p>
-                        <p class="">بتوقيت السعودية</p>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status mb-4 d-md-none d-block invisible">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/liverpool.png" alt="liverpool">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">ليفربول</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none invisible">
-                        <h5 class="status-name type mb-0">
-                          بث مباشر
-                        </h5>
-                      </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">بلال علام</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
                   </div>
-                </a>
-                <a href="Matches-single-live-1.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
-                    </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name finished mb-0">
-                          انتهت المباراة </h5>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name finished mb-0">
-                            انتهت المباراة </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3  mb-0 order-md-1 order-2 mt-md-0 mt-2">أرسنال</h5>
-                        <img src="../imgs/team-logos/arsenal.png" class="order-md-2 order-1" alt="arsenal">
-                      </div>
-                      <div class="match-result finished-result">
-                        <b class="winner">2</b>
-                        <b>-</b>
-                        <b class="loser">1</b>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block">
-                          <h5 class="status-name goals mb-4">
-                            الأهداف
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/astonVilla.png" alt="roma">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">استون فيلا</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name goals mb-0">
-                          الأهداف
-                        </h5>
-                      </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">خليل البلوشي</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
-                  </div>
-                </a>
-                <a href="Matches-single-live-1.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
-                    </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name finished mb-0">
-                          انتهت المباراة </h5>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name finished mb-0">
-                            انتهت المباراة </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3  mb-0 order-md-1 order-2 mt-md-0 mt-2">أرسنال</h5>
-                        <img src="../imgs/team-logos/arsenal.png" class="order-md-2 order-1" alt="arsenal">
-                      </div>
-                      <div class="match-result finished-result">
-                        <b class="winner">2</b>
-                        <b>-</b>
-                        <b class="loser">1</b>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block">
-                          <h5 class="status-name goals mb-4">
-                            الأهداف
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/astonVilla.png" alt="roma">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">استون فيلا</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name goals mb-0">
-                          الأهداف
-                        </h5>
-                      </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">خليل البلوشي</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
-                  </div>
-                </a>
-                <a href="Matches-single.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
-                    </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name comming-soon mb-0">
-                          تبدأ قريباً
-                        </h5>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name comming-soon mb-0">
-                            تبدأ قريباً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">بايرن ميونخ</h5>
-                        <img src="../imgs/team-logos/bayernMünchen.png" class="order-md-2 order-1" alt="bayernMünchen">
-                      </div>
-                      <div class="timing">
-                        <p>10:00 مساء</p>
-                        <p class="">بتوقيت السعودية</p>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status mb-4 d-md-none d-block invisible">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/liverpool.png" alt="liverpool">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">ليفربول</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none invisible">
-                        <h5 class="status-name type mb-0">
-                          بث مباشر
-                        </h5>
-                      </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">بلال علام</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="tab-pane fade show " id="matches-tomorrow" role="tabpanel"
-              aria-labelledby="matches-tomorrow-tab">
-              <div class="container">
-                <a href="Matches-single-live.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
-                    </div>
+                  <div class="row mx-0 tab-content-row first-row">
                     <!-- first row start -->
-                    <div class="row mx-0 tab-content-row first-row">
-                      <div class="match-status status-live d-md-block d-none">
-                        <h5 class="status-name mb-0">
-                          جارية حالياً
+                    <div class="match-status d-md-block d-none">
+                      <h5 class="status-name comming-soon mb-0">
+                        تبدأ قريباً
+                      </h5>
+                    </div>
+                    <div class="team-details">
+                      <div class="match-status d-md-none d-block mb-4">
+                        <h5 class="status-name comming-soon mb-0">
+                          تبدأ قريباً
                         </h5>
                       </div>
-                      <div class="team-details">
-                        <div class="match-status status-live d-md-none d-block mb-4 ">
-                          <h5 class="status-name mb-0">
-                            جارية حالياً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">ليستر سيتي</h5>
-                        <img src="../imgs/team-logos/leicesterCity.png" class="order-md-2 order-1" alt="leicesterCity">
-                      </div>
-                      <div class="match-result">
-                        <b>1</b>
-                        <b>-</b>
-                        <b>2</b>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/tottenham.png" alt="tottenham">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">توتنهام</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none">
+                      <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">بايرن ميونخ</h5>
+                      <img src="../imgs/team-logos/bayernMünchen.png" class="order-md-2 order-1" alt="bayernMünchen">
+                    </div>
+                    <div class="timing">
+                      <p>10:00 مساء</p>
+                      <p class="">بتوقيت السعودية</p>
+                    </div>
+                    <div class="team-details">
+                      <div class="match-status mb-4 d-md-none d-block invisible">
                         <h5 class="status-name type mb-0">
                           بث مباشر
                         </h5>
                       </div>
+                      <img src="../imgs/team-logos/liverpool.png" alt="liverpool">
+                      <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">ليفربول</h5>
                     </div>
-                    <!-- first row end -->
+                    <div class="match-status d-md-block d-none invisible">
+                      <h5 class="status-name type mb-0">
+                        بث مباشر
+                      </h5>
+                    </div>
+                  </div><!-- first row end -->
+                  <div class="row mx-0 tab-content-row">
                     <!-- second row start -->
-                    <div class="row mx-0 tab-content-row">
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">حسن العيدروس</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
+                    <div class="channel-info">
+                      <p class="m-0">القناة الناقلة</p>
+                      <p class="m-0">بي ان سبورت 4</p>
                     </div>
-                    <!-- second row end -->
+                    <div class="double-angel d-md-block d-none">
+                      <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
+                    </div>
+                    <div class="match-comentator">
+                      <p class="m-0">معلق المباراة</p>
+                      <p class="m-0">بلال علام</p>
+                    </div>
+                    <div class="double-angel d-md-block d-none">
+                      <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
+                    </div>
+                    <div class="match-stadium d-md-block d-none">
+                      <p class="m-0">ملعب المباراة</p>
+                      <p class="m-0">سان ماميس</p>
+                    </div>
+                  </div><!-- second row end -->
+                </div>
+              </a>
+              <a href="Matches-single.html">
+                <div class="border-gray match-details">
+                  <div class="details-hover border-gray px-5">
+                    <p class="mb-0">التفاصيل</p>
+                    <div class="angel-border">
+                      <i class="fa fa-angle-left"></i>
+                    </div>
                   </div>
-                </a>
-                <a href="Matches-single-live.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
-                    </div>
+                  <div class="row mx-0 tab-content-row first-row">
                     <!-- first row start -->
-                    <div class="row mx-0 tab-content-row first-row">
-                      <div class="match-status status-live d-md-block d-none">
-                        <h5 class="status-name mb-0">
-                          جارية حالياً
+                    <div class="match-status d-md-block d-none">
+                      <h5 class="status-name comming-soon mb-0">
+                        تبدأ قريباً
+                      </h5>
+                    </div>
+                    <div class="team-details">
+                      <div class="match-status d-md-none d-block mb-4">
+                        <h5 class="status-name comming-soon mb-0">
+                          تبدأ قريباً
                         </h5>
                       </div>
-                      <div class="team-details">
-                        <div class="match-status status-live d-md-none d-block mb-4 ">
-                          <h5 class="status-name mb-0">
-                            جارية حالياً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">ليستر سيتي</h5>
-                        <img src="../imgs/team-logos/leicesterCity.png" class="order-md-2 order-1" alt="leicesterCity">
-                      </div>
-                      <div class="match-result">
-                        <b>1</b>
-                        <b>-</b>
-                        <b>2</b>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/tottenham.png" alt="tottenham">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">توتنهام</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none">
+                      <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">بايرن ميونخ</h5>
+                      <img src="../imgs/team-logos/bayernMünchen.png" class="order-md-2 order-1" alt="bayernMünchen">
+                    </div>
+                    <div class="timing">
+                      <p>10:00 مساء</p>
+                      <p class="">بتوقيت السعودية</p>
+                    </div>
+                    <div class="team-details">
+                      <div class="match-status mb-4 d-md-none d-block invisible">
                         <h5 class="status-name type mb-0">
                           بث مباشر
                         </h5>
                       </div>
+                      <img src="../imgs/team-logos/liverpool.png" alt="liverpool">
+                      <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">ليفربول</h5>
                     </div>
-                    <!-- first row end -->
+                    <div class="match-status d-md-block d-none invisible">
+                      <h5 class="status-name type mb-0">
+                        بث مباشر
+                      </h5>
+                    </div>
+                  </div><!-- first row end -->
+                  <div class="row mx-0 tab-content-row">
                     <!-- second row start -->
-                    <div class="row mx-0 tab-content-row">
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">حسن العيدروس</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
+                    <div class="channel-info">
+                      <p class="m-0">القناة الناقلة</p>
+                      <p class="m-0">بي ان سبورت 4</p>
                     </div>
-                    <!-- second row end -->
+                    <div class="double-angel d-md-block d-none">
+                      <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
+                    </div>
+                    <div class="match-comentator">
+                      <p class="m-0">معلق المباراة</p>
+                      <p class="m-0">بلال علام</p>
+                    </div>
+                    <div class="double-angel d-md-block d-none">
+                      <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
+                    </div>
+                    <div class="match-stadium d-md-block d-none">
+                      <p class="m-0">ملعب المباراة</p>
+                      <p class="m-0">سان ماميس</p>
+                    </div>
+                  </div><!-- second row end -->
+                </div>
+              </a>
+              <a href="Matches-single-live-1.html">
+                <div class="border-gray match-details">
+                  <div class="details-hover border-gray px-5">
+                    <p class="mb-0">التفاصيل</p>
+                    <div class="angel-border">
+                      <i class="fa fa-angle-left"></i>
+                    </div>
                   </div>
-                </a>
-                <a href="Matches-single.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
+                  <div class="row mx-0 tab-content-row first-row">
+                    <!-- first row start -->
+                    <div class="match-status d-md-block d-none">
+                      <h5 class="status-name finished mb-0">
+                        انتهت المباراة </h5>
                     </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name comming-soon mb-0">
-                          تبدأ قريباً
-                        </h5>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name comming-soon mb-0">
-                            تبدأ قريباً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">بايرن ميونخ</h5>
-                        <img src="../imgs/team-logos/bayernMünchen.png" class="order-md-2 order-1" alt="bayernMünchen">
-                      </div>
-                      <div class="timing">
-                        <p>10:00 مساء</p>
-                        <p class="">بتوقيت السعودية</p>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status mb-4 d-md-none d-block invisible">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/liverpool.png" alt="liverpool">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">ليفربول</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none invisible">
-                        <h5 class="status-name type mb-0">
-                          بث مباشر
-                        </h5>
-                      </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">بلال علام</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
-                  </div>
-                </a>
-                <a href="Matches-single.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
-                    </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name comming-soon mb-0">
-                          تبدأ قريباً
-                        </h5>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name comming-soon mb-0">
-                            تبدأ قريباً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">بايرن ميونخ</h5>
-                        <img src="../imgs/team-logos/bayernMünchen.png" class="order-md-2 order-1" alt="bayernMünchen">
-                      </div>
-                      <div class="timing">
-                        <p>10:00 مساء</p>
-                        <p class="">بتوقيت السعودية</p>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status mb-4 d-md-none d-block invisible">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/liverpool.png" alt="liverpool">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">ليفربول</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none invisible">
-                        <h5 class="status-name type mb-0">
-                          بث مباشر
-                        </h5>
-                      </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">بلال علام</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
-                  </div>
-                </a>
-                <a href="Matches-single-live-1.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
-                    </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
+                    <div class="team-details">
+                      <div class="match-status d-md-none d-block mb-4">
                         <h5 class="status-name finished mb-0">
                           انتهت المباراة </h5>
                       </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name finished mb-0">
-                            انتهت المباراة </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3  mb-0 order-md-1 order-2 mt-md-0 mt-2">أرسنال</h5>
-                        <img src="../imgs/team-logos/arsenal.png" class="order-md-2 order-1" alt="arsenal">
-                      </div>
-                      <div class="match-result finished-result">
-                        <b class="winner">2</b>
-                        <b>-</b>
-                        <b class="loser">1</b>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block">
-                          <h5 class="status-name goals mb-4">
-                            الأهداف
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/astonVilla.png" alt="roma">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">استون فيلا</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name goals mb-0">
+                      <h5 class="ml-0 ml-md-3  mb-0 order-md-1 order-2 mt-md-0 mt-2">أرسنال</h5>
+                      <img src="../imgs/team-logos/arsenal.png" class="order-md-2 order-1" alt="arsenal">
+                    </div>
+                    <div class="match-result finished-result">
+                      <b class="winner">2</b>
+                      <b>-</b>
+                      <b class="loser">1</b>
+                    </div>
+                    <div class="team-details">
+                      <div class="match-status d-md-none d-block">
+                        <h5 class="status-name goals mb-4">
                           الأهداف
                         </h5>
                       </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">خليل البلوشي</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
-                  </div>
-                </a>
-                <a href="Matches-single-live-1.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
+                      <img src="../imgs/team-logos/astonVilla.png" alt="roma">
+                      <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">استون فيلا</h5>
                     </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
+                    <div class="match-status d-md-block d-none">
+                      <h5 class="status-name goals mb-0">
+                        الأهداف
+                      </h5>
+                    </div>
+                  </div><!-- first row end -->
+                  <div class="row mx-0 tab-content-row">
+                    <!-- second row start -->
+                    <div class="channel-info">
+                      <p class="m-0">القناة الناقلة</p>
+                      <p class="m-0">بي ان سبورت 4</p>
+                    </div>
+                    <div class="double-angel d-md-block d-none">
+                      <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
+                    </div>
+                    <div class="match-comentator">
+                      <p class="m-0">معلق المباراة</p>
+                      <p class="m-0">خليل البلوشي</p>
+                    </div>
+                    <div class="double-angel d-md-block d-none">
+                      <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
+                    </div>
+                    <div class="match-stadium d-md-block d-none">
+                      <p class="m-0">ملعب المباراة</p>
+                      <p class="m-0">سان ماميس</p>
+                    </div>
+                  </div><!-- second row end -->
+                </div>
+              </a>
+              <a href="Matches-single-live-1.html">
+                <div class="border-gray match-details">
+                  <div class="details-hover border-gray px-5">
+                    <p class="mb-0">التفاصيل</p>
+                    <div class="angel-border">
+                      <i class="fa fa-angle-left"></i>
+                    </div>
+                  </div>
+                  <div class="row mx-0 tab-content-row first-row">
+                    <!-- first row start -->
+                    <div class="match-status d-md-block d-none">
+                      <h5 class="status-name finished mb-0">
+                        انتهت المباراة </h5>
+                    </div>
+                    <div class="team-details">
+                      <div class="match-status d-md-none d-block mb-4">
                         <h5 class="status-name finished mb-0">
                           انتهت المباراة </h5>
                       </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name finished mb-0">
-                            انتهت المباراة </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3  mb-0 order-md-1 order-2 mt-md-0 mt-2">أرسنال</h5>
-                        <img src="../imgs/team-logos/arsenal.png" class="order-md-2 order-1" alt="arsenal">
-                      </div>
-                      <div class="match-result finished-result">
-                        <b class="winner">2</b>
-                        <b>-</b>
-                        <b class="loser">1</b>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block">
-                          <h5 class="status-name goals mb-4">
-                            الأهداف
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/astonVilla.png" alt="roma">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">استون فيلا</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none">
-                        <h5 class="status-name goals mb-0">
+                      <h5 class="ml-0 ml-md-3  mb-0 order-md-1 order-2 mt-md-0 mt-2">أرسنال</h5>
+                      <img src="../imgs/team-logos/arsenal.png" class="order-md-2 order-1" alt="arsenal">
+                    </div>
+                    <div class="match-result finished-result">
+                      <b class="winner">2</b>
+                      <b>-</b>
+                      <b class="loser">1</b>
+                    </div>
+                    <div class="team-details">
+                      <div class="match-status d-md-none d-block">
+                        <h5 class="status-name goals mb-4">
                           الأهداف
                         </h5>
                       </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">خليل البلوشي</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
-                  </div>
-                </a>
-                <a href="Matches-single.html">
-                  <div class="border-gray match-details">
-                    <div class="details-hover border-gray px-5">
-                      <p class="mb-0">التفاصيل</p>
-                      <div class="angel-border">
-                        <i class="fa fa-angle-left"></i>
-                      </div>
+                      <img src="../imgs/team-logos/astonVilla.png" alt="roma">
+                      <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">استون فيلا</h5>
                     </div>
-                    <div class="row mx-0 tab-content-row first-row">
-                      <!-- first row start -->
-                      <div class="match-status d-md-block d-none">
+                    <div class="match-status d-md-block d-none">
+                      <h5 class="status-name goals mb-0">
+                        الأهداف
+                      </h5>
+                    </div>
+                  </div><!-- first row end -->
+                  <div class="row mx-0 tab-content-row">
+                    <!-- second row start -->
+                    <div class="channel-info">
+                      <p class="m-0">القناة الناقلة</p>
+                      <p class="m-0">بي ان سبورت 4</p>
+                    </div>
+                    <div class="double-angel d-md-block d-none">
+                      <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
+                    </div>
+                    <div class="match-comentator">
+                      <p class="m-0">معلق المباراة</p>
+                      <p class="m-0">خليل البلوشي</p>
+                    </div>
+                    <div class="double-angel d-md-block d-none">
+                      <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
+                    </div>
+                    <div class="match-stadium d-md-block d-none">
+                      <p class="m-0">ملعب المباراة</p>
+                      <p class="m-0">سان ماميس</p>
+                    </div>
+                  </div><!-- second row end -->
+                </div>
+              </a>
+              <a href="Matches-single.html">
+                <div class="border-gray match-details">
+                  <div class="details-hover border-gray px-5">
+                    <p class="mb-0">التفاصيل</p>
+                    <div class="angel-border">
+                      <i class="fa fa-angle-left"></i>
+                    </div>
+                  </div>
+                  <div class="row mx-0 tab-content-row first-row">
+                    <!-- first row start -->
+                    <div class="match-status d-md-block d-none">
+                      <h5 class="status-name comming-soon mb-0">
+                        تبدأ قريباً
+                      </h5>
+                    </div>
+                    <div class="team-details">
+                      <div class="match-status d-md-none d-block mb-4">
                         <h5 class="status-name comming-soon mb-0">
                           تبدأ قريباً
                         </h5>
                       </div>
-                      <div class="team-details">
-                        <div class="match-status d-md-none d-block mb-4">
-                          <h5 class="status-name comming-soon mb-0">
-                            تبدأ قريباً
-                          </h5>
-                        </div>
-                        <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">بايرن ميونخ</h5>
-                        <img src="../imgs/team-logos/bayernMünchen.png" class="order-md-2 order-1" alt="bayernMünchen">
-                      </div>
-                      <div class="timing">
-                        <p>10:00 مساء</p>
-                        <p class="">بتوقيت السعودية</p>
-                      </div>
-                      <div class="team-details">
-                        <div class="match-status mb-4 d-md-none d-block invisible">
-                          <h5 class="status-name type mb-0">
-                            بث مباشر
-                          </h5>
-                        </div>
-                        <img src="../imgs/team-logos/liverpool.png" alt="liverpool">
-                        <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">ليفربول</h5>
-                      </div>
-                      <div class="match-status d-md-block d-none invisible">
+                      <h5 class="ml-0 ml-md-3 mb-0 order-md-1 order-2 mt-md-0 mt-2">بايرن ميونخ</h5>
+                      <img src="../imgs/team-logos/bayernMünchen.png" class="order-md-2 order-1" alt="bayernMünchen">
+                    </div>
+                    <div class="timing">
+                      <p>10:00 مساء</p>
+                      <p class="">بتوقيت السعودية</p>
+                    </div>
+                    <div class="team-details">
+                      <div class="match-status mb-4 d-md-none d-block invisible">
                         <h5 class="status-name type mb-0">
                           بث مباشر
                         </h5>
                       </div>
-                    </div><!-- first row end -->
-                    <div class="row mx-0 tab-content-row">
-                      <!-- second row start -->
-                      <div class="channel-info">
-                        <p class="m-0">القناة الناقلة</p>
-                        <p class="m-0">بي ان سبورت 4</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-comentator">
-                        <p class="m-0">معلق المباراة</p>
-                        <p class="m-0">بلال علام</p>
-                      </div>
-                      <div class="double-angel d-md-block d-none">
-                        <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
-                      </div>
-                      <div class="match-stadium d-md-block d-none">
-                        <p class="m-0">ملعب المباراة</p>
-                        <p class="m-0">سان ماميس</p>
-                      </div>
-                    </div><!-- second row end -->
-                  </div>
-                </a>
-              </div>
+                      <img src="../imgs/team-logos/liverpool.png" alt="liverpool">
+                      <h5 class="mr-0 mr-md-3 mb-0 mt-md-0 mt-2">ليفربول</h5>
+                    </div>
+                    <div class="match-status d-md-block d-none invisible">
+                      <h5 class="status-name type mb-0">
+                        بث مباشر
+                      </h5>
+                    </div>
+                  </div><!-- first row end -->
+                  <div class="row mx-0 tab-content-row">
+                    <!-- second row start -->
+                    <div class="channel-info">
+                      <p class="m-0">القناة الناقلة</p>
+                      <p class="m-0">بي ان سبورت 4</p>
+                    </div>
+                    <div class="double-angel d-md-block d-none">
+                      <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
+                    </div>
+                    <div class="match-comentator">
+                      <p class="m-0">معلق المباراة</p>
+                      <p class="m-0">بلال علام</p>
+                    </div>
+                    <div class="double-angel d-md-block d-none">
+                      <img src="../imgs/icons/doubleAngel.svg" alt="double-angel">
+                    </div>
+                    <div class="match-stadium d-md-block d-none">
+                      <p class="m-0">ملعب المباراة</p>
+                      <p class="m-0">سان ماميس</p>
+                    </div>
+                  </div><!-- second row end -->
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -1560,7 +617,6 @@
               </div>
             </a>
           </div>
-
           <div class="latest-news">
             <div class="news-container">
               <div class="section-title d-flex mt-0">
@@ -1632,15 +688,15 @@
                   <p class="text-muted mb-0">منذ 3 ساعات</p>
                 </div>
               </div>
-            </div><div class="all-items">
+            </div>
+            <div class="all-items">
               <a href="" class="all-items-hover"><b>جميع الأخبار</b></a>
               <a href="">
                 <img src="../imgs/icons/add.svg" alt="add icon">
               </a>
             </div>
-            
+
           </div>
-          
         </div>
       </div>
     </div>
@@ -1648,15 +704,13 @@
   <!-- end matche-tabs section -->
 
 
-  <!-- <input type="text" id="datepicker">
-  <script src="pikaday.js"></script>
-  <script>
-    var picker = new Pikaday({ field: $('#datepicker')[0] });
-  </script> -->
+ 
 
 
 
-
+  <script type="text/javascript">
+   
+</script>
 
 
 
@@ -1764,6 +818,11 @@
   <script src="../js/assets/bootstrap.min.js"></script>
   <script src="../js/assets/all.min.js"></script>
   <script src="../js/assets/owl.carousel.min.js"></script>
+
+
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
   <script src="../js/main.js"></script>
 
 

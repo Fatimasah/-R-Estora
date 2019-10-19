@@ -86,63 +86,68 @@ $(document).ready(function () {
     });
 
 
+    $('.slimScrollDiv1').slimScroll({
+        height: '450px',
+        size: '6px',
+        position: 'left',
+        color: '#F2EFEF',
+        alwaysVisible: true,
+        distance: '0px',
+        railVisible: true,
+        railColor: '#ffffff',
+        allowPageScroll: false,
+        disableFadeOut: false
+    });
 
+    $('.slimScrollDiv2').slimScroll({
+        height: '450px',
+        size: '6px',
+        position: 'left',
+        color: '#F2EFEF',
+        alwaysVisible: true,
+        distance: '0px',
+        railVisible: true,
+        railColor: '#ffffff',
+        allowPageScroll: false,
+        disableFadeOut: false
+    });
+    $('.slimScrollDiv3').slimScroll({
 
-    $('.slimScrollDiv1').slimScroll
-        ({
-            height: '450px',
-            size: '6px',
-            position: 'left',
-            color: '#F2EFEF',
-            alwaysVisible: true,
-            distance: '0px',
-            railVisible: true,
-            railColor: '#ffffff',
-            allowPageScroll: false,
-            disableFadeOut: false
+        height: '450px',
+        size: '6px',
+        position: 'left',
+        color: '#F2EFEF',
+        alwaysVisible: true,
+        distance: '0px',
+        railVisible: true,
+        railColor: '#ffffff',
+        allowPageScroll: false,
+        disableFadeOut: false
+    });
+    $('.slimScrollDiv4').slimScroll({
+
+        height: '450px',
+        size: '6px',
+        position: 'left',
+        color: '#F2EFEF',
+        alwaysVisible: true,
+        distance: '0px',
+        railVisible: true,
+        railColor: '#ffffff',
+        allowPageScroll: false,
+        disableFadeOut: false
+    });
+
+    // date picker 
+
+    $(function () {
+        
+        $('#datetimepicker4').datetimepicker({
+            // viewMode: 'years',
+            //     format: 'MM/YYYY'
+            
         });
-
-    $('.slimScrollDiv2').slimScroll
-        ({
-            height: '450px',
-            size: '6px',
-            position: 'left',
-            color: '#F2EFEF',
-            alwaysVisible: true,
-            distance: '0px',
-            railVisible: true,
-            railColor: '#ffffff',
-            allowPageScroll: false,
-            disableFadeOut: false
-        });
-    $('.slimScrollDiv3').slimScroll
-        ({
-
-            height: '450px',
-            size: '6px',
-            position: 'left',
-            color: '#F2EFEF',
-            alwaysVisible: true,
-            distance: '0px',
-            railVisible: true,
-            railColor: '#ffffff',
-            allowPageScroll: false,
-            disableFadeOut: false
-        });
-    $('.slimScrollDiv4').slimScroll
-        ({
-
-            height: '450px',
-            size: '6px',
-            position: 'left',
-            color: '#F2EFEF',
-            alwaysVisible: true,
-            distance: '0px',
-            railVisible: true,
-            railColor: '#ffffff',
-            allowPageScroll: false,
-            disableFadeOut: false
-        });
+    });
 
 
 });
@@ -163,9 +168,15 @@ window.onload = function () {
         }
         $('.cdp').attr('actpage', paginationPage);
     });
+
+
+
+
+
+
 };
 
-
+// search animation internal and external pages
 function openFun() {
     window.open("html/search-result.html", "_self");
 }
@@ -178,3 +189,9 @@ function goBack() {
     element.classList.add('bounceOut');
     window.history.back();
 }
+
+
+
+
+
+
