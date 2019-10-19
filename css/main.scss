@@ -52,17 +52,19 @@ html {
   //   height: 100%;
   // }
 }
-a,
-a:hover {
-  text-decoration: none;
-  outline: none;
-  color: #ffffff;
-}
-b {
-  font-weight: unset !important;
-}
-button:focus {
-  outline: none;
+body {
+  a,
+  a:hover {
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+  }
+  b {
+    font-weight: unset !important;
+  }
+  button:focus {
+    outline: none;
+  }
 }
 .border-gray {
   border: 1px solid var(--grayborder);

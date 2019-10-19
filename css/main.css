@@ -69,18 +69,18 @@ html {
   }
 }
 
-a,
-a:hover {
+body a,
+body a:hover {
   text-decoration: none;
   outline: none;
   color: #ffffff;
 }
 
-b {
+body b {
   font-weight: unset !important;
 }
 
-button:focus {
+body button:focus {
   outline: none;
 }
 

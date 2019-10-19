@@ -16,6 +16,10 @@
   margin-right: 0 !important;
 }
 
+.navbar-section{
+  background-color: white;
+}
+
 // matches content section start
 .matches-content {
   background-color: #f7f7f7;
@@ -59,9 +63,34 @@
         .d-picker {
           color: var(--blackColor);
           font: 16px/20px "sansB";
-          .form-group{
-            direction: ltr;
+          align-items: center;
+          form,
+          .mk-datepicker-container,
+          #start-date {
+            height: 100%;
+            border: none;
           }
+          .mk-datepicker {
+            padding-top: 50px;
+          }
+          .mk-datepicker-calendar .today {
+            background-color: var(--goldColor);
+          }
+
+          .mk-datepicker-next-m {
+            right: 30px;
+          }
+        }
+        .mk-datepicker-controls {
+          direction: ltr;
+        }
+        .mk-datepicker-label {
+          position: absolute;
+          top: 5px;
+          width: 100%;
+          left: 0;
+          font: 12px "sansB";
+          color: var(--blackColor);
         }
       }
       .match-details {
@@ -103,3 +132,7 @@
 }
 
 // matches content section end
+.site-app,
+.footer-section{
+  background-color: white;
+}

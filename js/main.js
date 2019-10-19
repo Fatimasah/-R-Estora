@@ -140,15 +140,19 @@ $(document).ready(function () {
 
     // date picker 
 
-    $(function () {
-        
-        $('#datetimepicker4').datetimepicker({
-            // viewMode: 'years',
-            //     format: 'MM/YYYY'
-            
-        });
-    });
 
+
+    // $('#datetimepicker4').datepicker({
+    //     autoclose: true,
+    //     format: 'mm/dd/yyyy',
+    //     startDate: '-3d'
+    // });
+
+    $.fn.datepicker.defaults.format = "mm/dd/yyyy";
+    $('#datetimepicker4').datepicker({
+        startDate: '-3d',
+        todayHighlight:true
+    });
 
 });
 
@@ -194,4 +198,33 @@ function goBack() {
 
 
 
+// datepicker matches page start
+$(function () {
+    var today = new Date();
 
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+
+    if(dd<10) {
+        dd = '0'+dd
+    } 
+
+    if(mm<10) {
+        mm = '0'+mm
+    } 
+
+    today = mm + '/' + dd + '/' + yyyy;
+  //    today = yyyy + ',' + mm + ',' + dd;
+
+    document.getElementById('start-date').value = today;
+    var $pickers = $('.mk-datepicker-trigger');
+        $pickers.mkdatepicker();
+        $pickers.on('change.mk-datepicker', function(e, date) {
+            console.info('formatted date: ', this.value);
+            console.info('raw date object: ', date);
+        });
+  });// datepicker matches page end
+
+
+ 
