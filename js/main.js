@@ -200,26 +200,26 @@ function goBack() {
 
 // datepicker matches page start
 $(function () {
-    var today = new Date();
+    // var today = new Date();
 
-    var dd = today.getDate();
-    var mm = today.getMonth() + 1; //January is 0!
-    var yyyy = today.getFullYear();
-    if (dd < 10) {
-        dd = '0' + dd
-    }
-    if (mm < 10) {
-        mm = '0' + mm
-    }
-    today = mm + '/' + dd + '/' + yyyy;
-    document.getElementById('start-date').value = today;
+    // var dd = today.getDate();
+    // var mm = today.getMonth() + 1; //January is 0!
+    // var yyyy = today.getFullYear();
+    // if (dd < 10) {
+    //     dd = '0' + dd
+    // }
+    // if (mm < 10) {
+    //     mm = '0' + mm
+    // }
+    // today = mm + '/' + dd + '/' + yyyy;
+    // document.getElementById('start-date').value = today;
 
-    var $pickers = $('.mk-datepicker-trigger');
-    $pickers.mkdatepicker();
-    $pickers.on('change.mk-datepicker', function (e, date) {
-        console.info('formatted date: ', this.value);
-        console.info('raw date object: ', date);
-    });
+    // var $pickers = $('.mk-datepicker-trigger');
+    // $pickers.mkdatepicker();
+    // $pickers.on('change.mk-datepicker', function (e, date) {
+    //     console.info('formatted date: ', this.value);
+    //     console.info('raw date object: ', date);
+    // });
 
 
 });// datepicker matches page end

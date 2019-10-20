@@ -18,20 +18,49 @@
 
 .navbar-section {
   background-color: white;
-  .navbar{
+  .navbar {
     background: unset;
     border: none;
     height: unset;
     line-height: unset;
     box-shadow: unset;
-    .navbar-collapse{
-      line-height: unset;
+    .navbar-toggler {
+      &:focus {
+        background-color: unset;
+      }
     }
-    .form-control{
-      width: auto;
-      margin-bottom: 0;
-      padding: .375rem .75rem;
-      height: calc(1.5em + .75rem + 2px);
+    .navbar-collapse {
+      line-height: unset;
+      .navbar-nav {
+        li {
+          &.active {
+            background-color: unset;
+          }
+        }
+        a {
+          &:hover {
+            background-color: unset;
+          }
+        }
+      }
+    }
+    .form-inline {
+      .form-control {
+        width: auto;
+        margin-bottom: 0;
+        padding: 0.375rem 0.75rem;
+        height: calc(1.5em + 0.75rem + 2px);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+      button {
+        &.btn {
+          height: unset;
+          border: none;
+          box-shadow: unset;
+        }
+      }
     }
   }
 }
@@ -168,9 +197,9 @@
   }
 }
 // edit framework
-.row{
+.row {
   margin-bottom: 0;
-  &::after{
+  &::after {
     content: unset;
   }
 }
@@ -182,6 +211,9 @@
   .datepicker-container {
     &.modal-content {
       border-radius: 7px;
+      .datepicker-table abbr{
+        text-decoration: none;
+      }
     }
   }
   .datepicker-controls {

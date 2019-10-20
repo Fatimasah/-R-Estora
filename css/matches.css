@@ -20,15 +20,37 @@
           box-shadow: unset;
 }
 
+.navbar-section .navbar .navbar-toggler:focus {
+  background-color: unset;
+}
+
 .navbar-section .navbar .navbar-collapse {
   line-height: unset;
 }
 
-.navbar-section .navbar .form-control {
+.navbar-section .navbar .navbar-collapse .navbar-nav li.active {
+  background-color: unset;
+}
+
+.navbar-section .navbar .navbar-collapse .navbar-nav a:hover {
+  background-color: unset;
+}
+
+.navbar-section .navbar .form-inline .form-control {
   width: auto;
   margin-bottom: 0;
-  padding: .375rem .75rem;
-  height: calc(1.5em + .75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.navbar-section .navbar .form-inline button.btn {
+  height: unset;
+  border: none;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
 }
 
 .matches-content {
@@ -175,6 +197,10 @@
 
 .datepicker-modal .datepicker-container.modal-content {
   border-radius: 7px;
+}
+
+.datepicker-modal .datepicker-container.modal-content .datepicker-table abbr {
+  text-decoration: none;
 }
 
 .datepicker-modal .datepicker-controls .month-prev,
