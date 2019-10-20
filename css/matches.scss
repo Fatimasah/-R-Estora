@@ -16,8 +16,24 @@
   margin-right: 0 !important;
 }
 
-.navbar-section{
+.navbar-section {
   background-color: white;
+  .navbar{
+    background: unset;
+    border: none;
+    height: unset;
+    line-height: unset;
+    box-shadow: unset;
+    .navbar-collapse{
+      line-height: unset;
+    }
+    .form-control{
+      width: auto;
+      margin-bottom: 0;
+      padding: .375rem .75rem;
+      height: calc(1.5em + .75rem + 2px);
+    }
+  }
 }
 
 // matches content section start
@@ -64,34 +80,40 @@
           color: var(--blackColor);
           font: 16px/20px "sansB";
           align-items: center;
-          form,
-          .mk-datepicker-container,
-          #start-date {
-            height: 100%;
+          .datepicker {
             border: none;
+            height: 100%;
+            text-align: center;
+            font: 16px/20px "sansB";
+            color: var(--blackColor);
           }
-          .mk-datepicker {
-            padding-top: 50px;
-          }
-          .mk-datepicker-calendar .today {
-            background-color: var(--goldColor);
-          }
-
-          .mk-datepicker-next-m {
-            right: 30px;
-          }
+          // form,
+          // .mk-datepicker-container,
+          // #start-date {
+          //   height: 100%;
+          //   border: none;
+          // }
+          // .mk-datepicker {
+          //   padding-top: 50px;
+          // }
+          // .mk-datepicker-calendar .today {
+          //   background-color: var(--goldColor);
+          // }
+          // .mk-datepicker-next-m {
+          //   right: 30px;
+          // }
         }
-        .mk-datepicker-controls {
-          direction: ltr;
-        }
-        .mk-datepicker-label {
-          position: absolute;
-          top: 4%;
-          width: 100%;
-          left: 0;
-          font: 12px "sansB";
-          color: var(--blackColor);
-        }
+        // .mk-datepicker-controls {
+        //   direction: ltr;
+        // }
+        // .mk-datepicker-label {
+        //   position: absolute;
+        //   top: 4%;
+        //   width: 100%;
+        //   left: 0;
+        //   font: 12px "sansB";
+        //   color: var(--blackColor);
+        // }
       }
       .match-details {
         background-color: white;
@@ -133,6 +155,39 @@
 
 // matches content section end
 .site-app,
-.footer-section{
+.footer-section {
   background-color: white;
+}
+
+// contact us modal
+#exampleModal {
+  max-height: unset;
+  background-color: unset;
+  .modal-footer {
+    background-color: unset;
+  }
+}
+// edit framework
+.row{
+  margin-bottom: 0;
+  &::after{
+    content: unset;
+  }
+}
+
+// datepicker modal
+.datepicker-modal {
+  background-color: unset;
+  box-shadow: unset;
+  .datepicker-container {
+    &.modal-content {
+      border-radius: 7px;
+    }
+  }
+  .datepicker-controls {
+    .month-prev,
+    .month-next {
+      transform: rotate(180deg);
+    }
+  }
 }

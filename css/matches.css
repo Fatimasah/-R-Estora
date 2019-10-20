@@ -11,6 +11,26 @@
   background-color: white;
 }
 
+.navbar-section .navbar {
+  background: unset;
+  border: none;
+  height: unset;
+  line-height: unset;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.navbar-section .navbar .navbar-collapse {
+  line-height: unset;
+}
+
+.navbar-section .navbar .form-control {
+  width: auto;
+  margin-bottom: 0;
+  padding: .375rem .75rem;
+  height: calc(1.5em + .75rem + 2px);
+}
+
 .matches-content {
   background-color: #f7f7f7;
 }
@@ -75,35 +95,11 @@
           align-items: center;
 }
 
-.matches-content .matches-tabs .tab-content .dp-block .d-picker form,
-.matches-content .matches-tabs .tab-content .dp-block .d-picker .mk-datepicker-container,
-.matches-content .matches-tabs .tab-content .dp-block .d-picker #start-date {
-  height: 100%;
+.matches-content .matches-tabs .tab-content .dp-block .d-picker .datepicker {
   border: none;
-}
-
-.matches-content .matches-tabs .tab-content .dp-block .d-picker .mk-datepicker {
-  padding-top: 50px;
-}
-
-.matches-content .matches-tabs .tab-content .dp-block .d-picker .mk-datepicker-calendar .today {
-  background-color: var(--goldColor);
-}
-
-.matches-content .matches-tabs .tab-content .dp-block .d-picker .mk-datepicker-next-m {
-  right: 30px;
-}
-
-.matches-content .matches-tabs .tab-content .dp-block .mk-datepicker-controls {
-  direction: ltr;
-}
-
-.matches-content .matches-tabs .tab-content .dp-block .mk-datepicker-label {
-  position: absolute;
-  top: 4%;
-  width: 100%;
-  left: 0;
-  font: 12px "sansB";
+  height: 100%;
+  text-align: center;
+  font: 16px/20px "sansB";
   color: var(--blackColor);
 }
 
@@ -152,5 +148,38 @@
 .site-app,
 .footer-section {
   background-color: white;
+}
+
+#exampleModal {
+  max-height: unset;
+  background-color: unset;
+}
+
+#exampleModal .modal-footer {
+  background-color: unset;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+.row::after {
+  content: unset;
+}
+
+.datepicker-modal {
+  background-color: unset;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.datepicker-modal .datepicker-container.modal-content {
+  border-radius: 7px;
+}
+
+.datepicker-modal .datepicker-controls .month-prev,
+.datepicker-modal .datepicker-controls .month-next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=matches.css.map */
