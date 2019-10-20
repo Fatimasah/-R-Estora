@@ -103,16 +103,39 @@ $(document).ready(function () {
 });
 
 // function nextMonth() {
-//     $('#datepicker').datepicker({
+//     var n_date;
+//     $('datepicker').datepicker({
+//         format: 'dd mmm, yyyy',
 //         onSelect: function () {
-//             var n_date = $(this).datepicker('getDate'),
-//                 day = date.getDate(),
-//                 month = date.getMonth() + 2,
-//                 year = date.getFullYear();
-//             n_date = day + ' ' + month + ',' + year; 
-//             document.getElementById('datepicker').value = n_date;
+//             var toYear = this.date.getFullYear();
+//             var toMonth = this.date.getMonth();
+//             var toDay = this.date.getDate();
+//             n_date = new Date( toYear ,toMonth + 1 , toDay );
 
+
+//             $("datepicker").datepicker({
+//                 format: 'dd mmm, yyyy',
+//                 defaultDate: n_date,
+//                 setDefaultDate:n_date
+//              })
 //         }
-//     });
+//     }); console.log(n_date);
 // }
 
+// $('.next-day').on("click", function () {
+//     var maxDate;
+//     $('#datepicker').datepicker({
+//         autoClose: true,
+//         format: 'dd mmm, yyyy',
+
+//         onSelect: function () {
+
+//             var toYear = this.date.getFullYear();
+//             var toMonth = this.date.getMonth();
+//             var toDay = this.date.getDate();
+//             maxDate = new Date(toDay + 1, toMonth, toYear);
+//             document.getElementById('datepicker').value = maxDate;
+//         }
+
+//     });
+// });

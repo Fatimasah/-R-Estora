@@ -28,11 +28,11 @@
       <div class="row">
         <!-- <div class="col"> -->
         <div class="logo pr-4">
-          <a href=""><img src="../imgs/logo.png" alt="Ramy logo"></a>
+          <a href="../index.html"><img src="../imgs/logo.png" alt="Ramy logo"></a>
         </div>
         <div class="site-name px-4">
           <p class="mb-0">
-            <a href="">رامي <br>الأسطورة</a>
+            <a href="../index.html">رامي <br>الأسطورة</a>
           </p>
         </div>
         <div class="social-contact mr-auto">
@@ -104,7 +104,8 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 text-left" type="search" placeholder="بحث" aria-label="Search">
+            <input class="form-control mr-sm-2 text-left" type="search" placeholder="بحث" aria-label="Search"
+              onclick="openFunIn()">
             <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
           </form>
         </div>
@@ -166,10 +167,6 @@
             </div>
             <b class="match-status">انتهت المباراة</b>
           </div>
-
-
-
-
           <div class="team">
             <img src="../imgs/team-logos/barcelona.png" alt="team logo">
             <b>برشلونة</b>
@@ -309,51 +306,41 @@
 
 
 
-<!-- contact model start -->
+  <!-- contact model start -->
 
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-aria-hidden="true">
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">تواصل معنا</h5>
-      </button>
-    </div>
-    <div class="modal-body">
-      <form>
-        <div class="form-group">
-          <label for="sender-name" class="col-form-label">الاسم كامل</label>
-          <input type="text" class="form-control" id="sender-name">
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">تواصل معنا</h5>
+          </button>
         </div>
-        <div class="form-group">
-          <label for="e-mail" class="col-form-label">البريد الالكتروني</label>
-          <input type="text" class="form-control" id="e-mail">
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="sender-name" class="col-form-label">الاسم كامل</label>
+              <input type="text" class="form-control" id="sender-name">
+            </div>
+            <div class="form-group">
+              <label for="e-mail" class="col-form-label">البريد الالكتروني</label>
+              <input type="text" class="form-control" id="e-mail">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">الموضوع</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="message-text" class="col-form-label">الموضوع</label>
-          <textarea class="form-control" id="message-text"></textarea>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">إرسال الرسالة</button>
         </div>
-      </form>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-primary">إرسال الرسالة</button>
+      </div>
     </div>
   </div>
-</div>
-</div>
-<!-- content model end -->
-<script>
-$('#exampleModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = $(this)
-  modal.find('.modal-title').text('New message to ' + recipient)
-  modal.find('.modal-body input').val(recipient)
-})
-</script>
+  <!-- content model end -->
+
 
 
 

@@ -203,6 +203,10 @@
   text-decoration: none;
 }
 
+.datepicker-modal .datepicker-container.modal-content .datepicker-done {
+  display: none;
+}
+
 .datepicker-modal .datepicker-controls .month-prev,
 .datepicker-modal .datepicker-controls .month-next {
   -webkit-transform: rotate(180deg);
