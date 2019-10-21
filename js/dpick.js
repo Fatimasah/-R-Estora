@@ -26,7 +26,7 @@ $(document).ready(function () {
         mm = '0' + mm
     }
     // today = mmmm + ' ' + dd + ',' + yyyy;
-    today = yyyy + ' ' + ',' + mmmm + dd;
+    today = dd + ' ' + mmmm + ', ' + yyyy;
     document.getElementById('datepicker').value = today;
 
 
@@ -90,8 +90,10 @@ $(document).ready(function () {
         autoclose: true,
         rtl: true,
         language: 'xx',
-        format: 'yyyy, mm dd',
-        orientation: 'right auto'
+        format: 'dd MM, yyyy',
+        // orientation: 'right auto',
+        toggleActive: true
+
     });
     // next day
     $('.next-day').on("click", function () {
