@@ -89,12 +89,13 @@
             height: 40px;
           }
         }
-        .prev-month,
-        .prev-day {
+        .next-month,
+        .next-day {
           img {
             transform: rotate(180deg);
           }
         }
+        
         .prev-month {
           border-radius: 0 7px 7px 0;
         }

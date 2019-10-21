@@ -48,8 +48,8 @@
   }
 }
 
-.matches-content .matches-tabs .tab-content .dp-block .prev-month img,
-.matches-content .matches-tabs .tab-content .dp-block .prev-day img {
+.matches-content .matches-tabs .tab-content .dp-block .next-month img,
+.matches-content .matches-tabs .tab-content .dp-block .next-day img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
