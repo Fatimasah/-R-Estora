@@ -29,25 +29,13 @@
 
 
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css" integrity="sha256-I/m6FhcACNYmRoqn1xUnizh6S7jOJsTq+aiJ6BtE2LE=" crossorigin="anonymous" />
    </head>
 
 <body>
     <style>
-        .mk-datepicker {
-            width: 20%;
-            left: 40%;
-        }
-        .mk-datepicker-calendar .today {
-            background-color: var(--goldColor);
-        }
-        .mk-datepicker-prev-y,
-        .mk-datepicker-prev-m,
-        .mk-datepicker-next-m,
-        .mk-datepicker-next-y {
-            display: none;
-        }
+        
     </style>
 
     <!-- start navbar section -->
@@ -764,12 +752,18 @@
 
 
 
-    <input type="text" id="datepicker" class="datepicker">
+    <input class="datepicker" id="datepicker">
+    <button class="next-day">Next</button>
+    <button class="prev-day">Previous</button>
+    <button class="next-month">Next m</button>
+    <button class="prev-month">Previous m</button>
 
 
 
 
-
+    <script>
+       
+            </script>
 
 
 
@@ -783,16 +777,12 @@
     <!-- bootstrap -->
     <script src="../js/assets/bootstrap.min.js"></script>
     <script src="../js/assets/all.min.js"></script>
-    <script src="../js/assets/owl.carousel.min.js"></script>
-    <script src="../js/assets/datepicker.min.js"></script>
-    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/176621/mk-component.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/176621/mk-datepicker.js"></script> -->
-    
-    
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="../js/assets/owl.carousel.min.js"></script>
+    <script src="../js/assets/datepicker.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js
+    "></script>
+    <script src="../js/dpick.js"></script>
 
-    <script src="../js/co.js"></script>
 
 
 </body>

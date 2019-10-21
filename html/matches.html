@@ -8,13 +8,18 @@
   <link rel="shortcut icon" type="image/x-icon" href="../imgs/logo-black.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="../css/assets/materialize.min.css">
+  <!-- <link rel="stylesheet" href="../css/assets/materialize.min.css"> -->
   <!-- bootstrap -->
   <link rel="stylesheet" href="../css/assets/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="css/assets/fontawesome.min.css"> -->
   <link rel="stylesheet" href="../css/assets/all.min.css">
   <link rel="stylesheet" href="../css/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="../css/assets/owl.theme.default.min.css">
+
+  <!-- datepicker -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css"
+    integrity="sha256-I/m6FhcACNYmRoqn1xUnizh6S7jOJsTq+aiJ6BtE2LE=" crossorigin="anonymous" />
 
   <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
   <link rel="stylesheet" type="text/css" media="screen" href="../css/matches.css">
@@ -128,11 +133,13 @@
                   <button class="prev-day"><img src="../imgs/icons/chevron_left-black.svg" alt="icon"></button>
                 </div>
                 <div class="d-picker d-flex">
-                  <input type="text" id="datepicker" class="datepicker mb-0">
+                  <!-- <input type="text" id="datepicker" class="datepicker mb-0"> -->
+                  <input class="datepicker" id="datepicker">
+
                 </div>
                 <div class="next-btns d-flex">
                   <button class="next-day"><img src="../imgs/icons/chevron_left-black.svg" alt="icon"></button>
-                  <button class="next-month" ><img src="../imgs/icons/doubleAngel.svg" alt="icon"></button>
+                  <button class="next-month"><img src="../imgs/icons/doubleAngel.svg" alt="icon"></button>
                 </div>
               </div>
               <a href="Matches-single-live.html">
@@ -794,13 +801,18 @@
   <!-- popper -->
   <script src="../js/assets/popper.min.js"></script>
   <!-- Compiled and minified JavaScript -->
-  <script src="../js/assets/materialize.min.js"></script>
+  <!-- <script src="../js/assets/materialize.min.js"></script> -->
   <!-- bootstrap -->
   <script src="../js/assets/bootstrap.min.js"></script>
   <script src="../js/assets/all.min.js"></script>
   <script src="../js/assets/owl.carousel.min.js"></script>
+  <!-- datepicker -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js
+  "></script>
   <script src="../js/main.js"></script>
-  <script src="../js/co.js"></script>
+  <!-- <script src="../js/co.js"></script> -->
+  <script src="../js/dpick.js"></script>
+
 
 </body>
 
