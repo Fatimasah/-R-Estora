@@ -90,7 +90,8 @@ $(document).ready(function () {
         autoclose: true,
         rtl: true,
         language: 'xx',
-        format: 'yyyy, mm dd'
+        format: 'yyyy, mm dd',
+        orientation: 'right auto'
     });
     // next day
     $('.next-day').on("click", function () {

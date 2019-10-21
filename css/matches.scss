@@ -86,6 +86,7 @@
           background-color: white;
           @media (max-width: 576px) {
             width: 40px;
+            height: 40px;
           }
         }
         .prev-month,
@@ -116,6 +117,9 @@
             font: 16px/20px "sansB";
             color: var(--blackColor);
             outline: unset;
+            @media (max-width: 576px) {
+              width: 100px;
+            }
           }
           // form,
           // .mk-datepicker-container,
@@ -229,10 +233,13 @@
 // }
 .datepicker-rtl.dropdown-menu {
   padding: 10px;
+  right: 30% !important;
 }
 .datepicker td,
 .datepicker th {
-  width: 40px;
+  @media (min-width: 576px) {
+    width: 40px;
+  }
 }
 .datepicker table tr td.active,
 .datepicker table tr td.active:hover,
