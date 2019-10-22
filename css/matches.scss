@@ -80,6 +80,7 @@
         .prev-day,
         .next-day,
         .next-month {
+          @extend %trans;
           border: none;
           width: 80px;
           height: 80px;
@@ -93,9 +94,31 @@
         .next-day {
           img {
             transform: rotate(180deg);
+            @extend %trans;
+          }
+          &:hover {
+            img {
+              @extend %trans;
+              @media (min-width: 767px) {
+                transform: rotate(180deg) translateX(-5px);
+              }
+            }
           }
         }
-        
+        .prev-month,
+        .prev-day {
+          img {
+            @extend %trans;
+          }
+          &:hover {
+            img {
+              @extend %trans;
+              @media (min-width: 767px) {
+                transform: translateX(-5px);
+              }
+            }
+          }
+        }
         .prev-month {
           border-radius: 0 7px 7px 0;
         }
@@ -140,17 +163,6 @@
           //   right: 30px;
           // }
         }
-        // .mk-datepicker-controls {
-        //   direction: ltr;
-        // }
-        // .mk-datepicker-label {
-        //   position: absolute;
-        //   top: 4%;
-        //   width: 100%;
-        //   left: 0;
-        //   font: 12px "sansB";
-        //   color: var(--blackColor);
-        // }
       }
       .match-details {
         background-color: white;
