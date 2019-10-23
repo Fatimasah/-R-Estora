@@ -367,6 +367,7 @@ body button:focus {
   position: absolute;
   left: 45px;
   border: none;
+  display: none;
 }
 
 .s-clear svg {

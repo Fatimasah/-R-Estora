@@ -141,9 +141,20 @@ $(document).ready(function () {
 
 
 
-
-
 });
+$('.form-control').on('input', function () {
+    $('.s-clear').show();
+});
+
+// $('.form-control').focus(function () {
+//     $('.s-clear').show();
+// });
+// $('.form-control').blur(function () {
+//     $('.s-clear').hide();
+// });
+
+
+
 
 
 
@@ -152,9 +163,8 @@ $('.social-ul').scrollToFixed({
     marginTop: 20,
     // limit: $('t-squad').offset().top -10
     // limit: $('.squad-text').offset().top ,
-    limit: $('.t-squad').offset().top 
+    limit: $('.t-squad').offset().top - 100
 });
-
 
 
 
