@@ -151,8 +151,8 @@ $(document).ready(function () {
 $('.social-ul').scrollToFixed({
     marginTop: 20,
     // limit: $('t-squad').offset().top -10
-    limit: $('.t-squad').offset().top - $('.social-ul').outerHeight() - 400,
-
+    // limit: $('.squad-text').offset().top ,
+    limit: $('.t-squad').offset().top 
 });
 
 

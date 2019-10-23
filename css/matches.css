@@ -102,6 +102,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .matches-content .matches-tabs .tab-content .dp-block .d-picker .datepicker {
@@ -112,24 +113,35 @@
   color: var(--blackColor);
   outline: unset;
   direction: rtl;
+  padding-right: 30px;
 }
 
 @media (max-width: 576px) {
   .matches-content .matches-tabs .tab-content .dp-block .d-picker .datepicker {
     width: 100px;
     font: 12px/20px "sansB";
+    margin-right: 15px;
+    padding-right: 0px;
   }
 }
 
 .matches-content .matches-tabs .tab-content .dp-block .d-picker::after {
   content: "";
   background-image: url("../imgs/icons/calendar-alt-solid.svg");
+  background-repeat: no-repeat;
   width: 18px;
   height: 20px;
-  top: 0;
-  right: 0;
+  right: 55px;
   position: absolute;
-  fill: #557ae0;
+  top: 35%;
+}
+
+@media (max-width: 576px) {
+  .matches-content .matches-tabs .tab-content .dp-block .d-picker::after {
+    width: 10px;
+    height: 12px;
+    right: 10px;
+  }
 }
 
 .matches-content .matches-tabs .tab-content .match-details {

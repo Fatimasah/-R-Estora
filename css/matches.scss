@@ -89,7 +89,7 @@
           color: var(--blackColor);
           font: 16px/20px "sansB";
           align-items: center;
-          // position: relative;
+          position: relative;
           .datepicker {
             border: none;
             height: 100%;
@@ -98,20 +98,31 @@
             color: var(--blackColor);
             outline: unset;
             direction: rtl;
+
+            padding-right: 30px;
             @media (max-width: 576px) {
               width: 100px;
               font: 12px/20px "sansB";
+              margin-right: 15px;
+              padding-right: 0px;
+
             }
           }
           &::after {
             content: "";
             background-image: url("../imgs/icons/calendar-alt-solid.svg");
+            background-repeat: no-repeat;
             width: 18px;
             height: 20px;
-            top: 0;
-            right: 0;
+            right: 55px;
+            // cursor: pointer;
             position: absolute;
-            fill: #557ae0;
+            top: 35%;
+            @media (max-width: 576px) {
+              width: 10px;
+              height: 12px;
+              right: 10px;
+            }
           }
         }
       }
