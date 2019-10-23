@@ -11,6 +11,9 @@
       @media (max-width: 576px) {
         margin-bottom: 10px;
       }
+      .rec_ {
+        font: 15px/23px "sansB";
+      }
       b {
         color: var(--redColor);
         @media (max-width: 576px) {
@@ -46,6 +49,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        font: 14px/23px "sansB";
       }
       .winner {
         background: rgba(0, 184, 169, 0.050980392156862744) 0% 0% no-repeat padding-box;

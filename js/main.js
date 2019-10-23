@@ -66,7 +66,7 @@ $(document).ready(function () {
         rtl: true,
         loop: false,
         margin: 10,
-        nav: true,
+        nav: false,
         // dots: false,
         responsiveClass: true,
         responsive: {
@@ -84,7 +84,6 @@ $(document).ready(function () {
             }
         }
     });
-
 
     $('.slimScrollDiv1').slimScroll({
         height: '450px',
@@ -111,6 +110,7 @@ $(document).ready(function () {
         allowPageScroll: false,
         disableFadeOut: false
     });
+
     $('.slimScrollDiv3').slimScroll({
 
         height: '450px',
@@ -124,6 +124,7 @@ $(document).ready(function () {
         allowPageScroll: false,
         disableFadeOut: false
     });
+
     $('.slimScrollDiv4').slimScroll({
 
         height: '450px',
@@ -138,24 +139,9 @@ $(document).ready(function () {
         disableFadeOut: false
     });
 
-    // date picker 
-
-
-
-    // $('#datetimepicker4').datepicker({
-    //     autoclose: true,
-    //     format: 'mm/dd/yyyy',
-    //     startDate: '-3d'
-    // });
-
-    $.fn.datepicker.defaults.format = "mm/dd/yyyy";
-    $('#datetimepicker4').datepicker({
-        startDate: '-3d',
-        todayHighlight: true
-    });
+    $('.social-ul').scrollToFixed();
 
 });
-
 
 
 // pagination
@@ -172,12 +158,6 @@ window.onload = function () {
         }
         $('.cdp').attr('actpage', paginationPage);
     });
-
-
-
-
-
-
 };
 
 // search animation internal and external pages
@@ -198,30 +178,4 @@ function goBack() {
 
 
 
-// datepicker matches page start
-$(function () {
-    // var today = new Date();
-
-    // var dd = today.getDate();
-    // var mm = today.getMonth() + 1; //January is 0!
-    // var yyyy = today.getFullYear();
-    // if (dd < 10) {
-    //     dd = '0' + dd
-    // }
-    // if (mm < 10) {
-    //     mm = '0' + mm
-    // }
-    // today = mm + '/' + dd + '/' + yyyy;
-    // document.getElementById('start-date').value = today;
-
-    // var $pickers = $('.mk-datepicker-trigger');
-    // $pickers.mkdatepicker();
-    // $pickers.on('change.mk-datepicker', function (e, date) {
-    //     console.info('formatted date: ', this.value);
-    //     console.info('raw date object: ', date);
-    // });
-
-
-});// datepicker matches page end
-
-
+// $(".social-ul").scrollToFixed();

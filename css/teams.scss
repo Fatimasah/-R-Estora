@@ -46,12 +46,12 @@
     }
     .owl-carousel {
       .owl-stage {
-        @media (max-width: 767px) {
-          padding-right: 75px;
-        }
-        @media (max-width: 650px) {
-          padding-right: 50px;
-        }
+        // @media (max-width: 767px) {
+        //   padding-right: 75px;
+        // }
+        // @media (max-width: 650px) {
+        //   padding-right: 50px;
+        // }
         @media (max-width: 576px) {
           padding-right: 0px;
         }

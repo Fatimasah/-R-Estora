@@ -40,18 +40,6 @@
   border: 1px solid rgba(224, 189, 85, 0.301961);
 }
 
-@media (max-width: 767px) {
-  .league-section .league-content .owl-carousel .owl-stage {
-    padding-right: 75px;
-  }
-}
-
-@media (max-width: 650px) {
-  .league-section .league-content .owl-carousel .owl-stage {
-    padding-right: 50px;
-  }
-}
-
 @media (max-width: 576px) {
   .league-section .league-content .owl-carousel .owl-stage {
     padding-right: 0px;

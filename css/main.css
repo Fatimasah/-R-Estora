@@ -23,7 +23,7 @@
   src: url("../fonts/TheSans-Plain.ttf");
 }
 
-.all-items, .all-items a, .all-items a:first-of-type, .all-items a:first-of-type b, .all-items a:last-of-type, .all-items:hover, .all-items:hover .all-items-hover, .all-items:hover .all-items-hover b, .header-section .social-contact ul li a, .header-section .social-contact ul li a svg, .header-section .social-contact ul li a:hover, .header-section .social-contact ul li a:hover svg, .navbar-section .navbar .navbar-nav .nav-item .nav-link, .navbar-section .navbar .navbar-nav .nav-item.active .nav-link, .navbar-section .navbar .navbar-nav .nav-item:hover .nav-link, .matches-content .matches-tabs .nav-pills .nav-item .nav-link, .matches-content .matches-tabs .tab-content .match-details, .matches-content .matches-tabs .tab-content .match-details:hover .details-hover, .matches-content .top-soccer .carousel .carousel-inner .carousel-item,
+.all-items a:first-of-type, .all-items a:first-of-type b, .header-section .social-contact ul li a, .header-section .social-contact ul li a svg, .header-section .social-contact ul li a:hover, .header-section .social-contact ul li a:hover svg, .navbar-section .navbar .navbar-nav .nav-item .nav-link, .navbar-section .navbar .navbar-nav .nav-item.active .nav-link, .navbar-section .navbar .navbar-nav .nav-item:hover .nav-link, .matches-content .matches-tabs .nav-pills .nav-item .nav-link, .matches-content .matches-tabs .tab-content .match-details, .matches-content .matches-tabs .tab-content .match-details:hover .details-hover, .matches-content .top-soccer .carousel .carousel-inner .carousel-item,
 .matches-content .top-soccer .carousel .carousel-inner .champion-item,
 .matches-content .top-soccer .carousel .champion-inner .carousel-item,
 .matches-content .top-soccer .carousel .champion-inner .champion-item,
@@ -48,6 +48,7 @@
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  outline: unset !important;
 }
 
 html {
@@ -74,6 +75,13 @@ body a:hover {
   text-decoration: none;
   outline: none;
   color: #ffffff;
+}
+
+body input:focus,
+body .btn:focus {
+  outline: unset !important;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
 }
 
 body b {
@@ -123,7 +131,7 @@ body button:focus {
 }
 
 .details-hover .angel-border {
-  border: 1px solid;
+  border: 1px solid #a0a3a0cc;
   border-radius: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -164,6 +172,8 @@ body button:focus {
   overflow: hidden;
   width: 50px;
   margin-right: auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .all-items a {
@@ -172,6 +182,8 @@ body button:focus {
   font: 14px/34px "sansB";
   color: var(--purpleColor);
   background-color: var(--purpleBack);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .all-items a img {
@@ -225,6 +237,8 @@ body button:focus {
   padding: 0;
   width: 50px;
   height: 50px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .all-items a:last-of-type img {
@@ -232,6 +246,8 @@ body button:focus {
 }
 
 .all-items:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 170px;
 }
 
@@ -239,6 +255,8 @@ body button:focus {
   left: 0;
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .all-items:hover .all-items-hover b {
@@ -247,6 +265,8 @@ body button:focus {
   -webkit-transition-delay: 0.4s !important;
           transition-delay: 0.4s !important;
   bottom: 7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .adds {
@@ -328,6 +348,30 @@ body button:focus {
             transform: scale(1.5);
     opacity: 0;
   }
+}
+
+.s-clear {
+  width: 35px;
+  height: 35px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 45px;
+  border: none;
+}
+
+.s-clear svg {
+  color: #a0a3a0;
+  font-size: 14px;
 }
 
 .latest-news-card {
@@ -538,24 +582,18 @@ body button:focus {
   color: var(--blackColor);
 }
 
-.navbar-section .navbar form .form-control {
-  border: none;
-}
-
-.navbar-section .navbar form .form-control::-webkit-input-placeholder {
+.navbar-section .navbar .search-block a {
   color: var(--blackColor);
 }
 
-.navbar-section .navbar form .form-control:-ms-input-placeholder {
-  color: var(--blackColor);
+.navbar-section .navbar .search-block a svg {
+  margin-right: 15px;
 }
 
-.navbar-section .navbar form .form-control::-ms-input-placeholder {
-  color: var(--blackColor);
-}
-
-.navbar-section .navbar form .form-control::placeholder {
-  color: var(--blackColor);
+.navbar-section .navbar .sb_ {
+  position: absolute;
+  top: 22px;
+  left: 0;
 }
 
 .league-section {
@@ -1009,6 +1047,14 @@ body button:focus {
   width: 6px;
   height: 6px;
   border-radius: 50%;
+  background-color: #e0e0e0;
+  opacity: 1;
+}
+
+.matches-content .top-soccer .carousel .carousel-inner .carousel-indicators li.active,
+.matches-content .top-soccer .carousel .champion-inner .carousel-indicators li.active,
+.matches-content .top-soccer .championships .carousel-inner .carousel-indicators li.active,
+.matches-content .top-soccer .championships .champion-inner .carousel-indicators li.active {
   background-color: var(--blackColor);
 }
 
@@ -1584,25 +1630,25 @@ button.btn-back {
 
 @-webkit-keyframes opacity-animation {
   0% {
-    opacity: 1;
+    background-color: rgba(0, 184, 169, 0.19);
   }
   50% {
-    opacity: 0;
+    background-color: white;
   }
   100% {
-    opacity: 1;
+    background-color: rgba(0, 184, 169, 0.19);
   }
 }
 
 @keyframes opacity-animation {
   0% {
-    opacity: 1;
+    background-color: rgba(0, 184, 169, 0.19);
   }
   50% {
-    opacity: 0;
+    background-color: white;
   }
   100% {
-    opacity: 1;
+    background-color: rgba(0, 184, 169, 0.19);
   }
 }
 

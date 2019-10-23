@@ -35,6 +35,7 @@
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  outline: unset !important;
 }
 html {
   scroll-behavior: smooth;
@@ -58,6 +59,13 @@ body {
     text-decoration: none;
     outline: none;
     color: #ffffff;
+  }
+  input,
+  .btn {
+    &:focus {
+      outline: unset !important;
+      box-shadow: unset !important;
+    }
   }
   b {
     font-weight: unset !important;
@@ -95,7 +103,7 @@ body {
     color: white;
   }
   .angel-border {
-    border: 1px solid;
+    border: 1px solid #a0a3a0cc;
     border-radius: 50%;
     justify-content: center;
     display: flex;
@@ -129,7 +137,12 @@ body {
   overflow: hidden;
   width: 50px;
   margin-right: auto;
-  @extend %trans;
+
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   a {
     padding: 0 16px 0 0;
@@ -137,7 +150,12 @@ body {
     font: 14px/34px "sansB";
     color: var(--purpleColor);
     background-color: var(--purpleBack);
-    @extend %trans;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     img {
       padding: 13px;
@@ -181,25 +199,44 @@ body {
       padding: 0;
       width: 50px;
       height: 50px;
-      @extend %trans;
+
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
       img {
         margin-right: 0;
       }
     }
   }
   &:hover {
-    @extend %trans;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     width: 170px;
     .all-items-hover {
       left: 0;
       transform: translate(0px, 0px);
-      @extend %trans;
+
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
 
       b {
         transform: translate(0px, 0px);
         transition-delay: 0.4s !important;
         bottom: 7px;
-        @extend %trans;
+
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
       }
     }
   }
@@ -262,7 +299,24 @@ body {
     opacity: 0;
   }
 }
-
+// search clear btn
+.s-clear {
+  width: 35px;
+  height: 35px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 45px;
+  border: none;
+  // display: none;
+  svg {
+    color: #a0a3a0;
+    font-size: 14px;
+  }
+}
 // news-card
 .latest-news-card {
   display: flex;
@@ -428,13 +482,18 @@ body {
         }
       }
     }
-    form {
-      .form-control {
-        border: none;
-        &::placeholder {
-          color: var(--blackColor);
+    .search-block {
+      a {
+        color: var(--blackColor);
+        svg {
+          margin-right: 15px;
         }
       }
+    }
+    .sb_ {
+      position: absolute;
+      top: 22px;
+      left: 0;
     }
   }
 }
@@ -760,8 +819,11 @@ body {
             width: 6px;
             height: 6px;
             border-radius: 50%;
-            background-color: var(--blackColor);
-            // opacity: 0.3;
+            background-color: #e0e0e0;
+            opacity: 1;
+            &.active {
+              background-color: var(--blackColor);
+            }
           }
         }
         .carousel-item,
@@ -1132,13 +1194,22 @@ button.btn-back {
 // start animation
 @keyframes opacity-animation {
   0% {
-    opacity: 1;
+    // opacity: 1;
+    background-color: rgba(0, 184, 169, 0.19);
   }
+  // 25% {
+  //   background-color: rgba(0, 184, 169, 0);
+  // }
   50% {
-    opacity: 0;
+    // opacity: 0;
+    background-color: white;
   }
+  // 75% {
+  //   background-color: rgba(0, 184, 169, 0);
+  // }
   100% {
-    opacity: 1;
+    // opacity: 1;
+    background-color: rgba(0, 184, 169, 0.19);
   }
 }
 // end animation

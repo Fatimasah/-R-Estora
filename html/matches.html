@@ -110,12 +110,24 @@
               <a class="nav-link" href="#">من نحن</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2 text-left" type="search" placeholder="بحث" aria-label="Search"
               onclick="openFunIn()">
             <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-          </form>
+          </form> -->
+          <div class="search-block d-lg-block d-none">
+              <a href="search-result.html">
+                بحث
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
         </div>
+        <div class="search-block sb_ d-lg-none d-block">
+            <a href="search-result.html">
+              بحث
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
       </nav>
     </div>
   </section>
@@ -134,9 +146,8 @@
                   <button class="next-day"><img src="../imgs/icons/chevron_left-black.svg" alt="icon"></button>
                 </div>
                 <div class="d-picker d-flex">
-                  <!-- <input type="text" id="datepicker" class="datepicker mb-0"> -->
+                    <!-- <i class="fas fa-calendar-alt"></i> -->
                   <input class="datepicker" id="datepicker" readonly>
-
                 </div>
                 <div class="next-btns d-flex">
                   <button class="prev-day"><img src="../imgs/icons/chevron_left-black.svg" alt="icon"></button>

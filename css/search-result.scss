@@ -4,7 +4,7 @@
     margin-bottom: 40px;
     .form-inline {
       .form-control {
-        height: 85px;
+        height: 75px;
         padding: 30px;
         width: 100%;
         font: 16px/23px "sansB";
@@ -14,6 +14,22 @@
           color: #a0a3a0;
         }
       }
+      // .s-clear {
+      //   width: 35px;
+      //   height: 35px;
+      //   background-color: #f7f7f7;
+      //   border-radius: 50%;
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   position: absolute;
+      //   left: 45px;
+      //   border: none;
+      //   svg {
+      //     color: #a0a3a0;
+      //     font-size: 14px;
+      //   }
+      // }
     }
   }
   .nav {

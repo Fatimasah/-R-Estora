@@ -11,7 +11,11 @@ body {
     .form-control {
       border: none;
       background: none;
+      width: 50%;
       text-align: right !important;
+      @media (max-width: 576px) {
+        width: 100%;
+      }
     }
   }
 }

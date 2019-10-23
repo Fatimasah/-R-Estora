@@ -22,7 +22,14 @@ body {
 .search-section .form-inline .form-control {
   border: none;
   background: none;
+  width: 50%;
   text-align: right !important;
+}
+
+@media (max-width: 576px) {
+  .search-section .form-inline .form-control {
+    width: 100%;
+  }
 }
 
 .match-live-section {

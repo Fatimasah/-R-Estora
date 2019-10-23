@@ -83,11 +83,11 @@
 }
 
 .matches-content .matches-tabs .tab-content .dp-block .prev-month {
-  border-radius: 0 7px 7px 0;
+  border-radius: 7px 0px 0px 7px;
 }
 
 .matches-content .matches-tabs .tab-content .dp-block .next-month {
-  border-radius: 7px 0px 0px 7px;
+  border-radius: 0px 7px 7px 0px;
 }
 
 .matches-content .matches-tabs .tab-content .dp-block .next-day,
@@ -121,8 +121,20 @@
   }
 }
 
+.matches-content .matches-tabs .tab-content .dp-block .d-picker::after {
+  content: "";
+  background-image: url("../imgs/icons/calendar-alt-solid.svg");
+  width: 18px;
+  height: 20px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  fill: #557ae0;
+}
+
 .matches-content .matches-tabs .tab-content .match-details {
   background-color: white;
+  border: none;
 }
 
 .matches-content .a-block {

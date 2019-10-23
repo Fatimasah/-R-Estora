@@ -26,6 +26,10 @@
   }
 }
 
+.soon-alert .soon-block .soon-side .rec_ {
+  font: 15px/23px "sansB";
+}
+
 .soon-alert .soon-block .soon-side b {
   color: var(--redColor);
 }
@@ -78,6 +82,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font: 14px/23px "sansB";
 }
 
 .details-section .details-block .finished-result .winner {
