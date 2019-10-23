@@ -139,9 +139,26 @@ $(document).ready(function () {
         disableFadeOut: false
     });
 
-    $('.social-ul').scrollToFixed();
+
+
+
 
 });
+
+
+
+
+$('.social-ul').scrollToFixed({
+    marginTop: 20,
+    // limit: $('t-squad').offset().top -10
+    limit: $('.t-squad').offset().top - $('.social-ul').outerHeight() - 400,
+
+});
+
+
+
+
+
 
 
 // pagination
@@ -158,6 +175,8 @@ window.onload = function () {
         }
         $('.cdp').attr('actpage', paginationPage);
     });
+
+
 };
 
 // search animation internal and external pages

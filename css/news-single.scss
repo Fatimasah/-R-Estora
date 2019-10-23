@@ -6,7 +6,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-// 
+//
 
 // start team-set section
 .team-squad {
@@ -68,30 +68,38 @@
       p {
         font: 18px/28px "sansP";
         color: var(--blackColor);
-        width: 85%;
+        width: 100%;
+        padding-left: 15%;
         margin-bottom: 0;
+
+        position: relative;
+
         @media (max-width: 576px) {
           width: 100%;
         }
       }
       ul {
         padding: 0;
-        width: 15%;
+        // width: 15%;
         text-align: left;
         padding-left: 8px;
-        @media (max-width: 576px) {
-          width: 100%;
-          text-align: right;
-          margin-bottom: 25px;
-        }
+
+        position: absolute;
+        left: 15px;
+
+        // @media (max-width: 576px) {
+        //   width: 100%;
+        //   text-align: right;
+        //   margin-bottom: 25px;
+        // }
         h6 {
           font: 14px/20px "sansB";
           margin-bottom: 18px;
           color: var(--blackColor);
-          @media (max-width: 576px) {
-            display: inline;
-            margin-left: 20px;
-          }
+          // @media (max-width: 576px) {
+          //   display: inline;
+          //   margin-left: 20px;
+          // }
         }
 
         li {
@@ -103,10 +111,10 @@
           margin-left: 10px;
           text-align: center;
           @extend %trans;
-          @media (max-width: 576px) {
-            display: inline;
-            margin-left: 20px;
-          }
+          // @media (max-width: 576px) {
+          //   display: inline;
+          //   margin-left: 20px;
+          // }
           &::before {
             content: "";
             position: absolute;
@@ -200,10 +208,10 @@
         .active-status {
           top: -10px;
           right: -20px;
-          @media(max-width:767px){
+          @media (max-width: 767px) {
             right: 35%;
           }
-          @media(max-width:576px){
+          @media (max-width: 576px) {
             right: 25%;
           }
         }
