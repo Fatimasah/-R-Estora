@@ -821,6 +821,7 @@ body {
             border-radius: 50%;
             background-color: #e0e0e0;
             opacity: 1;
+            border: none;
             &.active {
               background-color: var(--blackColor);
             }

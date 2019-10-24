@@ -29,7 +29,6 @@ $(document).ready(function () {
     today = dd + ' ' + mmmm + ', ' + yyyy;
     document.getElementById('datepicker').value = today;
 
-
     $.fn.datepicker.dates['xx'] = {
         days: [
             'الأحد',

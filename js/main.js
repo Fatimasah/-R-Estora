@@ -146,17 +146,6 @@ $('.form-control').on('input', function () {
     $('.s-clear').show();
 });
 
-// $('.form-control').focus(function () {
-//     $('.s-clear').show();
-// });
-// $('.form-control').blur(function () {
-//     $('.s-clear').hide();
-// });
-
-
-
-
-
 
 
 $('.social-ul').scrollToFixed({
@@ -190,12 +179,6 @@ window.onload = function () {
 };
 
 // search animation internal and external pages
-function openFun() {
-    window.open("html/search-result.html", "_self");
-}
-function openFunIn() {
-    window.open("search-result.html", "_self");
-}
 function goBack() {
     const element = document.querySelector('.search-result');
     element.classList.remove('fadeInRight');
@@ -203,8 +186,3 @@ function goBack() {
     window.history.back();
 }
 
-
-
-
-
-// $(".social-ul").scrollToFixed();

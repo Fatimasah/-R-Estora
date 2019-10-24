@@ -14,22 +14,6 @@
           color: #a0a3a0;
         }
       }
-      // .s-clear {
-      //   width: 35px;
-      //   height: 35px;
-      //   background-color: #f7f7f7;
-      //   border-radius: 50%;
-      //   display: flex;
-      //   justify-content: center;
-      //   align-items: center;
-      //   position: absolute;
-      //   left: 45px;
-      //   border: none;
-      //   svg {
-      //     color: #a0a3a0;
-      //     font-size: 14px;
-      //   }
-      // }
     }
   }
   .nav {
@@ -148,24 +132,3 @@
     }
   }
 }
-
-/* width */
-/*::-webkit-scrollbar {
-  width: 6px;
-}*/
-
-/* Track */
-// ::-webkit-scrollbar-track {
-//   background: white;
-// }
-
-/* Handle */
-// ::-webkit-scrollbar-thumb {
-//   background: #f2efef;
-//   border-radius: 17px;
-// }
-
-/* Handle on hover */
-// ::-webkit-scrollbar-thumb:hover {
-//   background: #555;
-// }
